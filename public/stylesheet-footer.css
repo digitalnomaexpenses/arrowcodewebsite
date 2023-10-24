@@ -1,0 +1,76 @@
+:root {
+	--background : #FAF7F4;
+	--card-background: #F0EDEA;
+	 --card-background-dark: #1d1d1d;;
+	--font-color-1: #164951;
+	--font-jakarta: 'Plus Jakarta Sans', sans-serif;
+	--dark-peach: #FF5F5F;
+	--form-background: #FFFFFF;
+	--form-border: #EFEFEF;
+	--form-input-border: #8F8F8F;
+	--card-shadow:drop-shadow(0 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+.dark {
+	background: var(--card-background-dark);
+	color: var(--card-background);
+}
+
+.light {
+	background: var(--card-background);
+	color: var(--font-color-1);
+}
+
+
+.footer,
+.footer-mobile {
+	min-width: 100%;
+	min-height: 90%;
+	border-radius: 40px;
+}
+
+
+.footer-heading {
+	font-weight: bolder;
+	font-size: 1.2rem;
+}
+
+.footer-heading-mobile {
+	font-size: 1.2rem;
+	font-weight: bolder;
+}
+
+.footer-text {
+	font-size: 1rem;
+}
+
+.footer-text-mobile {
+	font-size: 0.85rem;
+}
+
+.footer-nav-list {
+	list-style: none;
+	font-size: 1rem;
+	font-weight: bolder;
+	padding-left: 0 !important;
+}
+
+.footer-nav-list-mobile {
+	font-size: 0.75rem;
+	font-weight: bolder;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+
+	.footer-heading{
+		font-size: 1.1rem;
+	}
+
+	.footer-text{
+		font-size: 0.8rem;
+	}
+
+	.footer-nav-list {
+		font-size: 0.8rem;
+	}
+}

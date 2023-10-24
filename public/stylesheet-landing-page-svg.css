@@ -1,0 +1,1266 @@
+
+/*bar-graph-left start*/
+
+#bar-graph-1 {
+	animation: lp-bar-graph-1-appear 10s infinite ease-in;
+	transform-box: fill-box;
+	transform-origin: bottom;
+}
+
+#bar-graph-2 {
+	animation: lp-bar-graph-2-appear 10s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: bottom;
+}
+
+#bar-graph-3 {
+	animation: lp-bar-graph-3-appear 10s infinite ease-in;
+	transform-box: fill-box;
+	transform-origin: bottom;
+}
+
+#bar-graph-4 {
+	animation: lp-bar-graph-4-appear 10s infinite ease-in;
+	transform-box: fill-box;
+	transform-origin: bottom;
+}
+
+#bar-graph-5 {
+	animation: lp-bar-graph-5-appear 10s infinite ease-in;
+	transform-box: fill-box;
+	transform-origin: bottom;
+}
+
+#bar-graph-6 {
+	animation: lp-bar-graph-6-appear 10s infinite ease-in;
+	transform-box: fill-box;
+	transform-origin: bottom;
+}
+
+#bar-graph-7 {
+	animation: lp-bar-graph-7-appear 10s infinite ease-in;
+	transform-box: fill-box;
+	transform-origin: bottom;
+}
+
+@keyframes lp-bar-graph-1-appear {
+	0%, 12% {
+		transform: scale(1, 0);
+	}
+
+	24%, 100% {
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes lp-bar-graph-2-appear {
+	0%, 24% {
+		transform: scale(1, 0);
+	}
+
+	36%, 100% {
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes lp-bar-graph-3-appear {
+	0%, 36% {
+		transform: scale(1, 0);
+	}
+
+	48%, 100% {
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes lp-bar-graph-4-appear {
+	0%, 48% {
+		transform: scale(1, 0);
+	}
+
+	60%, 100% {
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes lp-bar-graph-5-appear {
+	0%, 60% {
+		transform: scale(1, 0);
+	}
+
+	72%, 100% {
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes lp-bar-graph-6-appear {
+	0%, 72% {
+		transform: scale(1, 0);
+	}
+
+	84%, 100% {
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes lp-bar-graph-7-appear {
+	0%, 84% {
+		transform: scale(1, 0);
+	}
+
+	96%, 100% {
+		transform: scale(1, 1);
+	}
+}
+
+bar-graph-left end*/
+
+
+/*lp-pyramid start*/
+
+
+@keyframes pyramid-background-appear {
+	0% {
+		fill-opacity: 0;
+	}
+
+	10% {
+		fill-opacity: 1;
+	}
+}
+
+#pyramid-block-1 {
+	animation: pyramid-block-1-appear 6s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes pyramid-block-1-appear {
+	0%, 80% {
+		transform: scale(1, 0);
+	}
+
+	81%, 100% {
+		transform: scale(1, 1);
+	}
+}
+
+#pyramid-block-2 {
+	animation: pyramid-block-2-appear 6s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes pyramid-block-2-appear {
+	0%, 60% {
+		transform: scale(1, 0);
+	}
+
+	61%, 100% {
+		transform: scale(1, 1);
+	}
+}
+
+#pyramid-block-3 {
+	animation: pyramid-block-3-appear 6s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes pyramid-block-3-appear {
+	0%, 40% {
+		transform: scale(1, 0);
+	}
+
+	41%, 100% {
+		transform: scale(1, 1);
+	}
+}
+
+#pyramid-block-4 {
+	animation: pyramid-block-4-appear 6s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes pyramid-block-4-appear {
+	0%, 20% {
+		transform: scale(1, 0);
+	}
+
+	21%, 100% {
+		transform: scale(1, 1);
+	}
+}
+
+/*lp-pyramid end*/
+
+
+
+#lp-line-graph-1-dot-1 {
+	animation: lp-line-graph-1-dot-1-appear 9s infinite ease-in-out ;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-1-dot-2 {
+	animation: lp-line-graph-1-dot-2-appear 9s infinite ease-in-out ;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-1-dot-3 {
+	animation: lp-line-graph-1-dot-3-appear 9s infinite ease-in-out ;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-1-dot-4 {
+	animation: lp-line-graph-1-dot-4-appear 9s infinite ease-in-out ;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-1-dot-5 {
+	animation: lp-line-graph-1-dot-5-appear 9s infinite ease-in-out ;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-1-dot-6 {
+	animation: lp-line-graph-1-dot-6-appear 9s infinite ease-in-out ;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-1-dot-7 {
+	animation: lp-line-graph-1-dot-7-appear 9s infinite ease-in-out ;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-1-dot-8 {
+	animation: lp-line-graph-1-dot-8-appear 9s infinite ease-in-out ;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-1-dot-9 {
+	animation: lp-line-graph-1-dot-9-appear 9s infinite ease-in-out ;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-1-dot-10 {
+	animation: lp-line-graph-1-dot-10-appear 9s infinite ease-in-out ;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes lp-line-graph-1-dot-1-appear {
+ 	0%, 7.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	8%, 100% {
+ 		opacity: 1;
+ 		fill: #ff5f5f;
+ 		transform: scale(3);
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-1-dot-2-appear {
+	0%, 15.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	16%, 100% {
+ 		opacity: 1;
+ 		fill: #ff5f5f;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-1-dot-3-appear {
+ 	0%, 23.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	24%, 100% {
+ 		opacity: 1;
+ 		fill: #ff5f5f;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-1-dot-4-appear {
+	0%, 31.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	32%, 100% {
+ 		opacity: 1;
+ 		fill: #ff5f5f;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-1-dot-5-appear {
+	0%, 39.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	40%, 100% {
+ 		opacity: 1;
+ 		fill: #ff5f5f;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-1-dot-6-appear {
+	0%, 47.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	48%, 100% {
+ 		opacity: 1;
+ 		fill: #ff5f5f;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-1-dot-7-appear {
+	0%, 55.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	56%, 100% {	
+ 		opacity: 1;
+ 		fill: #ff5f5f;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-1-dot-8-appear {
+	0%, 63.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+ 	
+ 	64%, 100% {
+ 		opacity: 1;
+ 		fill: #ff5f5f;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-1-dot-9-appear {
+	0%, 71.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+ 	
+ 	72%, 100% {
+ 		opacity: 1;
+ 		fill: #ff5f5f;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-1-dot-10-appear {
+	0%, 79.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+ 	
+ 	80%, 100% {
+ 		opacity: 1;
+ 		fill: #ff5f5f;
+ 		transform: scale(3);
+	}
+}
+
+
+#lp-line-graph-2-dot-1 {
+	animation: lp-line-graph-2-dot-1-appear 9s infinite ease-in-out ;
+	animation-delay: 9s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-2-dot-2 {
+	animation: lp-line-graph-2-dot-2-appear 9s infinite ease-in-out ;
+	animation-delay: 9s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-2-dot-3 {
+	animation: lp-line-graph-2-dot-3-appear 9s infinite ease-in-out ;
+	animation-delay: 9s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-2-dot-4 {
+	animation: lp-line-graph-2-dot-4-appear 9s infinite ease-in-out ;
+	animation-delay: 9s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-2-dot-5 {
+	animation: lp-line-graph-2-dot-5-appear 9s infinite ease-in-out ;
+	animation-delay: 9s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-2-dot-6 {
+	animation: lp-line-graph-2-dot-6-appear 9s infinite ease-in-out ;
+	animation-delay: 9s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-2-dot-7 {
+	animation: lp-line-graph-2-dot-7-appear 9s infinite ease-in-out ;
+	animation-delay: 9s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-2-dot-8 {
+	animation: lp-line-graph-2-dot-8-appear 9s infinite ease-in-out ;
+	animation-delay: 9s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-2-dot-9 {
+	animation: lp-line-graph-2-dot-9-appear 9s infinite ease-in-out ;
+	animation-delay: 9s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-2-dot-10 {
+	animation: lp-line-graph-2-dot-10-appear 9s infinite ease-in-out ;
+	animation-delay: 9s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes lp-line-graph-2-dot-1-appear {
+ 	0%, 7.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	8%, 100% {
+ 		opacity: 1;
+ 		fill: #5fff5f;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-2-dot-2-appear {
+	0%, 15.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	16%, 100% {
+ 		opacity: 1;
+ 		fill: #5fff5f;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-2-dot-3-appear {
+ 	0%, 23.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	24%, 100% {
+ 		opacity: 1;
+ 		fill: #5fff5f;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-2-dot-4-appear {
+	0%, 31.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	32%, 100% {
+ 		opacity: 1;
+ 		fill: #5fff5f;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-2-dot-5-appear {
+	0%, 39.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	40%, 100% {
+ 		opacity: 1;
+ 		fill: #5fff5f;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-2-dot-6-appear {
+	0%, 47.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	48%, 100% {
+ 		opacity: 1;
+ 		fill: #5fff5f;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-2-dot-7-appear {
+	0%, 55.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	56%, 100% {	
+ 		opacity: 1;
+ 		fill: #5fff5f;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-2-dot-8-appear {
+	0%, 63.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+ 	
+ 	64%, 100% {
+ 		opacity: 1;
+ 		fill: #5fff5f;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-2-dot-9-appear {
+	0%, 71.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+ 	
+ 	72%, 100% {
+ 		opacity: 1;
+ 		fill: #5fff5f;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-2-dot-10-appear {
+	0%, 79.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+ 	
+ 	80%, 100% {
+ 		opacity: 1;
+ 		fill: #5fff5f;
+ 		transform: scale(3);
+	}
+}
+
+
+#lp-line-graph-3-dot-1 {
+	animation: lp-line-graph-3-dot-1-appear 9s infinite ease-in-out ;
+	animation-delay: 18s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-3-dot-2 {
+	animation: lp-line-graph-3-dot-2-appear 9s infinite ease-in-out ;
+	animation-delay: 18s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-3-dot-3 {
+	animation: lp-line-graph-3-dot-3-appear 9s infinite ease-in-out ;
+	animation-delay: 18s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-3-dot-4 {
+	animation: lp-line-graph-3-dot-4-appear 9s infinite ease-in-out ;
+	animation-delay: 18s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-3-dot-5 {
+	animation: lp-line-graph-3-dot-5-appear 9s infinite ease-in-out ;
+	animation-delay: 18s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-3-dot-6 {
+	animation: lp-line-graph-3-dot-6-appear 9s infinite ease-in-out ;
+	animation-delay: 18s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-3-dot-7 {
+	animation: lp-line-graph-3-dot-7-appear 9s infinite ease-in-out ;
+	animation-delay: 18s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-3-dot-8 {
+	animation: lp-line-graph-3-dot-8-appear 9s infinite ease-in-out ;
+	animation-delay: 18s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-3-dot-9 {
+	animation: lp-line-graph-3-dot-9-appear 9s infinite ease-in-out ;
+	animation-delay: 18s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+#lp-line-graph-3-dot-10 {
+	animation: lp-line-graph-3-dot-10-appear 9s infinite ease-in-out ;
+	animation-delay: 18s;
+	opacity: 0.4;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes lp-line-graph-3-dot-1-appear {
+ 	0%, 7.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	8%, 100% {
+ 		opacity: 1;
+ 		fill: #5f5fff;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-3-dot-2-appear {
+	0%, 15.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	16%, 100% {
+ 		opacity: 1;
+ 		fill: #5f5fff;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-3-dot-3-appear {
+ 	0%, 23.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	24%, 100% {
+ 		opacity: 1;
+ 		fill: #5f5fff;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-3-dot-4-appear {
+	0%, 31.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	32%, 100% {
+ 		opacity: 1;
+ 		fill: #5f5fff;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-3-dot-5-appear {
+	0%, 39.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	40%, 100% {
+ 		opacity: 1;
+ 		fill: #5f5fff;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-3-dot-6-appear {
+	0%, 47.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	48%, 100% {
+ 		opacity: 1;
+ 		fill: #5f5fff;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-3-dot-7-appear {
+	0%, 55.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+
+ 	56%, 100% {	
+ 		opacity: 1;
+ 		fill: #5f5fff;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-3-dot-8-appear {
+	0%, 63.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+ 	
+ 	64%, 100% {
+ 		opacity: 1;
+ 		fill: #5f5fff;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-3-dot-9-appear {
+	0%, 71.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+ 	
+ 	72%, 100% {
+ 		opacity: 1;
+ 		fill: #5f5fff;
+ 		transform: scale(3);
+	}
+}
+
+@keyframes lp-line-graph-3-dot-10-appear {
+	0%, 79.9% {
+ 		opacity: 0.4;
+ 		fill: #172939;
+ 	}
+ 	
+ 	80%, 100% {
+ 		opacity: 1;
+ 		fill: #5f5fff;
+ 		transform: scale(3);
+	}
+}
+
+/**/
+
+#circle-graph-1 {
+	animation: circle-graph-1-appear 5s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+	opacity: 0.4;
+}
+
+#circle-graph-2 {
+	animation: circle-graph-2-appear 5s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+	opacity: 0.4;
+}
+
+#circle-graph-3 {
+	animation: circle-graph-3-appear 5s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+	opacity: 0.4;
+}
+
+#circle-graph-4 {
+	animation: circle-graph-4-appear 5s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+	opacity: 0.4;
+}
+
+@keyframes circle-graph-1-appear {
+	0%, 20% {
+		opacity: 0.4;
+	}
+
+	21%, 100% {
+		opacity: 0.6392;
+	}
+}
+
+@keyframes circle-graph-2-appear {
+	0%, 40% {
+		opacity: 0.4;
+	}
+
+	41%, 100% {
+		opacity: 0.8196;
+	}
+}
+
+@keyframes circle-graph-3-appear {
+	0%, 60% {
+		opacity: 0.4;
+	}
+
+	61%, 100% {
+		opacity: 1;
+	}
+}
+
+@keyframes circle-graph-4-appear {
+	0%, 80% {
+		opacity: 0.4;
+	}
+
+	81%, 100% {
+		opacity: 0.8196;
+	}
+}
+
+
+
+
+#ground-lines {
+	animation: ground-line-pulse 5s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes ground-line-pulse {
+	50% {
+		transform: scale(0.95);
+	}
+}
+
+
+#man-tie {
+	animation: man-tie-move 2.5s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: top right;
+}
+
+@keyframes man-tie-move {
+	50% {
+		transform: rotate(10deg);
+	}
+
+	0%, 100% {
+		transform: rotate(-10deg);
+	}
+}
+
+
+#man-paper {
+	animation: man-paper-move 3s infinite alternate-reverse;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+@keyframes man-paper-move {
+	25% {
+		transform: rotate(45deg);
+	}
+
+	50% {
+		transform: rotate(-15deg);
+	}
+
+	75% {
+		transform: rotate(20deg);
+	}
+
+}
+
+#woman-ponytail {
+	animation: woman-ponytail-move 2.5s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: top right;
+}
+
+@keyframes woman-ponytail-move {
+	50% {
+		transform: rotate(-20deg);
+	}
+
+	0%, 100% {
+		transform: rotate(7deg);
+	}
+}
+
+#man-head {
+	animation: man-head-move 4s infinite alternate-reverse; ease-in-out;
+	transform-box: fill-box;
+	transform-origin: bottom;
+}
+
+@keyframes man-head-move {
+	30%, 70% {
+		transform: rotate(-7deg);
+	}
+
+	50%, 90% {
+		transform: rotate(7deg);
+	}
+
+}
+
+#man-foot {
+	animation: man-foot-move 1s infinite alternate-reverse; ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center right;
+}
+
+@keyframes man-foot-move {
+	0%, 25% {
+		transform: rotate3d(0, -1, -1, 10deg);
+	}
+
+	50%, 65% {
+	transform: rotate3d(0, -1, -1, -30deg);
+	}
+
+	85%, 100% {
+		transform: rotate3d(0, -1, -1, 0deg);
+	}
+
+}
+
+#man-screen-hand {
+	animation: man-screen-hand-move 2.5s infinite reverse;
+	transform-box: fill-box;
+	transform-origin: center left;
+}
+
+@keyframes man-screen-hand-move {
+	0%, 100% {
+		transform: rotate(10deg);
+	}
+
+	50%{
+		transform: rotate(-10deg);
+	}
+
+}
+
+
+#woman-hand {
+	animation: woman-hand-move 2.5s infinite reverse;
+	transform-box: fill-box;
+	transform-origin: top;
+}
+
+@keyframes woman-hand-move {
+	0%, 100% {
+		transform: rotate(0deg);
+	}
+
+	50%{
+		transform: rotate(-25deg);
+	}
+
+}
+
+#woman-head,
+#woman-hair {
+	animation: woman-head-move 1.2s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: bottom;
+}
+
+@keyframes woman-head-move {
+	50% {
+		transform: rotate(10deg);
+	}
+
+	0%, 100% {
+		transform: rotate(0deg);
+	}
+}
+
+
+#man-laptop-hand {
+	transform-box: fill-box;
+	transform-origin:top;
+	animation: man-laptop-hand-move 1s infinite alternate ;
+}
+
+@keyframes man-laptop-hand-move {
+	0%, 100% {
+		transform: rotate(0deg) ;
+	}
+
+	50% {
+		transform: rotate(10deg) translateY(-1.5px);
+	}
+}
+
+
+/*World Map Animation*/
+
+#map-1 {
+	animation: map-1-highlight 10s infinite ease-in-out;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+#map-2 {
+	animation: map-2-highlight 10s infinite ease-in-out;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+
+#map-3,
+#map-4,
+#map-5, 
+#map-6,
+#map-7,
+#map-8,
+#map-9,
+#map-10 {
+	animation: map-3-highlight 10s infinite ease-in-out;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+#map-11,
+#map-12,
+#map-13,
+#map-14,
+#map-15, 
+#map-16,
+#map-17,
+#map-18,
+#map-19,
+#map-20 {
+	animation: map-11-highlight 10s infinite ease-in-out;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+#map-21,
+#map-22,
+#map-23,
+#map-24,
+#map-25, 
+#map-26,
+#map-27,
+#map-28,
+#map-29,
+#map-30 {
+	animation: map-21-highlight 10s infinite ease-in-out;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+#map-31,
+#map-32,
+#map-33,
+#map-34,
+#map-35, 
+#map-36,
+#map-37,
+#map-38,
+#map-39,
+#map-40 {
+	animation: map-31-highlight 10s infinite ease-in-out;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+#map-41,
+#map-42,
+#map-43,
+#map-44,
+#map-45, 
+#map-46,
+#map-47,
+#map-48,
+#map-49,
+#map-50 {
+	animation: map-41-highlight 10s infinite ease-in-out;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+
+#map-51,
+#map-52,
+#map-53,
+#map-54,
+#map-55, 
+#map-56,
+#map-57,
+#map-58,
+#map-59 {
+	animation: map-51-highlight 10s infinite ease-in-out;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+@keyframes map-1-highlight {
+	0%, 11% {
+		fill: #172939;
+		transform: translateY(0%);
+	}
+
+	22%, 100% {
+		fill: lightgray;
+		transform: translateY(-5%);
+	}
+
+}
+
+@keyframes map-2-highlight {
+	0%, 22% {
+		fill: #172939;
+		transform: translateY(0%);
+	}
+
+	31%, 100% {
+		fill: lightgray;
+		transform: translateY(-5%);
+	}
+
+}
+
+@keyframes map-3-highlight {
+	0%, 33% {
+		fill: #172939;
+		transform: translateY(0%);
+	}
+
+	42%, 100% {
+		fill: lightgray;
+		transform: translateY(-5%);
+	}
+
+}
+
+@keyframes map-11-highlight {
+	0%, 44% {
+		fill: #172939;
+		transform: translateY(0%);
+	}
+
+	53%, 100% {
+		fill: lightgray;
+		transform: translateY(-5%);
+	}
+
+}
+
+@keyframes map-21-highlight {
+	0%, 55% {
+		fill: #172939;
+		transform: translateY(0%);
+	}
+
+	64%, 100% {
+		fill: lightgray;
+		transform: translateY(-5%);
+	}
+
+}
+
+@keyframes map-31-highlight {
+	0%, 66% {
+		fill: #172939;
+		transform: translateY(0%);
+	}
+
+	75%, 100% {
+		fill: lightgray;
+		transform: translateY(-5%);
+	}
+
+}
+
+@keyframes map-41-highlight {
+	0%, 77% {
+		fill: #172939;
+		transform: translateY(0%);
+	}
+
+	85%, 100% {
+		fill: lightgray;
+		transform: translateY(-5%);
+	}
+
+}
+
+@keyframes map-51-highlight {
+	0%, 88% {
+		fill: #172939;
+		transform: translateY(0%);
+	}
+
+	99%, 100% {
+		fill: lightgray;
+		transform: translateY(-5%);
+	}
+
+}

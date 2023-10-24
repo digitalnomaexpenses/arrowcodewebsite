@@ -1,0 +1,16 @@
+.laptop-container > img {
+    width: 100%;
+}
+.made-with-icons {
+    height: 2.5rem;
+    filter: grayscale(100%);
+}
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+.work-title {
+    color: var(--accent);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}

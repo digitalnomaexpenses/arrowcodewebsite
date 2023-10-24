@@ -1,0 +1,27 @@
+:root {
+	--background-light : #FAF7F4;
+	--background-dark: #0b0b0b;
+	--card-background: #1d1d1d;
+	--font-color-1: #164951;
+	--font-jakarta: 'Plus Jakarta Sans', sans-serif;
+	--dark-peach: #FF5F5F;
+	--form-background: #FFFFFF;
+	--form-border: #EFEFEF;
+	--form-input-border: #8F8F8F;
+}
+
+
+
+body {
+	font-family: var(--font-jakarta);
+}
+
+.app-light {
+	background: var(--background-light);
+	color: var(--font-color-1);
+}
+
+.app-dark {
+	background: var(--background-dark);
+	color: var(--card-background);
+}

@@ -1,0 +1,99 @@
+:root {
+  --background : #FAF7F4;
+  --card-background: #F0EDEA;
+  --card-background-dark: #1d1d1d;
+  --font-color-1: #164951;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --dark-peach: #FF5F5F;
+  --form-background: #FFFFFF;
+  --form-border: #EFEFEF;
+  --form-input-border: #8F8F8F;
+  --services-list-item-line: rgb(22,73,81, 10%);
+}
+
+.services-svg-div {
+  overflow-x: hidden;
+}
+
+.services-heading {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.services-heading-mobile {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.services-heading span,
+.services-heading-mobile span {
+  color: var(--dark-peach);
+}
+
+.services-text {
+  font-size: 1.2rem;  
+}
+
+.services-text-mobile {
+  font-weight: normal;
+  font-size: 0.85rem;
+}
+  
+.services-line {
+  width: 90%;
+  color: var(--form-input-border);
+}
+
+.services-line-mobile {
+  width: 100%;
+  color: var(--form-input-border);
+}
+
+.services-list-item {
+  border-bottom: 0.08rem solid var(--services-list-item-line);
+}
+
+.services-list-item-mobile {
+  width: 90%;
+  font-size: 0.85rem;
+  border-bottom: 0.08rem solid var(--services-list-item-line);
+}
+
+.services-list {
+  list-style: none;
+  font-size: 1rem;
+}
+
+.services-list-desc {
+  font-size: 0.8rem;
+  text-align: justify;
+}
+
+.services-list-desc-mobile {
+  font-size: 0.75rem;
+  text-align: justify;
+}
+
+.services-item-number {
+  color: var(--dark-peach);
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+
+  .services-heading {
+    font-size: 1.3rem;
+  }
+
+  .services-text {
+    font-size: 1rem;
+  }
+
+  .services-list-item{
+    font-size: 0.9rem;
+  }
+
+  .services-list-desc {
+    font-size: 0.75rem;
+  }
+}

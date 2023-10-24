@@ -1,0 +1,402 @@
+/*Text with icons animation start*/
+
+
+
+/*furry feline animation start*/
+
+.cat-head-animation {
+	animation: cat-head-rotate 7s infinite ease-in-out;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+@keyframes cat-head-rotate {
+	0%, 100% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(15deg);
+	}
+}
+
+.cat-tail-animation {
+	animation: cat-tail-move 3s infinite ease-in-out;
+	transform-origin: bottom left;
+	transform-box: fill-box;
+}
+
+@keyframes cat-tail-move {
+	0%, 100% {
+		transform: rotate(15deg);
+	}
+
+	50% {
+		transform: rotate(-15deg);
+	}
+}
+
+/*furry feline animation end*/
+
+
+
+
+/*Completed projects animation start*/
+
+.completed-tick-animation {
+	animation: completed-tick-pulse 2s infinite ease-in-out;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+@keyframes completed-tick-pulse {
+	0%, 100% {
+		transform: scale(1.1);
+	}
+
+	50% {
+		transform: scale(0.9);
+	}
+}
+
+/*Completed projects animation end*/
+
+
+
+
+/*Web development animation start*/
+
+.wd-dash-1-animation {
+	animation: dash-1-blink 10s infinite ease-in;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes dash-1-blink {
+	0%, 8% {
+		opacity: 0;
+	}
+
+	9%, 100% {
+		opacity: 1;
+	}
+}
+
+.wd-dash-2-animation {
+	animation: dash-2-blink 10s infinite ease-in;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes dash-2-blink {
+	0%, 16% {
+		opacity: 0;
+	}
+
+	17%, 100% {
+		opacity: 1;
+	}
+}
+
+.wd-dash-3-animation {
+	animation: dash-3-blink 10s infinite ease-in;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes dash-3-blink {
+	0%, 24% {
+		opacity: 0;
+	}
+
+	25%, 100% {
+		opacity: 1;
+	}
+}
+
+.wd-dash-4-animation {
+	animation: dash-4-blink 10s infinite ease-in;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes dash-4-blink {
+	0%, 32% {
+		opacity: 0;
+	}
+
+	33%, 100% {
+		opacity: 1;
+	}
+}
+
+.wd-dash-5-animation {
+	animation: dash-5-blink 10s infinite ease-in;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes dash-5-blink {
+	0%, 40% {
+		opacity: 0;
+	}
+
+	41%, 100% {
+		opacity: 1;
+	}
+}
+
+.wd-dash-6-animation {
+	animation: dash-6-blink 10s infinite ease-in;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes dash-6-blink {
+	0%, 48% {
+		opacity: 0;
+	}
+
+	49%, 100% {
+		opacity: 1;
+	}
+}
+
+.wd-dash-7-animation {
+	animation: dash-7-blink 10s infinite ease-in;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes dash-7-blink {
+	0%, 56% {
+		opacity: 0;
+	}
+
+	57%, 100% {
+		opacity: 1;
+	}
+}
+
+.wd-dash-8-animation {
+	animation: dash-8-blink 10s infinite ease-in;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes dash-8-blink {
+	0%, 64% {
+		opacity: 0;
+	}
+
+	65%, 100% {
+		opacity: 1;
+	}
+}
+
+.wd-dash-9-animation {
+	animation: dash-9-blink 10s infinite ease-in;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes dash-9-blink {
+	0%, 72% {
+		opacity: 0;
+	}
+
+	73%, 100% {
+		opacity: 1;
+	}
+}
+
+.wd-dash-10-animation {
+	animation: dash-10-blink 10s infinite ease-in;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes dash-10-blink {
+	0%, 80% {
+		opacity: 0;
+	}
+
+	81%, 100% {
+		opacity: 1;
+	}
+}
+
+.wd-dash-11-animation {
+	animation: dash-11-blink 10s infinite ease-in;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes dash-11-blink {
+	0%, 88% {
+		opacity: 0;
+	}
+
+	89%, 100% {
+		opacity: 1;
+	}
+}
+
+.wd-dash-12-animation {
+	animation: dash-12-blink 10s infinite ease-in;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes dash-12-blink {
+	0%, 96% {
+		opacity: 0;
+	}
+
+	97%, 100% {
+		opacity: 1;
+	}
+}
+
+/*Web development animation end*/
+
+
+
+
+/*Project Management animation start*/
+
+.pm-icons-animation {
+	animation: pm-icons-rotate 20s infinite ease-in-out;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+@keyframes pm-icons-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/*Project Management animation end*/
+
+
+
+
+/*Text with icons animation end*/
+
+
+/*About us svg animation start*/
+#computer-monitor-light {
+	animation: computer-monitor-light-blink 2s infinite;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+@keyframes computer-monitor-light-blink {
+	0%, 100% {
+		fill: #ff5f5f;
+	}
+
+	50% {
+		fill: transparent;
+	}
+}
+
+.clock-hand-minute-animation {
+	animation: clock-hand-rotate 360s infinite;
+	transform-origin: bottom;
+	transform-box: fill-box;
+}
+
+.clock-hand-hour-animation {
+	animation: clock-hand-rotate 8640s infinite;
+	transform-origin: top left;
+	transform-box: fill-box;
+}
+
+@keyframes clock-hand-rotate {
+	0%{
+		transform: rotate(0deg);
+	}
+
+
+	50% {
+		transform: rotate(180deg);
+	}
+
+	 100% {
+	 	transform: rotate(360deg);
+	 }
+}
+
+#cat-ball {
+	animation: cat-ball-roll 10s ease-in-out infinite; 
+	transition: all 1s ease;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+@keyframes cat-ball-roll {
+  0%, 100% { 
+
+  	transform: translate(20%, 0%) rotate(160deg);
+
+  }
+
+  50% { 
+
+  	transform: translate(-40%, 0%) rotate(100deg); 
+
+  }
+}
+
+#coffee-line-1 {
+	stroke-dasharray: 100;
+	stroke-dashoffset: 100;
+	animation: coffee-line-1-appear 4s ease-in-out infinite;
+}
+
+@keyframes coffee-line-1-appear {
+  
+  to {
+  	stroke-dasharray: 40;
+    stroke-dashoffset: 50;
+    opacity: 0;
+  }
+}
+
+#coffee-line-2 {
+	stroke-dasharray: 100;
+	stroke-dashoffset: 100;
+	animation: coffee-line-2-appear 4.5s ease-in-out infinite;
+}
+
+@keyframes coffee-line-2-appear {
+  
+  to {
+  	stroke-dasharray: 40;
+    stroke-dashoffset: 40;
+    opacity: 0;
+  }
+}
+
+#coffee-line-3 {
+	stroke-dasharray: 100;
+	stroke-dashoffset: 100;
+	animation: coffee-line-3-appear 5s ease-in-out infinite;
+}
+
+@keyframes coffee-line-3-appear {
+  
+  to {
+  	stroke-dasharray: 40;
+    stroke-dashoffset: 50;
+    opacity: 0;
+  }
+}
+/*About us svg animation end*/
+

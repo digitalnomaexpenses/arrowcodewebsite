@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg width="41.209999" height="41" viewBox="0 0 41.209999 41" fill="none" version="1.1" id="svg21" sodipodi:docname="python-light-mode.svg" inkscape:version="1.2.2 (732a01da63, 2022-12-09)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <defs id="defs25" />
+  <sodipodi:namedview id="namedview23" pagecolor="#505050" bordercolor="#eeeeee" borderopacity="1" inkscape:showpageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#505050" showgrid="false" inkscape:zoom="9.2807765" inkscape:cx="32.64813" inkscape:cy="33.995" inkscape:window-width="1920" inkscape:window-height="1001" inkscape:window-x="-9" inkscape:window-y="-9" inkscape:window-maximized="1" inkscape:current-layer="SVGRepo_iconCarrier" />
+  <g id="SVGRepo_bgCarrier" stroke-width="0" />
+  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+  <g id="SVGRepo_iconCarrier" transform="matrix(1.2565577,0,0,1.2565577,-19.604847,-19.604924)" style="stroke-width:0.795825">
+    <path d="m 31.885,16 c -8.124,0 -7.617,3.523 -7.617,3.523 l 0.01,3.65 h 7.752 v 1.095 H 21.197 c 0,0 -5.197,-0.59 -5.197,7.608 0,8.196 4.537,7.906 4.537,7.906 h 2.708 v -3.804 c 0,0 -0.146,-4.537 4.465,-4.537 h 7.688 c 0,0 4.32,0.07 4.32,-4.175 v -7.019 c 0,0 0.656,-4.247 -7.833,-4.247 z m -4.275,2.454 c 0.771,0 1.395,0.624 1.395,1.395 0,0.771 -0.624,1.395 -1.395,1.395 a 1.393,1.393 0 0 1 -1.395,-1.395 c 0,-0.771 0.624,-1.395 1.395,-1.395 z" fill="url(#a)" id="path4" style="fill:#363636;stroke-width:0.723477;fill-opacity:1" />
+    <path d="m 32.115,47.833 c 8.124,0 7.617,-3.523 7.617,-3.523 l -0.01,-3.65 H 31.97 v -1.095 h 10.832 c 0,0 5.198,0.59 5.198,-7.607 0,-8.197 -4.537,-7.906 -4.537,-7.906 h -2.708 v 3.803 c 0,0 0.146,4.537 -4.465,4.537 h -7.688 c 0,0 -4.32,-0.07 -4.32,4.175 v 7.019 c 0,0 -0.656,4.247 7.833,4.247 z m 4.275,-2.454 a 1.393,1.393 0 0 1 -1.395,-1.395 c 0,-0.77 0.624,-1.394 1.395,-1.394 0.771,0 1.395,0.623 1.395,1.394 0,0.772 -0.624,1.395 -1.395,1.395 z" fill="url(#b)" id="path6" style="fill:#363636;stroke-width:0.723477;fill-opacity:1" />
+    <defs id="defs18">
+      <linearGradient id="a" x1="19.075001" y1="18.782" x2="34.897999" y2="34.658001" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#387EB8" id="stop8" />
+        <stop offset="1" stop-color="#366994" id="stop10" />
+      </linearGradient>
+      <linearGradient id="b" x1="28.809" y1="28.882" x2="45.803001" y2="45.162998" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#FFE052" id="stop13" />
+        <stop offset="1" stop-color="#FFC331" id="stop15" />
+      </linearGradient>
+    </defs>
+  </g>
+</svg>

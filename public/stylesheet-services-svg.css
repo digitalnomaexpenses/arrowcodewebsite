@@ -1,0 +1,506 @@
+
+:root {
+  --dark_peach: #FF5F5F;
+  --Poppins: 'Poppins', sans-serif;
+  --Jakarta: 'Plus Jakarta Sans', sans-serif;
+  --white: #FFFFFF;
+  --light-gray: #D3D3D3;
+  --gray: #808080;
+  --font-color: #193039;
+  --dark-peach-transparent: rgba(255, 95, 95, 0.5);
+
+}
+
+#s-svg-woman-hair {
+	animation: bounce-s-svg-woman-hair 3s ease-in-out infinite;
+	transform-box: fill-box;
+	transform-origin: bottom left;
+}
+
+@keyframes bounce-s-svg-woman-hair {
+	0%, 100% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(-30deg);
+	}
+}
+
+#s-svg-leaf-1 {
+	animation: wave-s-svg-leaf-1 5s ease-in-out infinite alternate;
+	transform-origin: top;
+	transform-box: fill-box;
+}
+
+@keyframes wave-s-svg-leaf-1 {
+	0%, 100% {
+		transform: rotate(-20deg);
+	}
+
+	50% {
+		transform: rotate(20deg);
+	}
+}
+
+#s-svg-leaf-2 {
+	animation: wave-s-svg-leaf-2 3.136s ease-in-out infinite alternate;
+	transform-origin: top left;
+	transform-box: fill-box;
+	animation-delay: 150ms;
+}
+
+@keyframes wave-s-svg-leaf-2 {
+	0%, 100% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(20deg);
+	}
+}
+
+#s-svg-leaf-3 {
+	animation: wave-s-svg-leaf-3 7s ease-in-out infinite alternate-reverse;
+	transform-origin: top right;
+	transform-box: fill-box;
+}
+
+@keyframes wave-s-svg-leaf-3 {
+	0%, 100% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(50deg);
+	}
+}
+
+#s-svg-leaf-4 {
+	animation: wave-s-svg-leaf-4 6s ease-in-out infinite;
+	transform-origin: top left;
+	transform-box: fill-box;
+}
+
+@keyframes wave-s-svg-leaf-4 {
+	0%, 100% {
+		transform: rotate(70deg);
+	}
+
+	50% {
+		transform: rotate(-45deg);
+	}
+}
+
+#s-svg-leaf-5 {
+	animation: wave-s-svg-leaf-5 5.5s ease-in-out infinite;
+	
+	transform-box: fill-box;
+}
+
+@keyframes wave-s-svg-leaf-5 {
+	0%, 100% {
+		transform: rotate(-10deg);
+	}
+
+	70% {
+		transform: rotate(45deg);
+	}
+}
+
+#s-svg-leaf-6 {
+	animation: wave-s-svg-leaf-6 5s ease-in-out infinite alternate;
+	transform-origin: top;
+	transform-box: fill-box;
+}
+
+@keyframes wave-s-svg-leaf-6 {
+	0%, 100% {
+		transform: rotate(-20deg);
+	}
+
+	50% {
+		transform: rotate(20deg);
+	}
+}
+
+
+#s-graph-left-1 {
+	transform: scale(1,0);
+	animation: elongate-s-graph-left-1 3s ease-out infinite;
+	transform-box: fill-box;
+	transform-origin: top;
+}
+
+@keyframes elongate-s-graph-left-1 {
+	0%, 100% {
+		transform: scale(1, 0);
+	}
+
+	10% {
+		transform: scale(1, 1);
+	}
+}
+
+#s-graph-left-2 {
+	transform: scale(1,0);
+	animation: elongate-s-graph-left-2 3s ease-out infinite;
+	transform-box: fill-box;
+	transform-origin: top;
+}
+
+@keyframes elongate-s-graph-left-2 {
+	0%, 100% {
+		transform: scale(1, 0);
+	}
+
+	20% {
+		transform: scale(1, 1);
+	}
+}
+
+#s-graph-left-3 {
+	transform: scale(1,0);
+	animation: elongate-s-graph-left-3 3s ease-out infinite;
+	transform-box: fill-box;
+	transform-origin: top;
+}
+
+@keyframes elongate-s-graph-left-3 {
+	0%, 100% {
+		transform: scale(1, 0);
+	}
+
+	30% {
+		transform: scale(1, 1);
+	}
+}
+
+#s-graph-left-4 {
+	transform: scale(1,0);
+	animation: elongate-s-graph-left-4 3s ease-out infinite;
+	transform-box: fill-box;
+	transform-origin: top;
+}
+
+@keyframes elongate-s-graph-left-4 {
+	0%, 100% {
+		transform: scale(1, 0);
+	}
+
+	40% {
+		transform: scale(1, 1);
+	}
+}
+
+#s-graph-left-5 {
+	transform: scale(1,0);
+	animation: elongate-s-graph-left-5 3s ease-out infinite;
+	transform-box: fill-box;
+	transform-origin: top;
+}
+
+@keyframes elongate-s-graph-left-5 {
+	0%, 100% {
+		transform: scale(1, 0);
+	}
+
+	50% {
+		transform: scale(1, 1);
+	}
+}
+
+#s-graph-left-6 {
+	transform: scale(1,0);
+	animation: elongate-s-graph-left-6 3s ease-out infinite;
+	transform-box: fill-box;
+	transform-origin: top;
+}
+
+@keyframes elongate-s-graph-left-6 {
+	0%, 100% {
+		transform: scale(1, 0);
+	}
+
+	60% {
+		transform: scale(1, 1);
+	}
+}
+
+.s-svg-graph-middle-1 {
+	animation: elongate-s-graph-middle 8s ease-in-out infinite;
+	transform: scale(1, 0);
+	transform-box: fill-box;
+	transform-origin: top;
+}
+
+.s-svg-graph-middle-2 {
+	animation: elongate-s-graph-middle 8s ease-in-out infinite;
+	transform: scale(1, 0);
+	transform-box: fill-box;
+	transform-origin: top;
+	animation-delay: 4s;
+}
+
+@keyframes elongate-s-graph-middle {
+	0%, 100% {
+		transform: scale(1, 0);
+	}
+
+	50% {
+		transform: scale(1, 1);
+	}
+}
+
+#s-svg-three-parts-pie-chart-1 {
+	animation: appear-s-svg-three-parts-pie-chart-1 3s linear infinite;
+	transform-origin: center;
+	transform-box: fill-box;
+	transform: scale(0, 0);
+
+}
+
+@keyframes appear-s-svg-three-parts-pie-chart-1 {
+	0%, 5%{
+		transform: scale(0, 0);
+	}
+
+	50%, 100% {
+		transform: scale(1, 1);
+	}
+}
+
+#s-svg-three-parts-pie-chart-2 {
+	animation: appear-s-svg-three-parts-pie-chart-2 3s linear infinite;
+	transform-origin: center;
+	transform-box: fill-box;
+	transform: scale(0, 0);
+
+}
+
+@keyframes appear-s-svg-three-parts-pie-chart-2 {
+	0%, 6% {
+		transform: scale(0, 0);
+	}
+
+	50%, 100% {
+		transform: scale(1, 1);
+	}
+}
+
+#s-svg-three-parts-pie-chart-3 {
+	animation: appear-s-svg-three-parts-pie-chart-3 3s linear infinite;
+	transform-origin: center;
+	transform-box: fill-box;
+	transform: scale(0, 0);
+}
+
+@keyframes appear-s-svg-three-parts-pie-chart-3 {
+
+	0%, 7% {
+		transform: scale(0, 0);
+	}
+
+	50%, 100% {
+		transform: scale(1, 1);
+	}
+}
+
+
+#s-svg-two-part-pie-chart-lines-1 {
+
+	animation: appear-s-svg-two-part-pie-chart-lines 2.5s infinite;
+	transform: scale(0, 1);
+	transform-box: fill-box;
+	transform-origin: top left;
+}
+
+#s-svg-two-part-pie-chart-lines-2 {
+
+	animation: appear-s-svg-two-part-pie-chart-lines 2.5s infinite;
+	transform: scale(0, 1);
+	transform-box: fill-box;
+	transform-origin: top left;
+	animation-delay: 1.25s;
+}
+
+@keyframes appear-s-svg-two-part-pie-chart-lines {
+
+	80%, 100% {
+		transform: scale(1, 1);
+	}
+}
+
+#s-svg-graph-right-text-1 {
+	animation: appear-s-svg-graph-right-text-1 5s infinite;
+	transform: scale(0, 1);
+	transform-box: fill-box;
+	transform-origin: top left;
+}
+
+@keyframes appear-s-svg-graph-right-text-1 {
+	0%, 10%{
+		transform: scale(0, 0);
+	}
+
+	50%, 100% {
+		transform: scale(1, 1);
+	}
+}
+
+#s-svg-graph-right-text-2 {
+	animation: appear-s-svg-graph-right-text-2 5s infinite;
+	transform: scale(0, 1);
+	transform-box: fill-box;
+	transform-origin: top left;
+}
+
+@keyframes appear-s-svg-graph-right-text-2 {
+	0%, 20% {
+		transform: scale(0, 0);
+	}
+
+	50%, 100% {
+		transform: scale(1, 1);
+	}
+}
+
+#s-svg-graph-right-text-3 {
+	animation: appear-s-svg-graph-right-text-3 5s infinite;
+	transform: scale(0, 1);
+	transform-box: fill-box;
+	transform-origin: top left;
+}
+
+@keyframes appear-s-svg-graph-right-text-3 {
+
+	0%, 30% {
+		transform: scale(0, 0);
+	}
+
+	50%, 100% {
+		transform: scale(1, 1);
+	}
+}
+
+#s-svg-graph-right-text-4 {
+	animation: appear-s-svg-graph-right-text-4 5s infinite;
+	transform: scale(0, 1);
+	transform-box: fill-box;
+	transform-origin: top left;
+}
+
+@keyframes appear-s-svg-graph-right-text-4 {
+
+	0%, 40% {
+		transform: scale(0, 0);
+	}
+
+	50%, 100% {
+		transform: scale(1, 1);
+	}
+}
+
+#s-svg-drawer {
+	transform-box: fill-box;
+	transform-origin: center right;
+	animation: open-s-svg-drawer 4s ease-in-out infinite;
+	transform: translateX(150px);
+}
+
+@keyframes open-s-svg-drawer {
+	50% {
+		transform: translateX(30px);
+	}
+}
+
+#s-svg-two-part-pie-chart-1 {
+	transform-box: fill-box;
+	transform-origin: bottom left;
+	animation: scale-s-svg-two-part-pie-chart-1 4s ease-in infinite;
+}
+
+@keyframes scale-s-svg-two-part-pie-chart-1 {
+	90% {
+		transform: scale(1.2, 1.2);
+	}
+}
+
+
+#s-svg-man-leg {
+	animation: swing-s-svg-man-leg 3s ease-in-out infinite;
+	transform-origin: bottom;
+	transform-box: fill-box;
+}
+
+@keyframes swing-s-svg-man-leg {
+	50% {
+		transform: rotate(20deg);
+	}
+}
+
+
+#s-svg-graph-right-outside-1 {
+	animation: elongate-s-svg-graph-right-outside-1 3s ease-out infinite;
+	transform-box: fill-box;
+	transform-origin: top;
+}
+
+@keyframes elongate-s-svg-graph-right-outside-1 {
+	0%, 100% {
+		transform: scale(1, 0);
+	}
+
+	20% {
+		transform: scale(1, 1);
+	}
+}
+
+#s-svg-graph-right-outside-2 {
+	animation: elongate-s-svg-graph-right-outside-2 3s ease-out infinite;
+	transform-box: fill-box;
+	transform-origin: top;
+}
+
+@keyframes elongate-s-svg-graph-right-outside-2 {
+	0%, 100% {
+		transform: scale(1, 0);
+	}
+
+	40% {
+		transform: scale(1, 1);
+	}
+}
+
+#s-svg-graph-right-outside-3 {
+	animation: elongate-s-svg-graph-right-outside-3 3s ease-out infinite;
+	transform-box: fill-box;
+	transform-origin: top;
+}
+
+@keyframes elongate-s-svg-graph-right-outside-3 {
+	0%, 100% {
+		transform: scale(1, 0);
+	}
+
+	60% {
+		transform: scale(1, 1);
+	}
+}
+
+#s-svg-graph-right-outside-4 {
+	animation: elongate-s-svg-graph-right-outside-4 3s ease-out infinite;
+	transform-box: fill-box;
+	transform-origin: top;
+}
+
+@keyframes elongate-s-svg-graph-right-outside-4 {
+	0%, 100% {
+		transform: scale(1, 0);
+	}
+
+	80% {
+		transform: scale(1, 1);
+	}
+
+}

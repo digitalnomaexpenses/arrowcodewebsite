@@ -1,0 +1,195 @@
+:root {
+	--background : #FAF7F4;
+	--card-background: #F0EDEA;
+	--card-background-dark: #1d1d1d;
+	--font-color-1: #164951;
+	--form-font-color-dark: #769094;
+	--font-jakarta: 'Plus Jakarta Sans', sans-serif;
+	--dark-peach: #FF5F5F;
+	--form-background: #FFFFFF;
+	--form-background-dark: #303030;
+	--form-border-light: #EFEFEF;
+	--form-border-dark: #525252;
+	--form-input-border: #8F8F8F;
+}
+
+.dark-form {
+	color: var(--form-background);
+	background: var(--form-background-dark);
+	border: 0.05rem solid var(--form-border-dark);
+
+}
+
+.light-form {
+	background: var(--form-background);
+	border: 0.2rem solid var(--form-border-light);
+}
+
+.input-text-dark {
+	color: var(--card-background);
+	border-bottom: 1px solid var(--form-border-light);
+
+}
+
+input.input-text-dark::placeholder {
+	color: var(--card-background);
+	opacity: 0.7;
+}
+
+input.input-text-dark::-ms-input-placeholder {
+	color: var(--card-background);
+}
+
+.input-text-light {
+	color: var(--font-color-1);
+	border-bottom: 1px solid var(--form-border-dark);
+}
+
+input.input-text-light::placeholder {
+	color: var(--font-color-1);
+	opacity: 0.7;
+}
+
+input.input-text-light::-ms-input-placeholder {
+	color: var(--font-color-1);
+}
+
+
+.textarea-dark {
+	border: 1px solid var(--form-border-light) !important;
+}
+
+.textarea-light {
+	border: 1px solid var(--form-border-dark) !important;
+}
+
+
+.form {
+	width: 100%;
+	margin-left: auto;
+	max-width: 400px;
+	border-radius: 2rem;
+	font-size: 1rem;
+}
+
+.form-mobile {
+	width: 100%;
+	border-radius: 2rem;
+	font-size: 0.75rem;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.form-title {
+	font-size: 1.2rem;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+.form-title-mobile {
+	font-size: 0.95rem;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+.form-label, .form-check-label {
+	font-size: 0.8rem;
+}
+
+.form-mobile-label {
+	font-size: 0.75rem !important;
+	margin: 0;
+}
+
+.form-label span {
+	color: var(--dark-peach);
+}
+
+.form-check-input {
+	color: var(--dark-peach);
+}
+
+.form-button-mobile-shine {
+	width: 5rem;
+	height: 2.2rem;
+	background: var(--dark-peach);
+	border: none;
+	color: var(--white);
+	border-radius: 0.5rem;
+	transform: translate(0%, -50%);
+	overflow: hidden;
+	font-size: 0.8rem;
+	font-weight: bolder;
+}
+
+.form-button-mobile-shine:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -300px;
+	background: rgba(255,255,255,0.6);
+	width: 50px;
+	height: 300px;
+	transform: skew(-45deg);
+	box-shadow: 0 0px 50px 5px rgba(255,255,255,1);
+	transition: 0.8s;
+}
+
+.form-button-mobile-shine:hover:before {
+	left: 300px;
+}
+
+.form-button-shine {
+	width: 5rem;
+	height: 2.2rem;
+	background: var(--dark-peach);
+	border: none;
+	color: var(--white);
+	border-radius: 0.5rem;
+	transform: translate(0%, -50%);
+	overflow: hidden;
+	font-size: 0.9rem;
+	font-weight: bolder;
+}
+
+.form-button-shine:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -300px;
+	background: rgba(255,255,255,0.6);
+	width: 50px;
+	height: 300px;
+	transform: skew(-45deg);
+	box-shadow: 0 0px 50px 5px rgba(255,255,255,1);
+	transition: 0.8s;
+}
+
+.form-button-shine:hover:before {
+	left: 300px;
+}
+
+textarea {
+	border-radius: 0.5rem;
+	height: 6rem;
+}
+
+.textarea-mobile {
+	width: 100%;
+	height: 7rem !important;
+
+}
+
+/* To remove arrows from phone number input start*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* To remove arrows from phone number input end*/

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg fill="none" height="22" width="22" viewBox="27 26 1.5244241 1.539472" version="1.1" id="svg10" sodipodi:docname="threejs-m-light-mode.svg" inkscape:version="1.2.2 (732a01da63, 2022-12-09)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <defs id="defs14" />
+  <sodipodi:namedview id="namedview12" pagecolor="#505050" bordercolor="#eeeeee" borderopacity="1" inkscape:showpageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#505050" showgrid="false" inkscape:zoom="10.752" inkscape:cx="17.485119" inkscape:cy="26.181176" inkscape:window-width="1920" inkscape:window-height="1001" inkscape:window-x="-9" inkscape:window-y="-9" inkscape:window-maximized="1" inkscape:current-layer="svg10" />
+  <g fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-width="4" stroke-miterlimit="10" stroke-linejoin="round" id="g8" style="stroke-width:5.2482;stroke-dasharray:none;stroke:#363636;stroke-opacity:1" transform="matrix(0.008,0,0,0.008,26.853292,25.861976)">
+    <path d="M 70.213,200.94 27,26 200.23,75.874 Z" id="path2" style="stroke-width:5.2482;stroke-dasharray:none;stroke:#363636;stroke-opacity:1" />
+    <path d="m 113.583,50.942 21.591,87.496 -86.567,-24.945 z" id="path4" style="stroke-width:5.2482;stroke-dasharray:none;stroke:#363636;stroke-opacity:1" />
+    <path d="M 92.103,125.36 81.379,81.895 124.387,94.241 Z M 70.651,38.483 81.375,81.948 38.367,69.602 Z m 86.012,24.777 10.724,43.465 -43.008,-12.346 z m -64.555,62.13 10.724,43.465 -43.008,-12.346 z" id="path6" style="stroke-width:5.2482;stroke-dasharray:none;stroke:#363636;stroke-opacity:1" />
+  </g>
+</svg>
