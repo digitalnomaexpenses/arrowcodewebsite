@@ -29,7 +29,6 @@
 	border-radius: 40px;
 }
 
-
 .contact-heading {
 	font-size: 1.5rem;
 	font-weight: bolder;
@@ -64,6 +63,265 @@
 .contact-text-mobile {
 	font-size: 0.85rem;
 }
+
+
+/*Contact Desktop Animation Start*/
+.contact-div-animation {
+	animation: contact-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes contact-animation {
+	0% {
+		opacity: 0;
+		transform: translateX(-30%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+.contact-form-animation {
+	animation: contact-form-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes contact-form-animation {
+	0% {
+		opacity: 0;
+		transform: translateX(30%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+.ctt-1-animation {
+	animation: contact-text-timings-1-animation 3s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ctt-2-animation {
+	animation: contact-text-timings-2-animation 3s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ctt-3-animation {
+	animation: contact-text-timings-3-animation 3s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ctt-4-animation {
+	animation: contact-text-timings-4-animation 3s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes contact-text-timings-1-animation {
+	0%, 50% {
+		opacity: 0;
+		transform: translateY(-10%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes contact-text-timings-2-animation {
+	0%, 60% {
+		opacity: 0;
+		transform: translateY(-10%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes contact-text-timings-3-animation {
+	0%, 70% {
+		opacity: 0;
+		transform: translateY(-10%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes contact-text-timings-4-animation {
+	0%, 80% {
+		opacity: 0;
+		transform: translateY(-10%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+/*Contact Desktop Animation End*/
+
+
+/*Contact Mobile Animation Start*/
+.contact-heading-mobile-animation {
+	animation: contact-heading-mobile-animation 1s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.contact-text-mobile-animation {
+	animation: contact-text-mobile-animation 1s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.contact-heading-mobile-timings-animation {
+	animation: contact-heading-mobile-timings-animation 1s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.cttm-1-animation {
+	animation: cttm-1-animation 1s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.cttm-2-animation {
+	animation: cttm-2-animation 1s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.cttm-3-animation {
+	animation: cttm-3-animation 1s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.cttm-4-animation {
+	animation: cttm-4-animation 1s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.form-mobile-animation {
+	animation: form-mobile-animation 1s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes contact-heading-mobile-animation {
+	0%, 5% {
+		opacity: 0;
+		transform: translateY(50%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes contact-text-mobile-animation {
+	0%, 15% {
+		opacity: 0;
+		transform: translateY(25%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes contact-heading-mobile-timings-animation {
+	0%, 25% {
+		opacity: 0;
+		transform: translateY(50%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes cttm-1-animation {
+	0%, 35% {
+		opacity: 0;
+		transform: translateY(50%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes cttm-2-animation {
+	0%, 45% {
+		opacity: 0;
+		transform: translateY(50%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes cttm-3-animation {
+	0%, 55% {
+		opacity: 0;
+		transform: translateY(50%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes cttm-4-animation {
+	0%, 65% {
+		opacity: 0;
+		transform: translateY(50%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes form-mobile-animation {
+	0%, 75% {
+		opacity: 0;
+		transform: translateY(5%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+/*Contact Mobile Animation End*/
+
 
 @media only screen and (max-width: 992px) and (min-width: 768px) {
 

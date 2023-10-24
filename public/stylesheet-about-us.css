@@ -14,23 +14,6 @@
 	min-width: 100%;
 }
 
-.about-us-animation {
-	animation: about-us-div-appear 2s ease-in-out;
-	transform-box: fill-box;
-	transform-origin: center;
-}
-
-@keyframes about-us-div-appear {
-	0% {
-		opacity: 0;
-		transform: translateX(-30%);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0%);
-	}
-}
 
 .about-us-heading {
 	font-size: 1.5rem;
@@ -54,6 +37,69 @@
 	font-size: 0.85rem;
 }
 
+.about-us-highlight-number {
+	font-weight: bolder;
+	font-size: 1.2rem;
+}
+
+.about-us-highlight-text {
+	font-size: 0.9rem;
+}
+
+.about-us-highlight-number-mobile {
+	font-size: 1.1rem;
+	font-weight: bolder;
+}
+
+.about-us-highlight-text-mobile {
+	font-size: 0.8rem;
+}
+
+.about-us-icons {
+	width: 60px;
+	height: auto;
+	margin: 20px;
+}
+
+
+
+
+/*About us desktop animation start*/
+.about-us-animation {
+	animation: about-us-div-appear 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes about-us-div-appear {
+	0% {
+		opacity: 0;
+		transform: translateX(-30%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+.about-us-svg-animation {
+	animation: about-us-svg-appear 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes about-us-svg-appear {
+	0% {
+		opacity: 0;
+		transform: translateX(30%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
 
 .project-management-animation {
 	animation: project-management-appear 3s ease-in-out;
@@ -119,49 +165,27 @@
 	}
 }
 
+/*About us desktop animation end*/
 
-.about-us-highlight-number {
-	font-weight: bolder;
-	font-size: 1.2rem;
-}
 
-.about-us-highlight-text {
-	font-size: 0.9rem;
-}
-
-.about-us-highlight-number-mobile {
-	font-size: 1.1rem;
-	font-weight: bolder;
-}
-
-.about-us-highlight-text-mobile {
-	font-size: 0.8rem;
-}
-
-.about-us-icons {
-	width: 60px;
-	height: auto;
-	margin: 20px;
-}
-
-.about-us-svg-animation {
-	animation: about-us-svg-appear 2s ease-in-out;
+/*About us mobile animation start*/
+.about-us-heading-mobile-animation {
+	animation: about-us-heading-mobile-animation 1s ease-in-out;
 	transform-box: fill-box;
 	transform-origin: center;
 }
 
-@keyframes about-us-svg-appear {
-	0% {
+@keyframes about-us-heading-mobile-animation {
+	0%, 5% {
 		opacity: 0;
-		transform: translateX(30%);
+		transform: translateY(50%);
 	}
 
 	100% {
 		opacity: 1;
-		transform: translateX(0%);
+		transform: translateY(0%);
 	}
 }
-
 
 .about-us-mobile-svg-animation {
 	animation: about-us-mobile-svg-appear 1s ease-in-out;
@@ -170,9 +194,27 @@
 }
 
 @keyframes about-us-mobile-svg-appear {
-	0% {
+	0%, 10% {
 		opacity: 0;
-		transform: translateY(30%);
+		transform: translate(0%, 20%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0%, 0%);
+	}
+}
+
+.about-us-text-mobile-animation {
+	animation: about-us-text-mobile-animation 1s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes about-us-text-mobile-animation {
+	0%, 15% {
+		opacity: 0;
+		transform: translateY(50%);
 	}
 
 	100% {
@@ -180,6 +222,80 @@
 		transform: translateY(0%);
 	}
 }
+
+.pm-mobile-animation {
+	animation: pm-mobile-animation 1s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes pm-mobile-animation {
+	0%, 20% {
+		opacity: 0;
+		transform: translateY(50%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+.wd-mobile-animation {
+	animation: wd-mobile-animation 1s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes wd-mobile-animation {
+	0%, 25% {
+		opacity: 0;
+		transform: translateY(50%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+.pd-mobile-animation {
+	animation: pd-mobile-animation 1s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes pd-mobile-animation {
+	0%, 30% {
+		opacity: 0;
+		transform: translateY(50%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+.ff-mobile-animation {
+	animation: ff-mobile-animation 1s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes ff-mobile-animation {
+	0%, 35% {
+		opacity: 0;
+		transform: translateY(50%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+/*About us mobile animation end*/
 
 @media only screen and (max-width: 992px) and (min-width: 768px) {
 

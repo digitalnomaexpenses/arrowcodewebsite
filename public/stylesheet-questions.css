@@ -104,7 +104,6 @@ button.dark-accordion:focus {
 	border: none;
 	color: var(--white);
 	border-radius: 0.5rem;
-	transform: translate(0%, -50%);
 	overflow: hidden;
 	font-size: 0.8rem;
 	font-weight: bolder;
@@ -160,7 +159,6 @@ button.accordion-button {
 	font-size: 1rem;
 }
 
-
 button.accordion-button-mobile {
 	font-size: 0.85rem !important;
 }
@@ -169,12 +167,378 @@ button.accordion-button:focus {
 	border-radius: 0.8rem 0.8rem 0 0 !important;
 	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
 	color: var(--font-color-1);
-
 }
 
 .accordion-button:not(.collapsed) {
 	background-color: transparent !important;
 }
+
+
+/*Desktop Animations Start*/
+
+.questions-lhs-animation {
+	animation: questions-lhs-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes questions-lhs-animation {
+	0% {
+		opacity: 0;
+		transform: translateX(-30%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+.questions-button-pulse-animation {
+	animation: questions-button-pulse-animation 3s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: bottom left;
+}
+
+@keyframes questions-button-pulse-animation {
+	0%, 50% {
+		opacity: 0;
+	}
+
+	70% {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	71%, 85% {
+		transform: scale(1.1);
+	}
+
+	76%, 90%, 100% {
+		transform: scale(1.0);
+	}
+}
+
+.ques-ai-1-animation {
+	animation: ques-ai-1-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-ai-2-animation {
+	animation: ques-ai-2-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-ai-3-animation {
+	animation: ques-ai-3-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-ai-4-animation {
+	animation: ques-ai-4-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-ai-5-animation {
+	animation: ques-ai-5-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-ai-6-animation {
+	animation: ques-ai-6-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-ai-7-animation {
+	animation: ques-ai-7-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-ai-8-animation {
+	animation: ques-ai-8-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-ai-9-animation {
+	animation: ques-ai-9-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-ai-10-animation {
+	animation: ques-ai-10-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes ques-ai-1-animation {
+	0%, 9% {
+		opacity: 0;
+		transform: translateX(30%);
+	}
+}
+
+@keyframes ques-ai-2-animation {
+	0%, 18% {
+		opacity: 0;
+		transform: translateX(30%);
+	}
+}
+
+@keyframes ques-ai-3-animation {
+	0%, 27% {
+		opacity: 0;
+		transform: translateX(30%);
+	}
+}
+
+@keyframes ques-ai-4-animation {
+	0%, 36% {
+		opacity: 0;
+		transform: translateX(30%);
+	}
+}
+
+@keyframes ques-ai-5-animation {
+	0%, 45% {
+		opacity: 0;
+		transform: translateX(30%);
+	}
+}
+
+@keyframes ques-ai-6-animation {
+	0%, 54% {
+		opacity: 0;
+		transform: translateX(30%);
+	}
+}
+
+@keyframes ques-ai-7-animation {
+	0%, 63% {
+		opacity: 0;
+		transform: translateX(30%);
+	}
+}
+
+@keyframes ques-ai-8-animation {
+	0%, 72% {
+		opacity: 0;
+		transform: translateX(30%);
+	}
+}
+
+@keyframes ques-ai-9-animation {
+	0%, 81% {
+		opacity: 0;
+		transform: translateX(30%);
+	}
+}
+
+@keyframes ques-ai-10-animation {
+	0%, 90% {
+		opacity: 0;
+		transform: translateX(30%);
+	}
+}
+
+/*Desktop Animations End*/
+
+
+
+
+/*Mobile Animation Start*/
+
+.ques-head-mob-animation {
+	animation: ques-head-mob-animation 1s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-text-mob-animation {
+	animation: ques-text-mob-animation 1s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-button-mob-animation {
+	animation: ques-button-mob-animation 3s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-ai-m-1-animation {
+	animation: ques-ai-m-1-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-ai-m-2-animation {
+	animation: ques-ai-m-2-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-ai-m-3-animation {
+	animation: ques-ai-m-3-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-ai-m-4-animation {
+	animation: ques-ai-m-4-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-ai-m-5-animation {
+	animation: ques-ai-m-5-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-ai-m-6-animation {
+	animation: ques-ai-m-6-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-ai-m-7-animation {
+	animation: ques-ai-m-7-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-ai-m-8-animation {
+	animation: ques-ai-m-8-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-ai-m-9-animation {
+	animation: ques-ai-m-9-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.ques-ai-m-10-animation {
+	animation: ques-ai-m-10-animation 2s ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes ques-head-mob-animation {
+	0%, 6.66% {
+		opacity: 0;
+		transform: translateY(30%);
+	}
+}
+
+@keyframes ques-text-mob-animation {
+	0%, 13.33% {
+		opacity: 0;
+		transform: translateY(30%);
+	}
+}
+
+@keyframes ques-button-mob-animation {
+	0%, 20% {
+		opacity: 0;
+		transform: translateY(30%), scale(1.0);
+	}
+
+	49% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	50%, 60% {
+		transform: scale(1.1);
+	}
+
+	55%, 65%, 100% {
+		transform: scale(1.0);
+	}
+}
+
+@keyframes ques-ai-m-1-animation {
+	0%, 26.66% {
+		opacity: 0;
+		transform: translateY(30%);
+	}
+}
+
+@keyframes ques-ai-m-2-animation {
+	0%, 33.33% {
+		opacity: 0;
+		transform: translateY(30%);
+	}
+}
+
+@keyframes ques-ai-m-3-animation {
+	0%, 40% {
+		opacity: 0;
+		transform: translateY(30%);
+	}
+}
+
+@keyframes ques-ai-m-4-animation {
+	0%, 46.66% {
+		opacity: 0;
+		transform: translateY(30%);
+	}
+}
+
+@keyframes ques-ai-m-5-animation {
+	0%, 53.33% {
+		opacity: 0;
+		transform: translateY(30%);
+	}
+}
+
+@keyframes ques-ai-m-6-animation {
+	0%, 60% {
+		opacity: 0;
+		transform: translateY(30%);
+	}
+}
+
+@keyframes ques-ai-m-7-animation {
+	0%, 66.66% {
+		opacity: 0;
+		transform: translateY(30%);
+	}
+}
+
+@keyframes ques-ai-m-8-animation {
+	0%, 73.33% {
+		opacity: 0;
+		transform: translateY(30%);
+	}
+}
+
+@keyframes ques-ai-m-9-animation {
+	0%, 80% {
+		opacity: 0;
+		transform: translateY(30%);
+	}
+}
+
+@keyframes ques-ai-m-10-animation {
+	0%, 86.66% {
+		opacity: 0;
+		transform: translateY(30%);
+	}
+}
+
+/*Mobile Animaton End*/
 
 
 @media only screen and (max-width: 992px) and (min-width: 768px) {

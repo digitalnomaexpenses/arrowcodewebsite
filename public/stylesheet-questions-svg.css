@@ -1,17 +1,15 @@
 
-
-#question-mark-question,
-#robot-face-outline-3,
-#robot-eye-left,
-#robot-eye-right {
+.question-mark-animation {
 	stroke-dasharray: 1000;
 	stroke-dashoffset: 1000;
 	animation: question-mark-question-appear 5s ease-in-out forwards;
 }
-#robot_head_group {
+
+.move-up-animation-1 {
 	animation: move_up 5s ease-in-out infinite;
 }
-#question_mark_group {
+
+.move-up-animation-2 {
 	transform-origin: center;
 	transform-box: fill-box;
 	animation: move_up 4s ease-in-out infinite, q_rotate 2s infinite;
@@ -53,14 +51,7 @@
 	}
 }
 
-
-#question-mark-dot,
-#robot-body-rectangle-left,
-#robot-body-rectangle-right,
-#robot-ear-left,
-#robot-ear-left-2,
-#robot-ear-right,
-#robot-ear-right-2 {
+.question-mark-dot-appear {
 	stroke-dasharray: 1000;
 	stroke-dashoffset: 1000;
 	animation: question-mark-dot-appear 10s ease-in-out forwards;
@@ -81,22 +72,13 @@
   }
 }
 
-
-
-#robot-body-outline-1 {
+.robot-body-outline-appear {
 	stroke-dasharray: 1000;
 	stroke-dashoffset: 1000;
 	animation: robot-body-outline-appear 3s ease-in-out forwards;
 }
 
-#robot-body-outline-2,
-#robot-body-outline-3,
-#robot-body-outline-4,
-#robot-body-outline-5,
-#robot-body-outline-6,
-#robot-face-outline,
-#robot-face-outline-2,
-#robot-smile {
+.robot-body-outline-appear-2 {
 	stroke-dasharray: 1000;
 	stroke-dashoffset: 1000;
 	animation: robot-body-outline-appear 4s ease-in-out forwards;
@@ -107,20 +89,4 @@
   to {
     stroke-dashoffset: 0;
   }
-}
-
-.e {
-	animation: experiment 1s infinite linear;
-	transform-box: fill-box;
-	transform-origin: center;
-}
-
-@keyframes experiment {
-	0%, 100% {
-		transform: scale(10);
-	}
-
-	50% {
-		transform: scale(1.0);
-	}
 }
