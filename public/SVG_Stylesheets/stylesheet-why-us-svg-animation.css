@@ -1,0 +1,224 @@
+.ys-cloud-1,
+.ys-envelope-1,
+.ys-small-globe-1,
+.ys-magnifying-glass,
+.ys-message,
+.ys-mobile,
+.ys-small-globe-2,
+.ys-cloud-2,
+.ys-envelope-2 {
+	animation: ys-small-icon-animation 2s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes ys-small-icon-animation {
+	5%, 15% {
+		transform: rotate(15deg);
+	}
+	10%, 20% {
+		transform: rotate(-15deg);
+	}
+	21%, 100% {
+		transform: rotate(0);
+	}
+
+}
+
+.globe-dot-animation-1 {
+	animation: globe-dot-animation-1 10s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.globe-dot-animation-2 {
+	animation: globe-dot-animation-2 10s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.globe-dot-animation-3 {
+	animation: globe-dot-animation-3 10s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.globe-dot-animation-4 {
+	animation: globe-dot-animation-4 10s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.globe-dot-animation-5 {
+	animation: globe-dot-animation-5 10s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.globe-dot-animation-6 {
+	animation: globe-dot-animation-6 10s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.globe-dot-animation-7 {
+	animation: globe-dot-animation-7 10s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.globe-dot-animation-8 {
+	animation: globe-dot-animation-8 10s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.globe-dot-animation-9 {
+	animation: globe-dot-animation-9 10s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+.globe-dot-animation-10 {
+	animation: globe-dot-animation-10 10s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes globe-dot-animation-1 {
+	5% {
+		transform: scale(2);
+	}
+
+	9%, 100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes globe-dot-animation-2 {
+	15% {
+		transform: scale(2);
+	}
+
+	19%, 100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes globe-dot-animation-3 {
+	25% {
+		transform: scale(2);
+	}
+
+	29%, 100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes globe-dot-animation-4 {
+	35% {
+		transform: scale(2);
+	}
+
+	39%, 100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes globe-dot-animation-5 {
+	45% {
+		transform: scale(2);
+	}
+
+	49%, 100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes globe-dot-animation-6 {
+	55% {
+		transform: scale(2);
+	}
+
+	59%, 100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes globe-dot-animation-7 {
+	65% {
+		transform: scale(2);
+	}
+
+	69%, 100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes globe-dot-animation-8 {
+	75% {
+		transform: scale(2);
+	}
+
+	79%, 100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes globe-dot-animation-9 {
+	85% {
+		transform: scale(2);
+	}
+
+	89%, 100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes globe-dot-animation-10 {
+	95% {
+		transform: scale(2);
+	}
+
+	99%, 100% {
+		transform: scale(1);
+	}
+}
+
+.ys-woman-hand {
+	animation: ys-woman-hand 1s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: left;
+	transform: rotate(20deg);
+}
+
+@keyframes ys-woman-hand {
+	40% {
+		transform: rotate(30deg);
+	}
+}
+
+.ys-woman-hair-1 {
+	animation: ys-woman-hair-1 2s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: bottom;
+	
+}
+
+.ys-woman-hair-2 {
+	animation: ys-woman-hair-2 2.5s infinite ease-in-out;
+	transform-box: fill-box;
+	transform-origin: top;
+}
+
+@keyframes ys-woman-hair-1 {
+	50% {
+		transform: rotate(5deg);
+	}
+}
+
+@keyframes ys-woman-hair-2 {
+	30% {
+		transform: rotate(-2deg);
+	}
+}
