@@ -1,8 +1,14 @@
 import React from "react"
+import { useInView } from 'react-intersection-observer'
 
 export default function ServicesItem(props) {
+
+	const { ref: siMobRef, inView: siMobVisibility } = useInView();
+
 	return(
-		<div className="services-list-item-mobile pt-2 pb-2">
+		<div 
+			ref={siMobRef}
+			className={`services-list-item-mobile pt-2 pb-2 ${siMobVisibility ? `${props.id}-mob-animation` : ""}`}>
 			<div 
 				data-bs-toggle="collapse" 
 				data-bs-target={`#${props.id}`} 

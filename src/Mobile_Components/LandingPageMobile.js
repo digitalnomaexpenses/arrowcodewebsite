@@ -2,7 +2,7 @@ import React from "react"
 
 export default function LandingPageMobile(props) {
 	return(
-		<div className="container pt-5">
+		<div className="container pt-5 vh-100">
 			<div className="d-flex flex-column justify-content-center align-items-center">
 				<div className="landing-page-svg-div">
 					<svg width="100%" height="100%" viewBox="0 0 492 360" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -439,13 +439,34 @@ export default function LandingPageMobile(props) {
 				</div>
 			</div>
 			<div className="d-flex flex-row justify-content-around lp-logos-mobile-light">
-				<img src={props.darkMode ? "aws-m-dark-mode.svg" : "aws-m-light-mode.svg"} className="img-fluid"/>
-					<img src={props.darkMode ? "postgreSQL-m-dark-mode.svg" : "postgreSQL-m-light-mode.svg"} className="img-fluid"/>
-					<img src={props.darkMode ? "flask-m-dark-mode.svg" : "flask-m-light-mode.svg"} className="img-fluid"/>
-					<img src={props.darkMode ? "bootstrap-m-dark-mode.svg" : "bootstrap-m-light-mode.svg"} className="img-fluid"/>
-					<img src={props.darkMode ? "react-m-dark-mode.svg" : "react-m-light-mode.svg"} className="img-fluid"/>
-					<img src={props.darkMode ? "threejs-m-dark-mode.svg" : "threejs-m-light-mode.svg"} className="img-fluid"/>
-					<img src={props.darkMode ? "python-m-dark-mode.svg" : "python-m-light-mode.svg"} className="img-fluid"/>
+				<img 
+					src={props.darkMode ? 
+					"../SVGs/Landing_Page/aws-m-dark-mode.svg" : "../SVGs/Landing_Page/aws-m-light-mode.svg"} 
+					className="img-fluid"/>
+				<img 
+					src={props.darkMode ? 
+					"../SVGs/Landing_Page/postgreSQL-m-dark-mode.svg" : "../SVGs/Landing_Page/postgreSQL-m-light-mode.svg"} 
+					className="img-fluid"/>
+				<img 
+					src={props.darkMode ? 
+					"../SVGs/Landing_Page/flask-m-dark-mode.svg" : "../SVGs/Landing_Page/flask-m-light-mode.svg"} 
+					className="img-fluid"/>
+				<img 
+					src={props.darkMode ? 
+					"../SVGs/Landing_Page/bootstrap-m-dark-mode.svg" : "../SVGs/Landing_Page/bootstrap-m-light-mode.svg"} 
+					className="img-fluid"/>
+				<img 
+					src={props.darkMode ? 
+					"../SVGs/Landing_Page/react-m-dark-mode.svg" : "../SVGs/Landing_Page/react-m-light-mode.svg"} 
+					className="img-fluid"/>
+				<img 
+					src={props.darkMode ? 
+					"../SVGs/Landing_Page/threejs-m-dark-mode.svg" : "../SVGs/Landing_Page/threejs-m-light-mode.svg"} 
+					className="img-fluid"/>
+				<img 
+					src={props.darkMode ? 
+					"../SVGs/Landing_Page/python-m-dark-mode.svg" : "../SVGs/Landing_Page/python-m-light-mode.svg"} 
+					className="img-fluid"/>
 			</div>
 		</div>
 	)

@@ -1,7 +1,8 @@
 import React from "react"
-import ServicesData from "./ServicesData.js"
-import ServicesDataTwo from "./ServicesDataTwo.js"
-import ServicesItem from "./ServicesItem"
+import ServicesData from "../Additional_Components/ServicesData.js" 
+import ServicesDataTwo from "../Additional_Components/ServicesDataTwo.js"
+import ServicesItem from "../Additional_Components/ServicesItem.js"
+import { useInView } from 'react-intersection-observer'
 
 
 export default function Services() {
@@ -25,17 +26,22 @@ export default function Services() {
 		/>
 		))
 
+	const { ref: servicesRef, inView: servicesVisibility } = useInView();
+
 	return(
-		<div className="container pt-5">
+		<div 
+			className="container pt-5"
+			ref={servicesRef}>
 			<div className="d-flex flex-row">
 				<div className="col-lg-7 col-8 pt-4 ps-5">
 					<div className="d-flex flex-column">
-						<div className="services-heading pb-4">Customized <span>Solutions</span></div>
-						<div className="pe-5 services-text pb-3">
+						<div 
+							className={`services-heading pb-4 ${servicesVisibility ? "services-lhs-animation" : ""}`}>
+							Customized <span>Solutions</span></div>
+						<div className={`pe-5 services-text pb-3 ${servicesVisibility ? "services-lhs-animation" : ""}`}>
 							One size doesn’t fit all. We customize solutions as per your needs. 
 							Explore the plethora of services we offer.
 						</div>
-			
 					</div>
 					<div className="row row-cols-2 pe-5 pt-4">
 						<div className="d-flex flex-column services-list">
@@ -46,7 +52,7 @@ export default function Services() {
 						</div>
 					</div>
 				</div>
-				<div className="col">
+				<div className={`col ${servicesVisibility ? "services-rhs-animation" : ""}`}>
 					<div className="services-svg-div pt-4">
 						<svg id="svg2" width="175%" height="175%" viewBox="0 0 1535 550" xmlns="http://www.w3.org/2000/svg" className="pt-5">
 						   <defs id="defs6" />

@@ -1,9 +1,14 @@
 import React from "react"
+import { useInView } from 'react-intersection-observer'
 
 export default function ServicesItem(props) {
 
+	const { ref: serviceItemsRef, inView: servicesItemVisibility } = useInView();
+
 	return(
-		<div className="mb-lg-3 pb-2 mb-4 services-list-item">
+		<div 
+			ref={serviceItemsRef}
+			className={`mb-lg-3 pb-2 mb-4 services-list-item ${servicesItemVisibility ? `${props.id}-animation` : ""}`}>
 			<div 
 				data-bs-toggle="collapse" 
 				data-bs-target={`#${props.id}`} 

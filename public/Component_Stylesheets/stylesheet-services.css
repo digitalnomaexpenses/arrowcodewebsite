@@ -1,0 +1,467 @@
+:root {
+  --background : #FAF7F4;
+  --card-background: #F0EDEA;
+  --card-background-dark: #1d1d1d;
+  --font-color-1: #164951;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --dark-peach: #FF5F5F;
+  --form-background: #FFFFFF;
+  --form-border: #EFEFEF;
+  --form-input-border: #8F8F8F;
+  --services-list-item-line: rgb(22,73,81, 10%);
+}
+
+.services-svg-div {
+  overflow-x: hidden;
+}
+
+.services-heading {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.services-heading-mobile {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.services-heading span,
+.services-heading-mobile span {
+  color: var(--dark-peach);
+}
+
+.services-text {
+  font-size: 1.2rem;  
+}
+
+.services-text-mobile {
+  font-weight: normal;
+  font-size: 0.85rem;
+}
+  
+.services-line {
+  width: 90%;
+  color: var(--form-input-border);
+}
+
+.services-line-mobile {
+  width: 100%;
+  color: var(--form-input-border);
+}
+
+.services-list-item {
+  border-bottom: 0.08rem solid var(--services-list-item-line);
+}
+
+.services-list-item-mobile {
+  width: 90%;
+  font-size: 0.85rem;
+  border-bottom: 0.08rem solid var(--services-list-item-line);
+}
+
+.services-list {
+  list-style: none;
+  font-size: 1rem;
+}
+
+.services-list-desc {
+  font-size: 0.8rem;
+  text-align: justify;
+}
+
+.services-list-desc-mobile {
+  font-size: 0.75rem;
+  text-align: justify;
+}
+
+.services-item-number {
+  color: var(--dark-peach);
+  font-weight: bolder;
+}
+
+/*Services text and div Desktop Animations start*/
+
+.services-lhs-animation {
+  animation: services-lhs-animation 2s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes services-lhs-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.services-rhs-animation {
+  animation: services-rhs-animation 2s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes services-rhs-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(30%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.service_item_1-animation {
+  animation: service_item_1-animation 3s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.service_item_2-animation {
+  animation: service_item_2-animation 3s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.service_item_3-animation {
+  animation: service_item_3-animation 3s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.service_item_4-animation {
+  animation: service_item_4-animation 3s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.service_item_5-animation {
+  animation: service_item_5-animation 3s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.service_item_6-animation {
+  animation: service_item_6-animation 3s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.service_item_7-animation {
+  animation: service_item_7-animation 3s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.service_item_8-animation {
+  animation: service_item_8-animation 3s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.service_item_9-animation {
+  animation: service_item_9-animation 3s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.service_item_10-animation {
+  animation: service_item_10-animation 3s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes service_item_1-animation {
+  0%, 40% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+}
+
+@keyframes service_item_2-animation {
+  0%, 45% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  55% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes service_item_3-animation {
+  0%, 50% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes service_item_4-animation {
+  0%, 55% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  65% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes service_item_5-animation {
+  0%, 60% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes service_item_6-animation {
+  0%, 65% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  75% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes service_item_7-animation {
+  0%, 70% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes service_item_8-animation {
+  0%, 75% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  85% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes service_item_9-animation {
+  0%, 80% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes service_item_10-animation {
+  0%, 85% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  95% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/*Services text and div Desktop Animations end*/
+
+
+
+
+
+/*Services text and div mobile Animations start*/
+
+.s-mob-animation-1 {
+  animation: s-mob-animation-1 2s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.s-mob-animation-2 {
+  animation: s-mob-animation-2 2s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.s-mob-animation-3 {
+  animation: s-mob-animation-3 2s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.s-mob-animation-4 {
+  animation: s-mob-animation-4 2s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes s-mob-animation-1 {
+  0%, 20% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  30% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+}
+
+@keyframes s-mob-animation-2 {
+  0%, 25% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  35% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+}
+
+@keyframes s-mob-animation-3 {
+  0%, 30% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  40% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+}
+
+@keyframes s-mob-animation-4 {
+  0%, 35% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  45% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+}
+
+
+/*same as desktop service-item animation */
+
+.service_item_1-mob-animation {
+  animation: service_item_1-animation 2s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.service_item_2-mob-animation {
+  animation: service_item_2-animation 2s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.service_item_3-mob-animation {
+  animation: service_item_3-animation 2s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.service_item_4-mob-animation {
+  animation: service_item_4-animation 2s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.service_item_5-mob-animation {
+  animation: service_item_5-animation 2s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.service_item_6-mob-animation {
+  animation: service_item_6-animation 2s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.service_item_7-mob-animation {
+  animation: service_item_7-animation 2s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.service_item_8-mob-animation {
+  animation: service_item_8-animation 2s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.service_item_9-mob-animation {
+  animation: service_item_9-animation 2s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.service_item_10-mob-animation {
+  animation: service_item_10-animation 3s ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+
+/*Services text and div mobile Animations end*/
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+
+  .services-heading {
+    font-size: 1.3rem;
+  }
+
+  .services-text {
+    font-size: 1rem;
+  }
+
+  .services-list-item{
+    font-size: 0.9rem;
+  }
+
+  .services-list-desc {
+    font-size: 0.75rem;
+  }
+}

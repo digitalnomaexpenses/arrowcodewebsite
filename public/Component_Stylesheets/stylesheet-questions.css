@@ -220,132 +220,183 @@ button.accordion-button:focus {
 }
 
 .ques-ai-1-animation {
-	animation: ques-ai-1-animation 2s ease-in-out;
+	animation: ques-ai-1-animation 3s ease-in-out;
 	transform-box: fill-box;
 	transform-origin: center;
 }
 
 .ques-ai-2-animation {
-	animation: ques-ai-2-animation 2s ease-in-out;
+	animation: ques-ai-2-animation 3s ease-in-out;
 	transform-box: fill-box;
 	transform-origin: center;
 }
 
 .ques-ai-3-animation {
-	animation: ques-ai-3-animation 2s ease-in-out;
+	animation: ques-ai-3-animation 3s ease-in-out;
 	transform-box: fill-box;
 	transform-origin: center;
 }
 
 .ques-ai-4-animation {
-	animation: ques-ai-4-animation 2s ease-in-out;
+	animation: ques-ai-4-animation 3s ease-in-out;
 	transform-box: fill-box;
 	transform-origin: center;
 }
 
 .ques-ai-5-animation {
-	animation: ques-ai-5-animation 2s ease-in-out;
+	animation: ques-ai-5-animation 3s ease-in-out;
 	transform-box: fill-box;
 	transform-origin: center;
 }
 
 .ques-ai-6-animation {
-	animation: ques-ai-6-animation 2s ease-in-out;
+	animation: ques-ai-6-animation 3s ease-in-out;
 	transform-box: fill-box;
 	transform-origin: center;
 }
 
 .ques-ai-7-animation {
-	animation: ques-ai-7-animation 2s ease-in-out;
+	animation: ques-ai-7-animation 3s ease-in-out;
 	transform-box: fill-box;
 	transform-origin: center;
 }
 
 .ques-ai-8-animation {
-	animation: ques-ai-8-animation 2s ease-in-out;
+	animation: ques-ai-8-animation 3s ease-in-out;
 	transform-box: fill-box;
 	transform-origin: center;
 }
 
 .ques-ai-9-animation {
-	animation: ques-ai-9-animation 2s ease-in-out;
+	animation: ques-ai-9-animation 3s ease-in-out;
 	transform-box: fill-box;
 	transform-origin: center;
 }
 
 .ques-ai-10-animation {
-	animation: ques-ai-10-animation 2s ease-in-out;
+	animation: ques-ai-10-animation 3s ease-in-out;
 	transform-box: fill-box;
 	transform-origin: center;
 }
 
 @keyframes ques-ai-1-animation {
-	0%, 9% {
+	0%, 40% {
 		opacity: 0;
-		transform: translateX(30%);
+		transform: translateY(30%);
 	}
+
+	50% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+
 }
 
 @keyframes ques-ai-2-animation {
-	0%, 18% {
+	0%, 45% {
 		opacity: 0;
-		transform: translateX(30%);
+		transform: translateY(30%);
+	}
+
+	55% {
+		opacity: 1;
+		transform: translateY(0%);
 	}
 }
 
 @keyframes ques-ai-3-animation {
-	0%, 27% {
+	0%, 50% {
 		opacity: 0;
-		transform: translateX(30%);
+		transform: translateY(30%);
+	}
+
+	60% {
+		opacity: 1;
+		transform: translateY(0%);
 	}
 }
 
 @keyframes ques-ai-4-animation {
-	0%, 36% {
+	0%, 55% {
 		opacity: 0;
-		transform: translateX(30%);
+		transform: translateY(30%);
+	}
+
+	65% {
+		opacity: 1;
+		transform: translateY(0%);
 	}
 }
 
 @keyframes ques-ai-5-animation {
-	0%, 45% {
+	0%, 60% {
 		opacity: 0;
-		transform: translateX(30%);
+		transform: translateY(30%);
+	}
+
+	70% {
+		opacity: 1;
+		transform: translateY(0%);
 	}
 }
 
 @keyframes ques-ai-6-animation {
-	0%, 54% {
+	0%, 65% {
 		opacity: 0;
-		transform: translateX(30%);
+		transform: translateY(30%);
+	}
+
+	75% {
+		opacity: 1;
+		transform: translateY(0%);
 	}
 }
 
 @keyframes ques-ai-7-animation {
-	0%, 63% {
+	0%, 70% {
 		opacity: 0;
-		transform: translateX(30%);
+		transform: translateY(30%);
+	}
+
+	80% {
+		opacity: 1;
+		transform: translateY(0%);
 	}
 }
 
 @keyframes ques-ai-8-animation {
-	0%, 72% {
+	0%, 75% {
 		opacity: 0;
-		transform: translateX(30%);
+		transform: translateY(30%);
+	}
+
+	85% {
+		opacity: 1;
+		transform: translateY(0%);
 	}
 }
 
 @keyframes ques-ai-9-animation {
-	0%, 81% {
+	0%, 80% {
 		opacity: 0;
-		transform: translateX(30%);
+		transform: translateY(30%);
+	}
+
+	90% {
+		opacity: 1;
+		transform: translateY(0%);
 	}
 }
 
 @keyframes ques-ai-10-animation {
-	0%, 90% {
+	0%, 85% {
 		opacity: 0;
-		transform: translateX(30%);
+		transform: translateY(30%);
+	}
+
+	95% {
+		opacity: 1;
+		transform: translateY(0%);
 	}
 }
 

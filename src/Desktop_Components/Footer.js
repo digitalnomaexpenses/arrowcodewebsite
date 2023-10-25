@@ -9,10 +9,22 @@ export default function Footer(props) {
 						<div className="footer-heading pb-4 pe-5">Arrow Code Developers</div>
 						<div className="footer-text pe-5 pb-3">We help you become digitally savvy. Get online and grow your business</div>
 						<div className="d-flex flex-row pt-xl-4">
-							<img src={props.darkMode ? "facebook-icon-dark.svg" : "facebook-icon.svg"} className="img-fluid pe-lg-2 pe-3"/>
-							<img src={props.darkMode ? "linkedin-icon-dark.svg" : "linkedin-icon.svg"} className="img-fluid pe-lg-2 pe-3"/>
-							<img src={props.darkMode ? "twitter-icon-dark.svg" : "twitter-icon.svg"} className="img-fluid pe-lg-2 pe-3"/>
-							<img src={props.darkMode ? "instagram-icon-dark.svg" : "instagram-icon.svg"} className="img-fluid pe-lg-2 pe-3"/>
+							<img 
+								src={props.darkMode ? 
+									"../SVGs/Footer/facebook-icon-dark.svg" : "../SVGs/Footer/facebook-icon.svg"} 
+								className="img-fluid pe-lg-2 pe-3"/>
+							<img 
+								src={props.darkMode ? 
+									"../SVGs/Footer/linkedin-icon-dark.svg" : "../SVGs/Footer/linkedin-icon.svg"}
+								className="img-fluid pe-lg-2 pe-3"/>
+							<img 
+								src={props.darkMode ? 
+									"../SVGs/Footer/twitter-icon-dark.svg" : "../SVGs/Footer/twitter-icon.svg"}
+								className="img-fluid pe-lg-2 pe-3"/>
+							<img 
+								src={props.darkMode ? 
+									"../SVGs/Footer/instagram-icon-dark.svg" : "../SVGs/Footer/instagram-icon.svg"}
+								className="img-fluid pe-lg-2 pe-3"/>
 						</div>
 					</div>
 				</div>
@@ -31,7 +43,10 @@ export default function Footer(props) {
 						<div className="footer-text">Mon - Fri</div>
 						<div className="footer-text pb-4">10 AM - 5 PM IST</div>
 						<div className="d-flex flex-row">
-							<img src={props.darkMode ? "email-icon-dark.svg" : "email-icon.svg"} className="img-fluid pe-2"/>
+							<img 
+								src={props.darkMode ? 
+									"../SVGs/Footer/email-icon-dark.svg" : "../SVGs/Footer/email-icon.svg"} 
+								className="img-fluid pe-2"/>
 							<div className="footer-text">inquiries@arrowcode.com</div>
 						</div>
 					</div>

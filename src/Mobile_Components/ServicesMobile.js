@@ -1,7 +1,8 @@
 import React from "react"
-import ServicesData from "./ServicesData.js"
-import ServicesDataTwo from "./ServicesDataTwo.js"
-import ServicesItemMobile from "./ServicesItemMobile"
+import ServicesData from "../Additional_Components/ServicesData.js"
+import ServicesDataTwo from "../Additional_Components/ServicesDataTwo.js"
+import ServicesItemMobile from "../Mobile_Components/ServicesItemMobile"
+import { useInView } from 'react-intersection-observer'
 
 export default function ServicesMobile() {
 	let servicesElementsMobile= ServicesData.map(eachElement => (
@@ -24,16 +25,23 @@ export default function ServicesMobile() {
 		/>
 		))
 
+	const { ref: sMobRef, inView: sMobVisibility } = useInView();
+
 	return(
-		<div className='container ps-3 pe-3'>
+		<div 
+			className='container ps-3 pe-3'
+			ref={sMobRef}>
 			<div className="d-flex flex-column pt-5 justify-content-center align-items-center">
-				<div className="services-heading-mobile pb-4">Customized <span>Solutions</span></div>
-				<div className="services-text-mobile text-center">
+				<div 
+					className={`services-heading-mobile pb-4 ${sMobVisibility ? "s-mob-animation-1" : ""}`}>
+					Customized <span>Solutions</span>
+				</div>
+				<div className={`services-text-mobile text-center ${sMobVisibility ? "s-mob-animation-2" : ""}`}>
 					One size doesn’t fit all. We customize solutions 
 					as per your needs. Explore the plethora of services we offer.
 				</div>
-				<hr className="services-line"/>
-				<div className="services-svg-div">
+				<hr className={`services-line ${sMobVisibility ? "s-mob-animation-3" : ""}`}/>
+				<div className={`services-svg-div ${sMobVisibility ? "s-mob-animation-4" : ""}`}>
 					<svg id="svg2" width="175%" height="175%" viewBox="0 0 1535 550" xmlns="http://www.w3.org/2000/svg">
 					   <defs id="defs6" />
 					   <g id="g8" transform="matrix(1.3333333,0,0,-1.3333333,3.3754033e-4,543.81461)">

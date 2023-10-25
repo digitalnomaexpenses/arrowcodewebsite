@@ -2,8 +2,8 @@ import React from "react"
 
 export default function LandingPage(props) {
 	return (
-		<div className="container pt-5 landing-page">
-			<div className="d-flex flex-column">
+		<div className="container pt-5 landing-page vh-100">
+			<div className="d-flex flex-column pt-5">
 				<div className="d-flex flex-row pb-5 justify-content-around align-items-center">
 					<div className="col-6 pt-5 ps-5">
 						<div className="d-flex flex-column lp-title-and-text pt-5 ps-3">
@@ -448,13 +448,34 @@ export default function LandingPage(props) {
 					</div>
 				</div>
 				<div className="d-flex flex-row justify-content-around lp-skill-icons ps-3 pe-3 mt-4 mb-5">
-					<img src={props.darkMode ? "aws-dark-mode.svg" : "aws-light-mode.svg"} className="img-fluid lp-skill-icon-1"/>
-					<img src={props.darkMode ? "postgreSQL-dark-mode.svg" : "postgreSQL-light-mode.svg"} className="img-fluid lp-skill-icon-2"/>
-					<img src={props.darkMode ? "flask-dark-mode.svg" : "flask-light-mode.svg"} className="img-fluid lp-skill-icon-3"/>
-					<img src={props.darkMode ? "bootstrap-dark-mode.svg" : "bootstrap-light-mode.svg"} className="img-fluid lp-skill-icon-4"/>
-					<img src={props.darkMode ? "react-dark-mode.svg" : "react-light-mode.svg"} className="img-fluid lp-skill-icon-5"/>
-					<img src={props.darkMode ? "threejs-dark-mode.svg" : "threejs-light-mode.svg"} className="img-fluid lp-skill-icon-6"/>
-					<img src={props.darkMode ? "python-dark-mode.svg" : "python-light-mode.svg"} className="img-fluid lp-skill-icon-7"/>
+					<img 
+						src={props.darkMode ? 
+							"../SVGs/Landing_Page/aws-dark-mode.svg" : "../SVGs/Landing_Page/aws-light-mode.svg"} 
+						className="img-fluid lp-skill-icon-1"/>
+					<img 
+						src={props.darkMode ? 
+							"../SVGs/Landing_Page/postgreSQL-dark-mode.svg" : "../SVGs/Landing_Page/postgreSQL-light-mode.svg"} 
+						className="img-fluid lp-skill-icon-2"/>
+					<img 
+						src={props.darkMode ? 
+							"../SVGs/Landing_Page/flask-dark-mode.svg" : "../SVGs/Landing_Page/flask-light-mode.svg"} 
+						className="img-fluid lp-skill-icon-3"/>
+					<img 
+						src={props.darkMode ? 
+							"../SVGs/Landing_Page/bootstrap-dark-mode.svg" : "../SVGs/Landing_Page/bootstrap-light-mode.svg"} 
+						className="img-fluid lp-skill-icon-4"/>
+					<img 
+						src={props.darkMode ? 
+							"../SVGs/Landing_Page/react-dark-mode.svg" : "../SVGs/Landing_Page/react-light-mode.svg"} 
+						className="img-fluid lp-skill-icon-5"/>
+					<img 
+						src={props.darkMode ? 
+							"../SVGs/Landing_Page/threejs-dark-mode.svg" : "../SVGs/Landing_Page/threejs-light-mode.svg"} 
+						className="img-fluid lp-skill-icon-6"/>
+					<img 
+						src={props.darkMode ? 
+							"../SVGs/Landing_Page/python-dark-mode.svg" : "../SVGs/Landing_Page/python-light-mode.svg"} 
+						className="img-fluid lp-skill-icon-7"/>
 				</div>
 			</div>
 			
