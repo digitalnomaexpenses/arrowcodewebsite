@@ -1,0 +1,60 @@
+:root {
+  --background : #FAF7F4;
+  --card-background-dark: #1d1d1d;
+  --card-background: #F0EDEA;
+  --font-color-1: #164951;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --dark-peach: #FF5F5F;
+  --form-background: #FFFFFF;
+  --form-background-dark: #303030;
+  --inner-card-background-dark: #303030;
+  --form-border: #EFEFEF;
+  --form-input-border: #8F8F8F;
+  --services-list-item-line: rgb(22,73,81, 10%);
+  --why-us-inner-card-background: linear-gradient(rgba(255,255,255, 1), rgba(255,255,255, 0.1));
+  --card-shadow:drop-shadow(0 10px 10px rgba(0, 0, 0, 0.25));
+  --white: white;
+}
+
+.ppdark {
+  color: var(--card-background);
+}
+
+
+.pp-heading {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.pp-points-heading {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.pp-points-text {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+p.pp-points-text {
+  margin-bottom: 0 !important;
+}
+
+.pp-update {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+
+@media only screen and (max-width: 768px){
+  .pp-heading {
+    font-size: 1.2rem;
+  }
+
+  .pp-points-heading {
+    font-size: 0.9rem;
+  }
+
+  .pp-points-text {
+    font-size: 0.8rem;
+  }
+}
