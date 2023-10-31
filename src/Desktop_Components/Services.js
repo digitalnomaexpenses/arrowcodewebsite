@@ -1,32 +1,45 @@
 import React from "react"
-import ServicesData from "../Additional_Components/ServicesData.js" 
-import ServicesDataTwo from "../Additional_Components/ServicesDataTwo.js"
+import JSON_ServicesContent from "../Additional_Components/JSONs/JSON_ServicesContent.js" 
+import JSON_ServicesData from "../Additional_Components/JSONs/JSON_ServicesData.js" 
+import JSON_ServicesDataTwo from "../Additional_Components/JSONs/JSON_ServicesDataTwo.js"
 import ServicesItem from "../Additional_Components/ServicesItem.js"
+import ServicesContentDesktopItem from "../Additional_Components/ServicesContentDesktopItem.js"
+
 import { useInView } from 'react-intersection-observer'
 
 
 export default function Services() {
-	let servicesElements= ServicesData.map(eachElement => (
-		<ServicesItem 
-			key={eachElement.id}
-			id={eachElement.id}
-			number={eachElement.number}
-			title = {eachElement.title}
-			desc = {eachElement.desc}
-		/>
-		))
-
-	let servicesElementsTwo = ServicesDataTwo.map(eachElement => (
-		<ServicesItem 
-			key={eachElement.id}
-			id={eachElement.id}
-			number={eachElement.number}
-			title = {eachElement.title}
-			desc = {eachElement.desc}
-		/>
-		))
-
 	const { ref: servicesRef, inView: servicesVisibility } = useInView();
+
+	let servicesContentElement = JSON_ServicesContent.map(eachElement => (
+			<ServicesContentDesktopItem 
+				title={eachElement.title}
+				title_span={eachElement.title_span}
+				text={eachElement.text}
+				isVisible={servicesVisibility}
+			/>
+		))
+
+	let servicesPointsElements= JSON_ServicesData.map(eachElement => (
+		<ServicesItem 
+			key={eachElement.id}
+			id={eachElement.id}
+			number={eachElement.number}
+			title = {eachElement.title}
+			desc = {eachElement.desc}
+		/>
+		))
+
+	let servicesPointsElementsTwo = JSON_ServicesDataTwo.map(eachElement => (
+		<ServicesItem 
+			key={eachElement.id}
+			id={eachElement.id}
+			number={eachElement.number}
+			title = {eachElement.title}
+			desc = {eachElement.desc}
+		/>
+		))
+
 
 	return(
 		<div 
@@ -34,21 +47,13 @@ export default function Services() {
 			ref={servicesRef}>
 			<div className="d-flex flex-row">
 				<div className="col-lg-7 col-8 pt-4 ps-5">
-					<div className="d-flex flex-column">
-						<div 
-							className={`services-heading pb-4 ${servicesVisibility ? "services-lhs-animation" : ""}`}>
-							Customized <span>Solutions</span></div>
-						<div className={`pe-5 services-text pb-3 ${servicesVisibility ? "services-lhs-animation" : ""}`}>
-							One size doesn’t fit all. We customize solutions as per your needs. 
-							Explore the plethora of services we offer.
-						</div>
-					</div>
+					{servicesContentElement}
 					<div className="row row-cols-2 pe-5 pt-4">
 						<div className="d-flex flex-column services-list">
-							{servicesElements}
+							{servicesPointsElements}
 						</div>
 						<div className="d-flex flex-column services-list">
-							{servicesElementsTwo}
+							{servicesPointsElementsTwo}
 						</div>
 					</div>
 				</div>

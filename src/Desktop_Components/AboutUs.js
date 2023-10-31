@@ -1,12 +1,23 @@
 import React from "react"
 import { useInView } from 'react-intersection-observer'
 
+import JSON_AboutUsContent from "../Additional_Components/JSONs/JSON_AboutUsContent.js"
+import AboutUsContentDesktopItem from "../Additional_Components/AboutUsContentDesktopItem.js"
+
 export default function AboutUs(props) {
 
-	//intersection observer lazy loading or animation start
+	//intersection observer animation start
 	const { ref: aboutUsRef, inView: aboutUsVisibility } = useInView();
+ 	//intersection observer animation end
 
- 	//intersection observer lazy loading or animation start
+	let AboutUsContentElement = JSON_AboutUsContent.map(eachElement => (
+			<AboutUsContentDesktopItem
+				title={eachElement.title}
+				title_span={eachElement.title_span}
+				text={eachElement.text}
+			/>
+		))
+
 	return(
 		<div 
 		className="container pt-5"
@@ -14,15 +25,11 @@ export default function AboutUs(props) {
 		>
 			<div className="about-us d-flex flex-row">
 				<div className={`col-lg-6 col-7 ps-5 pe-lg-5 pe-2 ${aboutUsVisibility ? "about-us-animation" : ""}`}>
-					<div className="about-us-heading pb-3">About <span>Us</span></div>
-					<div className="about-us-text pb-3">
-						We’re a small team of independent developers, 
-						product managers, and their feline friends
-					</div>
+					{AboutUsContentElement}
 					<div className="row row-cols-2 about-us-text-with-icons">
 						<div className={`col ${aboutUsVisibility ? "project-management-animation" : ""}`}>
-							<div className="d-flex flex-row">
-								<div className="project-management-svg">
+							<div className="d-flex flex-row pb-4 pt-2">
+								<div className="project-management-svg pe-3">
 									<svg width="90" height="90" viewBox="0 0 90 90" fill="none" id="svg74"  xmlns="http://www.w3.org/2000/svg" >
 									   <defs id="defs78" />
 									   <g id="g220" transform="matrix(1.6000032,0,0,1.6000032,0.999824,0.999992)" >
@@ -84,8 +91,8 @@ export default function AboutUs(props) {
 							</div>
 						</div>
 						<div className={`col ${aboutUsVisibility ? "web-development-animation" : ""}`}>
-							<div className="d-flex flex-row">
-								<div className="web-development-svg">
+							<div className="d-flex flex-row pb-4 pt-2">
+								<div className="web-development-svg pe-3">
 									<svg width="90" height="90" viewBox="0 0 90 90" fill="none" id="svg299" xmlns="http://www.w3.org/2000/svg">
 									   <defs id="defs303" />
 									   <g id="g564" transform="matrix(0.8003842,0,0,0.8003842,0.28893784,-27.053788)" >
@@ -171,8 +178,8 @@ export default function AboutUs(props) {
 							</div>
 						</div>
 						<div className={`col ${aboutUsVisibility ? "projects-delivered-animation" : ""}`}>
-							<div className="d-flex flex-row">
-								<div className="projects-delivered-svg">
+							<div className="d-flex flex-row pb-4">
+								<div className="projects-delivered-svg pe-3">
 									<svg width="90" height="90" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
 									   <defs id="defs76" />
 									   <g id="g1191" transform="matrix(0.13197182,0,0,0.13197182,4.4804255,0.75629821)" >
@@ -214,8 +221,8 @@ export default function AboutUs(props) {
 							</div>
 						</div>
 						<div className={`col ${aboutUsVisibility ? "furry-feline-animation" : ""}`}>
-							<div className="d-flex flex-row">
-								<div className="furry-feline-svg">
+							<div className="d-flex flex-row pb-4">
+								<div className="furry-feline-svg pe-3">
 									<svg width="90" height="90" viewBox="0 0 90 90" id="svg22" xmlns="http://www.w3.org/2000/svg">
 									  <defs id="defs26" />
 									  <g id="g872" transform="matrix(0.2338478,0,0,0.2338478,-68.53897,5.0030052)">

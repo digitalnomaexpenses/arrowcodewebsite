@@ -1,56 +1,33 @@
 import React from "react"
 
+import JSON_FooterContent from "../Additional_Components/JSONs/JSON_FooterContent.js"
+import FooterContentDesktopItem from "../Additional_Components/FooterContentDesktopItem.js"
+
 export default function Footer(props) {
+
+	let FooterContentElement = JSON_FooterContent.map(eachElement => (
+			<FooterContentDesktopItem
+				key={eachElement.id}
+				logo_title={eachElement.logo_title}
+				text={eachElement.text}
+				menu_1={eachElement.menu_1}
+				menu_2={eachElement.menu_2}
+				menu_3={eachElement.menu_3}
+				menu_4={eachElement.menu_4}
+				menu_5={eachElement.menu_5}
+				title={eachElement.title}
+				timings_1={eachElement.timings_1}
+				timings_2={eachElement.timings_2}
+				timings_3={eachElement.timings_3}
+				email={eachElement.email}
+				fDarkMode={props.darkMode}
+			/>
+		))
+
 	return(
 		<div className="container pt-5 pb-5">
-			<div className={props.darkMode ? "footer d-flex flex-row p-5 dark": "footer d-flex flex-row p-5 light"}>
-				<div className="col-4">
-					<div className="d-flex flex-column">
-						<div className="footer-heading pb-4 pe-5">Arrow Code Developers</div>
-						<div className="footer-text pe-5 pb-3">We help you become digitally savvy. Get online and grow your business</div>
-						<div className="d-flex flex-row pt-xl-4">
-							<img 
-								src={props.darkMode ? 
-									"../SVGs/Footer/facebook-icon-dark.svg" : "../SVGs/Footer/facebook-icon.svg"} 
-								className="img-fluid pe-lg-2 pe-3"/>
-							<img 
-								src={props.darkMode ? 
-									"../SVGs/Footer/linkedin-icon-dark.svg" : "../SVGs/Footer/linkedin-icon.svg"}
-								className="img-fluid pe-lg-2 pe-3"/>
-							<img 
-								src={props.darkMode ? 
-									"../SVGs/Footer/twitter-icon-dark.svg" : "../SVGs/Footer/twitter-icon.svg"}
-								className="img-fluid pe-lg-2 pe-3"/>
-							<img 
-								src={props.darkMode ? 
-									"../SVGs/Footer/instagram-icon-dark.svg" : "../SVGs/Footer/instagram-icon.svg"}
-								className="img-fluid pe-lg-2 pe-3"/>
-						</div>
-					</div>
-				</div>
-				<div className="col">
-					<ul className="footer-nav-list">
-						<li className="pb-4">Home</li>
-						<li className="pb-4">About Us</li>
-						<li className="pb-4">Privacy Policy</li>
-						<li>Get in Touch</li>
-					</ul>
-				</div>
-				<div className="col-5">
-					<div d-flex flex-column>
-						<div className="footer-heading pb-4">Arrow Code Developers</div>
-						<div className="footer-text">Working Hours:</div>
-						<div className="footer-text">Mon - Fri</div>
-						<div className="footer-text pb-4">10 AM - 5 PM IST</div>
-						<div className="d-flex flex-row">
-							<img 
-								src={props.darkMode ? 
-									"../SVGs/Footer/email-icon-dark.svg" : "../SVGs/Footer/email-icon.svg"} 
-								className="img-fluid pe-2"/>
-							<div className="footer-text">inquiries@arrowcode.com</div>
-						</div>
-					</div>
-				</div>
+			<div className={` footer d-flex flex-row p-5 ${props.darkMode ? "dark": "light"}`}>
+				{FooterContentElement}
 			</div>
 		</div>
 	)

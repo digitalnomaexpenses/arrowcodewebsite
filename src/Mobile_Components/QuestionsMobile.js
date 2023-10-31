@@ -1,9 +1,37 @@
 import React from "react"
 import { useInView } from 'react-intersection-observer'
 
+import JSON_qContent from "../Additional_Components/JSONs/JSON_qContent.js"
+import QuestionsMobContentItem from "../Additional_Components/QuestionsMobContentItem.js"
+
+import JSON_qAccordionContent from "../Additional_Components/JSONs/JSON_qAccordionContent.js"
+import QuestionsAccordionMobItem from "../Additional_Components/QuestionsAccordionMobItem.js"
+
 export default function QuestionsMobile(props) {
 
 	const { ref: quesMobRef, inView: quesMobVisibility } = useInView();
+
+	let qMobContentElement = JSON_qContent.map(eachElement => (
+			<QuestionsMobContentItem
+				title={eachElement.title}
+				title_span={eachElement.title_span}
+				text={eachElement.text}
+				button_text={eachElement.button_text}
+				isVisible = {quesMobVisibility}
+
+			/>
+		))
+
+	let qAccMobElements =  JSON_qAccordionContent.map(eachElement => (
+			<QuestionsAccordionMobItem 
+				key={eachElement.id}
+				id={eachElement.id}
+				isVisible={quesMobVisibility}
+				qMobAccDarkMode={props.darkMode}
+				question={eachElement.question}
+				answer={eachElement.answer}
+			/>
+		))
 
 	return(
 		<div 
@@ -12,14 +40,7 @@ export default function QuestionsMobile(props) {
 		>
 			<div className={props.darkMode ? "questionsMobile dark": "questionsMobile light"}>
 				<div className="d-flex flex-column pt-5 pb-5 ps-4 pe-4">
-					<div 
-						className={`questions-heading-mobile pb-3 text-center ${quesMobVisibility ? "ques-head-mob-animation" : ""}`}>
-						Have <span>Questions?</span>
-					</div>
-					<div className={`questions-text-mobile pb-4 text-center ${quesMobVisibility ? "ques-text-mob-animation" : ""}`}>Have a question that we haven’t covered yet?</div>
-					<div className="text-center pt-3 pb-3">
-						<button className={`questions-buttonMobile ${quesMobVisibility ? "ques-button-mob-animation" : ""}`} href="#">Contact Us</button>
-					</div>
+					{qMobContentElement}
 					<div className="questions-svg-div text-center ps-3 pb-3">
 						<svg width="25%" height="25%" viewBox="0 0 151 174" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g id="question_mark_group" className={quesMobVisibility ? "move-up-animation-2" : ""}>

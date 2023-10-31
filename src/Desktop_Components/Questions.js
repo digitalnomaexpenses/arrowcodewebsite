@@ -1,9 +1,38 @@
 import React from "react"
 import { useInView } from 'react-intersection-observer'
 
+import JSON_qContent from "../Additional_Components/JSONs/JSON_qContent.js"
+import QuestionsDesktopContentItem from "../Additional_Components/QuestionsDesktopContentItem.js"
+
+import JSON_qAccordionContent from "../Additional_Components/JSONs/JSON_qAccordionContent.js"
+import QuestionsAccordionDesktopItem from "../Additional_Components/QuestionsAccordionDesktopItem.js"
+
 export default function Questions(props) {
 
 	const { ref: questionsRef, inView: questionsVisibility } = useInView();
+
+	let qAccordionElements =  JSON_qAccordionContent.map(eachElement => (
+			<QuestionsAccordionDesktopItem 
+				key={eachElement.id}
+				id={eachElement.id}
+				isVisible={questionsVisibility}
+				qDarkMode={props.darkMode}
+				question={eachElement.question}
+				answer={eachElement.answer}
+			/>
+		))
+
+	let qContentElement = JSON_qContent.map(eachElement => (
+			<QuestionsDesktopContentItem 
+				key={eachElement.id}
+				title={eachElement.title}
+				title_span={eachElement.title_span}
+				text={eachElement.text}
+				button_text={eachElement.button_text}
+				isVisible = {questionsVisibility}
+
+			/>
+		))
 
 	return(
 		<div 
@@ -12,17 +41,7 @@ export default function Questions(props) {
 			<div className={`questions d-flex flex-row pt-5 ps-5 pe-5 pb-3 ${props.darkMode ? "dark": "light"}`}>
 				<div className="col-5 pe-4">
 					<div className="d-flex flex-column">
-						<div 
-							className={`questions-heading pb-4 ${questionsVisibility ? "questions-lhs-animation" : ""}`}>
-							Have <span>Questions?</span>
-						</div>
-						<div 
-							className={`questions-text pb-4 ${questionsVisibility ? "questions-lhs-animation" : ""}`}>
-							Have a question that we haven’t covered yet?
-						</div>
-						<div className={`ps-5 pe-5 pt-5 ms-4 ${questionsVisibility ? "questions-button-pulse-animation" : ""}`}>
-							<button className="questions-button-shine" href="#">Contact Us</button>
-						</div>
+						{qContentElement}
 						<div className="questions-svg-div ps-1">
 							<svg width="151" height="174" viewBox="0 0 151 174" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<g id="question_mark_group" className={questionsVisibility ? "move-up-animation-2" : ""}>
@@ -68,109 +87,7 @@ export default function Questions(props) {
 				</div>
 				<div className="col">
 					<div className="accordion accordion-flush" id="accordionFlushExample">
-
-						<div 
-							className=	{
-								`accordion-item 
-								${props.darkMode ? "dark-accordion" : ""} 
-								${questionsVisibility ? "ques-ai-1-animation" : ""}`
-							} 
-							style={{background: props.darkMode ? "#303030" : "rgba(255, 255, 255, 1)"}}>
-							<h2 className="accordion-header">
-							  <button className={props.darkMode ? "accordion-button dark-accordion collapsed" : "accordion-button collapsed"} type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item-1" aria-expanded="false" aria-controls="accordion-item-1">
-							    Is this service pre-paid or post paid?
-							  </button>
-							</h2>
-							<div id="accordion-item-1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-							  <div className="accordion-body">Lorem ipsum dolor sit amet. Qui tenetur rerum in aperiam internos sed possimus error est quibusdam temporibus aut labore voluptate. Et dolor incidunt eum quas fugit eos maiores similique id dolorum reiciendis quo expedita velit ex harum voluptates est sunt vero.</div>
-							</div>
-						</div>
-
-						<div 
-							className=	{
-								`accordion-item 
-								${props.darkMode ? "dark-accordion" : ""} 
-								${questionsVisibility ? "ques-ai-2-animation" : ""}`
-							}
-							style={{background: props.darkMode ? "#303030" : "rgba(255, 255, 255, 1)"}}>
-							<h2 className="accordion-header">
-							  <button className={props.darkMode ? "accordion-button dark-accordion collapsed" : "accordion-button collapsed"} type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item-2" aria-expanded="false" aria-controls="accordion-item-2">
-							    Can I ask you to change anything if I’m unhappy?
-							  </button>
-							</h2>
-							<div id="accordion-item-2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-							  <div className="accordion-body">Lorem ipsum dolor sit amet. Qui tenetur rerum in aperiam internos sed possimus error est quibusdam temporibus aut labore voluptate. Et dolor incidunt eum quas fugit eos maiores similique id dolorum reiciendis quo expedita velit ex harum voluptates est sunt vero.</div>
-							</div>
-						</div>
-
-						<div 
-							className=	{
-								`accordion-item 
-								${props.darkMode ? "dark-accordion" : ""} 
-								${questionsVisibility ? "ques-ai-3-animation" : ""}`
-							} 
-							style={{background: props.darkMode ? "#303030" : "rgba(255, 255, 255, 1)"}}>
-							<h2 className="accordion-header">
-							  <button className={props.darkMode ? "accordion-button dark-accordion collapsed" : "accordion-button collapsed"} type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item-3" aria-expanded="false" aria-controls="accordion-item-3">
-							    What if I fail to pay on time?
-							  </button>
-							</h2>
-							<div id="accordion-item-3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-							  <div className="accordion-body">Lorem ipsum dolor sit amet. Qui tenetur rerum in aperiam internos sed possimus error est quibusdam temporibus aut labore voluptate. Et dolor incidunt eum quas fugit eos maiores similique id dolorum reiciendis quo expedita velit ex harum voluptates est sunt vero.</div>
-							</div>
-						</div>
-
-						<div 
-							className=	{
-								`accordion-item 
-								${props.darkMode ? "dark-accordion" : ""} 
-								${questionsVisibility ? "ques-ai-4-animation" : ""}`
-							}  
-							style={{background: props.darkMode ? "#303030" : "rgba(255, 255, 255, 1)"}}>
-							<h2 className="accordion-header">
-							  <button className={props.darkMode ? "accordion-button dark-accordion collapsed" : "accordion-button collapsed"} type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item-4" aria-expanded="false" aria-controls="accordion-item-4">
-							    Is Web scraping legal in my country?
-							  </button>
-							</h2>
-							<div id="accordion-item-4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-							  <div className="accordion-body">Lorem ipsum dolor sit amet. Qui tenetur rerum in aperiam internos sed possimus error est quibusdam temporibus aut labore voluptate. Et dolor incidunt eum quas fugit eos maiores similique id dolorum reiciendis quo expedita velit ex harum voluptates est sunt vero.</div>
-							</div>
-						</div>
-
-						<div 
-							className=	{
-								`accordion-item 
-								${props.darkMode ? "dark-accordion" : ""} 
-								${questionsVisibility ? "ques-ai-5-animation" : ""}`
-							} 
-							style={{background: props.darkMode ? "#303030" : "rgba(255, 255, 255, 1)"}}>
-							<h2 className="accordion-header">
-							  <button className={props.darkMode ? "accordion-button dark-accordion collapsed" : "accordion-button collapsed"} type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item-5" aria-expanded="false" aria-controls="accordion-item-5">
-							    Do you charge for meetings/calls?
-							  </button>
-							</h2>
-							<div id="accordion-item-5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-							  <div className="accordion-body">Lorem ipsum dolor sit amet. Qui tenetur rerum in aperiam internos sed possimus error est quibusdam temporibus aut labore voluptate. Et dolor incidunt eum quas fugit eos maiores similique id dolorum reiciendis quo expedita velit ex harum voluptates est sunt vero.</div>
-							</div>
-						</div>
-
-						<div 
-							className=	{
-								`accordion-item 
-								${props.darkMode ? "dark-accordion" : ""} 
-								${questionsVisibility ? "ques-ai-6-animation" : ""}`
-							} 
-							style={{background: props.darkMode ? "#303030" : "rgba(255, 255, 255, 1)"}}>
-							<h2 className="accordion-header">
-							  <button className={props.darkMode ? "accordion-button dark-accordion collapsed" : "accordion-button collapsed"} type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item-6" aria-expanded="false" aria-controls="accordion-item-6">
-							    Is there a enterprise plan?
-							  </button>
-							</h2>
-							<div id="accordion-item-6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-							  <div className="accordion-body">Lorem ipsum dolor sit amet. Qui tenetur rerum in aperiam internos sed possimus error est quibusdam temporibus aut labore voluptate. Et dolor incidunt eum quas fugit eos maiores similique id dolorum reiciendis quo expedita velit ex harum voluptates est sunt vero.</div>
-							</div>
-						</div>
-
+						{qAccordionElements}
 					</div>
 				</div>
 			</div>

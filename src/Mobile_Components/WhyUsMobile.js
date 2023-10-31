@@ -1,9 +1,27 @@
 import React from "react"
 import { useInView } from 'react-intersection-observer'
 
+import JSON_YSContent from "../Additional_Components/JSONs/JSON_YSContent.js"
+import WhyUsMobContentItem from "../Additional_Components/WhyUsMobContentItem.js"
+
 export default function WhyUsMobile(props) {
 
 	const { ref:yUsMRef, inView:yUsMVisibility } = useInView();
+
+	let YSMobContentElement = JSON_YSContent.map(eachElement => (
+			<WhyUsMobContentItem 
+				title={eachElement.title}
+				title_span={eachElement.title_span}
+				p_title_1={eachElement.p_title_1}
+        		p_text_1={eachElement.p_text_1}
+        		p_title_2={eachElement.p_title_2}
+        		p_text_2={eachElement.p_text_2}
+        		p_title_3={eachElement.p_title_3}
+        		p_text_3={eachElement.p_text_3}
+        		ysMobDarkMode={props.darkMode}
+        		isVisible={yUsMVisibility}
+			/>
+		))
 
 	return(
 		<div 
@@ -12,54 +30,7 @@ export default function WhyUsMobile(props) {
 			<div className={`
 					d-flex flex-column why-us-mobile pt-4 ps-4 pe-4 
 					${props.darkMode ? "dark" :"light"}`}>
-				<div className={`
-					why-us-mobile-heading pb-3 text-center
-					${props.darkMode ? "ws-dark-border" : "ws-light-border"}
-					${yUsMVisibility ? "y-us-m-animation-1" : ""}`}>
-					Simplifying <span>Business</span>
-				</div>
-				<div className={`d-flex flex-row pt-3 pb-4 ${yUsMVisibility ? "y-us-m-animation-2" : ""}`}>
-					<div>
-						<img 
-							src={props.darkMode ? 
-								"../SVGs/Why_Us/why-us-arrow-mobile-dark.svg":"../SVGs/Why_Us/why-us-arrow-mobile-light.svg"}/>
-					</div>
-					<div className="d-flex flex-column">
-						<div className="why-us-points-heading-mobile">Personalized Attention</div>
-						<div className="why-us-points-text-mobile text-justify">
-							We give you the attention that your 
-							business deserves and transparent communication at every step.
-						</div>
-					</div>
-				</div>
-				<div className={`d-flex flex-row pb-4 ${yUsMVisibility ? "y-us-m-animation-3" : ""}`}>
-					<div>
-						<img 
-							src={props.darkMode ? 
-								"../SVGs/Why_Us/why-us-arrow-mobile-dark.svg":"../SVGs/Why_Us/why-us-arrow-mobile-light.svg"}/>
-					</div>
-					<div className="d-flex flex-column">
-						<div className="why-us-points-heading-mobile">Competitive Pricing</div>
-						<div className="why-us-points-text-mobile text-justify">
-							As a small business, we know that a penny saved 
-							is a penny earned. Keep it light on your pockets.
-						</div>
-					</div>
-				</div>
-				<div className={`d-flex flex-row pb-4 ${yUsMVisibility ? "y-us-m-animation-4" : ""}`}>
-					<div>
-						<img 
-							src={props.darkMode ? 
-								"../SVGs/Why_Us/why-us-arrow-mobile-dark.svg":"../SVGs/Why_Us/why-us-arrow-mobile-light.svg"}/>
-					</div>
-					<div className="d-flex flex-column">
-						<div className="why-us-points-heading-mobile">On Time Delivery</div>
-						<div className="why-us-points-text-mobile text-justify">
-							We know punctuality is essential in business. 
-							We keep our commitments so you can keep yours
-						</div>
-					</div>
-				</div>
+				{YSMobContentElement}
 			</div>
 		</div>
 	)

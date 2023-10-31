@@ -1,6 +1,17 @@
 import React from "react"
+import JSON_LPContent from "../Additional_Components/JSONs/JSON_LPContent.js"
+import LandingPageMobileItem from "../Additional_Components/LandingPageMobileItem.js"
 
 export default function LandingPageMobile(props) {
+
+	let LPMobElment = JSON_LPContent.map(eachElement => (
+			<LandingPageMobileItem 
+				title={eachElement.title}
+				title_span = {eachElement.title_span}
+				text= {eachElement.text}
+				button_text={eachElement.button_text}
+			/>
+		))
 	return(
 		<div className="container pt-5 vh-100">
 			<div className="d-flex flex-column justify-content-center align-items-center">
@@ -429,14 +440,7 @@ export default function LandingPageMobile(props) {
 						</defs>
 					</svg>
 				</div>
-				<div className="lp-title-mobile pb-3 text-center">Your Vision, <span>Our Code</span></div>
-				<div className="lp-text-mobile ps-5 pe-5 text-center pb-5">
-					Focus on your Business Goals and 
-					leave the tech to us.
-				</div>
-				<div className="text-center pb-5">
-					<button className="lp-buttonMobile" href="#">Let's Get Started</button>
-				</div>
+				{LPMobElment}
 			</div>
 			<div className="d-flex flex-row justify-content-around lp-logos-mobile-light">
 				<img 

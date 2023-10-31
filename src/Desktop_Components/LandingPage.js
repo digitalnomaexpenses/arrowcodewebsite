@@ -1,23 +1,23 @@
 import React from "react"
+import JSON_LPContent from "../Additional_Components/JSONs/JSON_LPContent.js"
+import LPDesktopContentItem from "../Additional_Components/LPDesktopContentItem.js"
 
 export default function LandingPage(props) {
+	let LPContentElement = JSON_LPContent.map(eachElement => (
+			<LPDesktopContentItem 
+				title={eachElement.title}
+				title_span={eachElement.title_span}
+				text={eachElement.text}
+				button_text={eachElement.button_text}
+			/>
+		))
+
 	return (
 		<div className="container pt-5 landing-page vh-100">
 			<div className="d-flex flex-column pt-5">
 				<div className="d-flex flex-row pb-5 justify-content-around align-items-center">
 					<div className="col-6 pt-5 ps-5">
-						<div className="d-flex flex-column lp-title-and-text pt-5 ps-3">
-							<div className="lp-title pb-3">Your Vision, <span>Our Code</span></div>
-							<div className="lp-text">
-								Focus on your Business Goals and 
-								leave the tech to us.
-							</div>
-							<div className="col pt-4">
-								<div className="pt-5">
-									<button className="lp-button-shine" href="#">Let’s get Started</button>
-								</div>
-							</div>
-						</div>
+						{LPContentElement}
 					</div>
 					<div className="col-5 pe-5">
 						<div className="landing-page-svg-div">

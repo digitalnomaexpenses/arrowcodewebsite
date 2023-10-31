@@ -1,45 +1,53 @@
 import React from "react"
-import ServicesData from "../Additional_Components/ServicesData.js"
-import ServicesDataTwo from "../Additional_Components/ServicesDataTwo.js"
+import JSON_ServicesData from "../Additional_Components/JSONs/JSON_ServicesData.js" 
+import JSON_ServicesDataTwo from "../Additional_Components/JSONs/JSON_ServicesDataTwo.js"
 import ServicesItemMobile from "../Mobile_Components/ServicesItemMobile"
+
+import JSON_ServicesContent from "../Additional_Components/JSONs/JSON_ServicesContent.js" 
+import ServicesContentMobItem from "../Additional_Components/ServicesContentMobItem.js"
+
 import { useInView } from 'react-intersection-observer'
 
 export default function ServicesMobile() {
-	let servicesElementsMobile= ServicesData.map(eachElement => (
-		<ServicesItemMobile 
-			key={eachElement.id}
-			id={eachElement.id}
-			number={eachElement.number}
-			title = {eachElement.title}
-			desc = {eachElement.desc}
-		/>
-		))
-
-	let servicesElementsTwoMobile = ServicesDataTwo.map(eachElement => (
-		<ServicesItemMobile 
-			key={eachElement.id}
-			id={eachElement.id}
-			number={eachElement.number}
-			title = {eachElement.title}
-			desc = {eachElement.desc}
-		/>
-		))
 
 	const { ref: sMobRef, inView: sMobVisibility } = useInView();
+
+	let servicesElementsMobile= JSON_ServicesData.map(eachElement => (
+		<ServicesItemMobile 
+			key={eachElement.id}
+			id={eachElement.id}
+			number={eachElement.number}
+			title = {eachElement.title}
+			desc = {eachElement.desc}
+		/>
+		))
+
+	let servicesElementsTwoMobile = JSON_ServicesDataTwo.map(eachElement => (
+		<ServicesItemMobile 
+			key={eachElement.id}
+			id={eachElement.id}
+			number={eachElement.number}
+			title = {eachElement.title}
+			desc = {eachElement.desc}
+		/>
+		))
+
+	let servMobContentElement = JSON_ServicesContent.map(eachElement => (
+			<ServicesContentMobItem 
+				title={eachElement.title}
+				title_span={eachElement.title_span}
+				text={eachElement.text}
+				isVisible={sMobVisibility}
+			/>
+		))
+	
 
 	return(
 		<div 
 			className='container ps-3 pe-3'
 			ref={sMobRef}>
 			<div className="d-flex flex-column pt-5 justify-content-center align-items-center">
-				<div 
-					className={`services-heading-mobile pb-4 ${sMobVisibility ? "s-mob-animation-1" : ""}`}>
-					Customized <span>Solutions</span>
-				</div>
-				<div className={`services-text-mobile text-center ${sMobVisibility ? "s-mob-animation-2" : ""}`}>
-					One size doesn’t fit all. We customize solutions 
-					as per your needs. Explore the plethora of services we offer.
-				</div>
+				{servMobContentElement}
 				<hr className={`services-line ${sMobVisibility ? "s-mob-animation-3" : ""}`}/>
 				<div className={`services-svg-div ${sMobVisibility ? "s-mob-animation-4" : ""}`}>
 					<svg id="svg2" width="175%" height="175%" viewBox="0 0 1535 550" xmlns="http://www.w3.org/2000/svg">
