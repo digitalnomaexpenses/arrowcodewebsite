@@ -5,6 +5,8 @@ import LPDesktopContentItem from "../Additional_Components/LPDesktopContentItem.
 export default function LandingPage(props) {
 	let LPContentElement = JSON_LPContent.map(eachElement => (
 			<LPDesktopContentItem 
+				key={eachElement.id}
+				id={eachElement.id}
 				title={eachElement.title}
 				title_span={eachElement.title_span}
 				text={eachElement.text}

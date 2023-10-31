@@ -439,7 +439,7 @@
 }
 
 .service_item_10-mob-animation {
-  animation: service_item_10-animation 3s ease-in-out;
+  animation: service_item_10-animation 2s ease-in-out;
   transform-box: fill-box;
   transform-origin: center;
 }

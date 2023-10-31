@@ -6,7 +6,7 @@ export default function QuestionsAccordionDesktopItem(qprops) {
 			className=	{
 				`accordion-item 
 				${qprops.qDarkMode ? "dark-accordion" : ""} 
-				${qprops.isVisible ? "ques-ai-1-animation" : ""}`
+				${qprops.isVisible ? `${qprops.id}_animation` : ""}`
 			} 
 			style={{background: qprops.qDarkMode ? "#303030" : "rgba(255, 255, 255, 1)"}}>
 			<h2 className="accordion-header">

@@ -4,12 +4,15 @@ import { useInView } from 'react-intersection-observer'
 import JSON_YSContent from "../Additional_Components/JSONs/JSON_YSContent.js"
 import WhyUsMobContentItem from "../Additional_Components/WhyUsMobContentItem.js"
 
+
 export default function WhyUsMobile(props) {
 
 	const { ref:yUsMRef, inView:yUsMVisibility } = useInView();
 
 	let YSMobContentElement = JSON_YSContent.map(eachElement => (
 			<WhyUsMobContentItem 
+				key={eachElement.id}
+				id={eachElement.id}
 				title={eachElement.title}
 				title_span={eachElement.title_span}
 				p_title_1={eachElement.p_title_1}

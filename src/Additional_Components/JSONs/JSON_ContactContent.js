@@ -1,5 +1,6 @@
 export default [
     {
+        id:"contact_1",
         title: "Let's Work ",
         title_span: "Together",
         text: "We're thrilled that you're considering us for your web development needs. Whether you have a project in mind, questions about our services",

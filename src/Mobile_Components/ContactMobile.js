@@ -12,7 +12,8 @@ export default function ContactMobile(props) {
 
 	let ContactMobContentElement = JSON_ContactContent.map(eachElement => (
 			<ContactContentMobItem
-				key={eachElement.title}
+				key={eachElement.id}
+				id={eachElement.id}
 				title={eachElement.title}
 				title_span={eachElement.title_span}
 				text={eachElement.text}

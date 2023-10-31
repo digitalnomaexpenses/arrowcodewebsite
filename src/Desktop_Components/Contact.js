@@ -14,7 +14,8 @@ export default function Contact(props) {
 
  	let ContactContentElement = JSON_ContactContent.map(eachElement => (
 			<ContactContentDesktopItem
-				key={eachElement.title}
+				key={eachElement.id}
+				id={eachElement.id}
 				title={eachElement.title}
 				title_span={eachElement.title_span}
 				text={eachElement.text}

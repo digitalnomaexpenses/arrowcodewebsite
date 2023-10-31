@@ -8,6 +8,7 @@ export default function Footer(props) {
 	let FooterContentElement = JSON_FooterContent.map(eachElement => (
 			<FooterContentDesktopItem
 				key={eachElement.id}
+				id={eachElement.id}
 				logo_title={eachElement.logo_title}
 				text={eachElement.text}
 				menu_1={eachElement.menu_1}

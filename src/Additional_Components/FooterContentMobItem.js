@@ -28,7 +28,7 @@ export default function FooterContentMobItem(fmobprops) {
 			<div className="footer-nav-list-mobile pb-2">{fmobprops.menu_3}</div>
 			<div className="footer-nav-list-mobile pb-4">{fmobprops.menu_4}</div>
 			<div className="footer-nav-list-mobile pb-4">{fmobprops.menu_5}</div>
-			<div className="footer-headinng-mobile pb-2 pt-1">{fmobprops.title}</div>
+			<div className="footer-heading-mobile pb-2 pt-1">{fmobprops.title}</div>
 			<div className="footer-text-mobile pb-1 pe-5">{fmobprops.timings_1}</div>
 			<div className="footer-text-mobile">{fmobprops.timings_2}</div>
 			<div className="footer-text-mobile pb-3">{fmobprops.timings_3}</div>

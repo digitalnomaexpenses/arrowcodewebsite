@@ -6,7 +6,7 @@ export default function QuestionsAccordionMobItem(qmobaccprops) {
 			className=	{
 				`accordion-item 
 				${qmobaccprops.qMobAccDarkMode ? "dark-accordion" : ""} 
-				${qmobaccprops.isVisible ? "ques-ai-m-1-animation" : ""}`
+				${qmobaccprops.isVisible ? `${qmobaccprops.id}_m_animation` : ""}`
 			} 
 			style={{background: qmobaccprops.qMobAccDarkMode ? "#303030" : "rgba(255, 255, 255, 1)"}}>
 			<h2 className="accordion-header">

@@ -8,6 +8,7 @@ export default function FooterMobile(props) {
 	let FooterMobContentElement = JSON_FooterContent.map(eachElement => (
 			<FooterContentMobItem
 				key={eachElement.id}
+				id={eachElement.id}
 				logo_title={eachElement.logo_title}
 				text={eachElement.text}
 				menu_1={eachElement.menu_1}

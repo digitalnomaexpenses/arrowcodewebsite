@@ -8,6 +8,8 @@ import Questions from "./Desktop_Components/Questions"
 import Contact from "./Desktop_Components/Contact"
 import AboutUs from "./Desktop_Components/AboutUs"
 import Footer from "./Desktop_Components/Footer"
+import TermsAndConditions from "./Desktop_Components/TermsAndConditions.js"
+import PrivacyPolicy from "./Desktop_Components/PrivacyPolicy.js"
 
 
 import LandingPageMobile from "./Mobile_Components/LandingPageMobile"
@@ -32,7 +34,7 @@ function App() {
   //To render either the desktop component or mobile component end
 
   //Dark mode or light mode start
-  const [darkMode, setDarkMode] = React.useState(false)
+  const [darkMode, setDarkMode] = React.useState(true)
 
   function toggleDarkMode() {
         setDarkMode(prevMode => !prevMode)}
@@ -104,6 +106,15 @@ function App() {
                                 darkMode={darkMode} 
                                 toggleDarkMode={toggleDarkMode}
                                 />} 
+      <TermsAndConditions 
+                                darkMode={darkMode} 
+                                toggleDarkMode={toggleDarkMode}
+                                />
+      <PrivacyPolicy 
+                                darkMode={darkMode} 
+                                toggleDarkMode={toggleDarkMode}
+                                />
+
     </div>
 
   );

@@ -6,6 +6,8 @@ export default function LandingPageMobile(props) {
 
 	let LPMobElment = JSON_LPContent.map(eachElement => (
 			<LandingPageMobileItem 
+				key={eachElement.id}
+				id={eachElement.id}
 				title={eachElement.title}
 				title_span = {eachElement.title_span}
 				text= {eachElement.text}

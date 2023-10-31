@@ -1,4 +1,5 @@
 import React from "react"
+import WhyUsSVG from "../SVGs/WhyUsSVG.js"
 
 export default function WhyUsMobContentItem(ysmobprops) {
 	return(
@@ -9,6 +10,7 @@ export default function WhyUsMobContentItem(ysmobprops) {
 					${ysmobprops.isVisible ? "y-us-m-animation-1" : ""}`}>
 					{ysmobprops.title}<span>{ysmobprops.title_span}</span>
 				</div>
+				<WhyUsSVG />
 				<div className={`d-flex flex-row pt-3 pb-4 ${ysmobprops.isVisible ? "y-us-m-animation-2" : ""}`}>
 					<div>
 						<img 
