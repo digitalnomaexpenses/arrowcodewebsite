@@ -3,7 +3,9 @@ import React from "react"
 export default function FooterContentMobItem(fmobprops) {
 	return(
 		<>
-			<div className="footer-heading-mobile pb-2 pt-2">{fmobprops.logo_title}</div>
+			<div className="footer-heading-mobile pb-2 pt-2">
+				<img className="img-fluid" src={fmobprops.fMobDarkMode? "./SVGs/logo-7-dark-mode.svg" : "./SVGs/logo-7.svg"}/>
+			</div>
 			<div className="footer-text-mobile">{fmobprops.text}</div>
 			<div className="d-flex flex-row pt-2">
 				<img 

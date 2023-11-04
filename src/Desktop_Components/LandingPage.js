@@ -15,7 +15,7 @@ export default function LandingPage(props) {
 		))
 
 	return (
-		<div className="container pt-5 landing-page vh-100">
+		<div className="container pt-5 landing-page">
 			<div className="d-flex flex-column pt-5">
 				<div className="d-flex flex-row pb-5 justify-content-around align-items-center">
 					<div className="col-6 pt-5 ps-5">

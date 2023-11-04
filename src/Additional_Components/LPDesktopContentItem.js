@@ -7,7 +7,7 @@ export default function LandingPageDesktopItem(props) {
 				<div className="lp-text">{props.text}</div>
 				<div className="col pt-4">
 					<div className="pt-5">
-						<button className="lp-button-shine" href="#">{props.button_text}</button>
+						<button className="lp-button-shine">{props.button_text}</button>
 					</div>
 				</div>
 			</div>

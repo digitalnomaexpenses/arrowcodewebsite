@@ -1,5 +1,5 @@
 .laptop-container > img {
-    width: 100%;
+    width: 95%;
 }
 .made-with-icons {
     height: 2.5rem;
@@ -9,8 +9,40 @@
     display: flex;
     justify-content: space-between;
 }
+
 .work-title {
     color: var(--accent);
     font-size: 1.5rem;
     font-weight: bolder;
+}
+
+.carousel-control-prev, 
+.carousel-control-next {
+    filter: invert(100%);
+    width: 4%;
+    transition: transform 100ms ease-in-out;
+}
+
+.carousel-control-prev:hover, 
+.carousel-control-next:hover {
+    transform: scale(1.2);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .work-description {
+        font-size: 0.8rem;
+    }
+
+    .work-title {
+        font-size: 1rem;
+    }
+
+    .image-container-mobile img {
+    }
+
+    .laptop-container > img {
+    width: 100%;
+}
+
 }

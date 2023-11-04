@@ -5,7 +5,9 @@ export default function FooterContentDesktopItem(fprops) {
 		<>
 			<div className="col-4">
 				<div className="d-flex flex-column">
-					<div className="footer-heading pb-4 pe-5">{fprops.logo_title}</div>
+					<div className="footer-heading pb-4 pe-5">
+						<img className="img-fluid" src={fprops.fDarkMode? "./SVGs/logo-7-dark-mode.svg" : "./SVGs/logo-7.svg"}/>
+					</div>
 					<div className="footer-text pe-5 pb-3">{fprops.text}</div>
 					<div className="d-flex flex-row pt-xl-4">
 						<img 

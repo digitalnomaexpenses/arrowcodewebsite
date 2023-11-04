@@ -38,7 +38,9 @@ export default function Navbar(props) {
 			id="navbar" 
 			className={props.darkMode? "navbar navbar-dark navbar-expand-lg ps-4": "navbar navbar-expand-lg ps-4"} 
 			style={props.darkMode ? navbarStyleDark : navbarStyle}>
-	    <a id="navbar-brand" className="navbar-brand ps-md-4">Arrow Code</a>
+	    <a id="navbar-brand" className="navbar-brand">
+	    	<img src={props.darkMode? "./SVGs/logo-7-dark-mode.svg" : "./SVGs/logo-7.svg"} className="img-fluid"/>
+	    </a>
 	      <button 
 	        className={props.darkMode ? "navbar-toggler dark-navbar-toggler me-3" : "navbar-toggler me-3" }
 	        type="button" 

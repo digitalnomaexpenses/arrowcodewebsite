@@ -34,7 +34,7 @@ function App() {
   //To render either the desktop component or mobile component end
 
   //Dark mode or light mode start
-  const [darkMode, setDarkMode] = React.useState(true)
+  const [darkMode, setDarkMode] = React.useState(false)
 
   function toggleDarkMode() {
         setDarkMode(prevMode => !prevMode)}
@@ -77,8 +77,11 @@ function App() {
                                 toggleDarkMode={toggleDarkMode}
                                 />}  
 
-      {windowWidth > 768 && <Portfolio/>}  
-      {windowWidth <= 768 && <Portfolio/>} 
+      <Portfolio 
+        darkMode={darkMode} 
+        toggleDarkMode={toggleDarkMode}
+        portWindowWidth={windowWidth}/>  
+
 
       {windowWidth > 992 && <Contact 
                                 darkMode={darkMode} 
@@ -106,14 +109,6 @@ function App() {
                                 darkMode={darkMode} 
                                 toggleDarkMode={toggleDarkMode}
                                 />} 
-      <TermsAndConditions 
-                                darkMode={darkMode} 
-                                toggleDarkMode={toggleDarkMode}
-                                />
-      <PrivacyPolicy 
-                                darkMode={darkMode} 
-                                toggleDarkMode={toggleDarkMode}
-                                />
 
     </div>
 

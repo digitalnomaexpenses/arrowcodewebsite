@@ -15,7 +15,7 @@ export default function LandingPageMobile(props) {
 			/>
 		))
 	return(
-		<div className="container pt-5 vh-100">
+		<div className="container pt-5">
 			<div className="d-flex flex-column justify-content-center align-items-center">
 				<div className="landing-page-svg-div">
 					<svg width="100%" height="100%" viewBox="0 0 492 360" fill="none" xmlns="http://www.w3.org/2000/svg">

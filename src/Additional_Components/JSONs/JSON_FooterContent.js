@@ -1,7 +1,6 @@
 export default [
     {
         id:"footer_1",
-        logo_title: "Arrow Code Developers",
         text: "We help you become digitally savvy. Get online and grow your business",
         menu_1:"Home",
         menu_2:"About Us",
