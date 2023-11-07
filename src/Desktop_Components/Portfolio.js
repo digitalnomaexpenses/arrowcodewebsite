@@ -2,7 +2,8 @@ import React from "react"
 
 export default function Portfolio(portprops) {
 	return(
-		<div className="container">
+		<section className="container" id="portfolio">
+			<h3 className="section-heading text-center pt-5">Featured <span>Projects</span></h3>
 			<div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
 		        <div className="carousel-inner">
 		            <div className="carousel-item active ps-5 pe-5">
@@ -12,9 +13,9 @@ export default function Portfolio(portprops) {
 		                            <img src = "laptop.png"/>
 		                        </div>
 		                        <div className="col-lg-4 col-md-10 col-12">
-		                            <p className="work-title">Expense App</p>
-		                            <p className="work-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-		                            <p className="work-description">Made With</p>
+		                            <h4 className="section-heading pb-3">Expense App</h4>
+		                            <p className="section-text pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+		                            <p className="section-text">Made With</p>
 		                            <div className="image-container col-12">
 		                                <img 
 		                                	src={`../SVGs/Landing_Page/aws-${portprops.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
@@ -37,9 +38,9 @@ export default function Portfolio(portprops) {
 		                            <img src = "laptop.png"/>
 		                        </div>
 		                        <div className="col-lg-4 col-md-10 col-12">
-		                            <p className="work-title">Expense App 2</p>
-		                            <p className="work-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-		                            <p className="work-description">Made With</p>
+		                            <h4 className="section-heading pb-3">Expense App 2</h4>
+		                            <p className="section-text pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+		                            <p className="section-text">Made With</p>
 		                            
 		                            <div className="image-container col-12">
 		                                <img 
@@ -63,9 +64,9 @@ export default function Portfolio(portprops) {
 		                            <img src = "laptop.png"/>
 		                        </div>
 		                        <div className="col-lg-4 col-md-10 col-12">
-		                            <p className="work-title">Expense App 3</p>
-		                            <p className="work-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-		                            <p className="work-description">Made With</p>
+		                            <h4 className="section-heading pb-3">Expense App 3</h4>
+		                            <p className="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+		                            <p className="section-text pb-4">Made With</p>
 		                            <div className="image-container col-12">
 		                                <img 
 		                                	src={`../SVGs/Landing_Page/aws-${portprops.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
@@ -92,7 +93,6 @@ export default function Portfolio(portprops) {
 		            <span className="visually-hidden">Next</span>
 		        </a>
 		    </div>
-
-		</div>
+		</section>
 	)
 }

@@ -15,28 +15,6 @@
 }
 
 
-.about-us-heading {
-	font-size: 1.5rem;
-	font-weight: bolder;
-}
-
-.about-us-heading-mobile {
-	font-size: 1.2rem;
-	font-weight: bolder;
-}
-
-.about-us-heading span, .about-us-heading-mobile span {
-	color: var(--dark-peach);
-}
-
-.about-us-text {
-	font-size: 1.2rem;
-}
-
-.about-us-text-mobile {
-	font-size: 0.85rem;
-}
-
 .about-us-highlight-number {
 	font-weight: bolder;
 	font-size: 1.2rem;
@@ -298,14 +276,6 @@
 /*About us mobile animation end*/
 
 @media only screen and (max-width: 992px) and (min-width: 768px) {
-
-	.about-us-heading{
-		font-size: 1.3rem;
-	}
-
-	.about-us-text {
-		font-size: 1rem;
-	}
 
 	.about-us-highlight-text {
 		font-size: 0.8rem;

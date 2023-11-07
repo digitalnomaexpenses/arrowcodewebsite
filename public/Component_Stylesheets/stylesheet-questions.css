@@ -43,29 +43,6 @@ button.dark-accordion:focus {
 	border-radius: 40px;
 }
 
-.questions-heading {
-	font-size: 1.5rem;
-	font-weight: bolder;
-}
-
-.questions-heading-mobile{
-	font-size: 1.2rem;
-	font-weight: bolder;
-}
-
-.questions-heading span,
-.questions-heading-mobile span {
-	color: var(--dark-peach);
-}
-
-.questions-text {
-	font-size: 1.2rem;
-}
-
-.questions-text-mobile{
-	font-size: 0.85rem;
-}
-
 .questions-button-shine {
 	width: 150px;
 	height: 50px;
@@ -593,14 +570,6 @@ button.accordion-button:focus {
 
 @media only screen and (max-width: 992px) and (min-width: 768px) {
 
-	.questions-heading {
-		font-size: 1.3rem;
-	}
-
-	.questions-text {
-		font-size: 1rem;
-	}
-
 	button.accordion-button {
 		font-size: 0.9rem;
 		height: 3rem;
@@ -614,6 +583,19 @@ button.accordion-button:focus {
 		width: 7rem;
 		height: 2.6rem;
 	}
+
+	.questions-svg {
+		width: 50%;
+		height: 50%;
+	}
+
 }	
+
+@media only screen and (max-width: 768px) {
+	.questions-svg {
+		width: 20%;
+		height: 20%;
+	}
+}
 
 

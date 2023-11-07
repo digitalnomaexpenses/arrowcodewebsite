@@ -27,20 +27,21 @@ export default function WhyUs(props) {
 		))
 
 	return(
-		<div 
+		<section 
 			className="container pt-5"
-			ref={whyUsRef}>
+			ref={whyUsRef}
+			id="why-us">
 			<div className={`d-flex flex-row why-us pt-5 ps-4 pb-5 ${props.darkMode? "dark" : "light"}`}>
 				<div className={`col ps-lg-4 ${ whyUsVisibility ? "why-us-lhs-animation" : ""}`}>
 					<div className="col-lg-9 col-md-11 h-100">
-						<div className={props.darkMode ? "d-flex flex-column why-us-inner-card-dark ps-3 pt-3": "d-flex flex-column why-us-inner-card ps-3 pt-3"}>
-							<div className="why-us-inner-card-upper-heading pb-2">Welcome To</div>
-							<div className="why-us-inner-card-heading pe-5">
+						<div className={`d-flex flex-column ps-3 pt-3 ${props.darkMode ? " why-us-inner-card-dark": "why-us-inner-card"}`}>
+							<small className="why-us-inner-card-upper-heading pb-2">Welcome To</small>
+							<p className="section-text pe-5">
 								The digital freedom passport
-							</div>
-							<div className="why-us-inner-card-heading pe-5 pb-2">
+							</p>
+							<p className="section-text pe-5 pb-2">
 								for your business
-							</div>
+							</p>
 							<div className="whyUs3dParentDiv">
 								<WhyUsSVG />
 							</div>
@@ -51,6 +52,6 @@ export default function WhyUs(props) {
 					{YSContentElement}
 				</div>
 			</div>
-		</div>
+		</section>
 	)
 }

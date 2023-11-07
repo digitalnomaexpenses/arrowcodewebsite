@@ -28,7 +28,7 @@ export default function Form(props) {
 	return(
 			<div className="d-flex flex-column">
 				<form onSubmit={handleSubmit} className={props.formDarkMode ? "form dark-form": "form light-form"}>
-					<h3 className="form-title text-center pb-3 pt-4">Contact Us</h3>
+					<h4 className="form-title text-center pb-3 pt-4">Contact Us</h4>
 					<div className="container ps-5 pe-5">
 						<label htmlFor="formName" className="form-label"> Your Name/Company Name <span>*</span></label>
 						<input 

@@ -20,21 +20,6 @@
   color: var(--card-background);
 }
 
-
-.pp-heading {
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-.pp-points-heading {
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.pp-points-text {
-  font-size: 0.9rem;
-  text-align: justify;
-}
 p.pp-points-text {
   margin-bottom: 0 !important;
 }
@@ -42,19 +27,4 @@ p.pp-points-text {
 .pp-update {
   font-size: 0.7rem;
   font-weight: bold;
-}
-
-
-@media only screen and (max-width: 768px){
-  .pp-heading {
-    font-size: 1.2rem;
-  }
-
-  .pp-points-heading {
-    font-size: 0.9rem;
-  }
-
-  .pp-points-text {
-    font-size: 0.8rem;
-  }
 }

@@ -4,9 +4,9 @@ import React from "react"
 export default function WhyUsDesktopItem(ysprops) {
 	return(
 			<div className="d-flex flex-column">
-				<div className={`why-us-heading text-justify pe-5 ${ysprops.isVisible ? "why-us-rhs-animation" : ""}`}>
+				<h3 className={`section-heading text-justify pe-5 ${ysprops.isVisible ? "why-us-rhs-animation" : ""}`}>
 					{ysprops.title}<span>{ysprops.title_span}</span>
-				</div>
+				</h3>
 				<hr 
 					className={`
 						${ysprops.ysDarkMode ? "why-us-line-dark" : "why-us-line-light"} 
@@ -20,8 +20,8 @@ export default function WhyUsDesktopItem(ysprops) {
 							className="img-fluid"/>
 					</div>
 					<div className="d-flex flex-column pe-3">
-						<div className="why-us-points-heading">{ysprops.p_title_1}</div>
-						<div className="why-us-points-text pe-5">{ysprops.p_text_1}</div>
+						<h4 className="why-us-points-heading">{ysprops.p_title_1}</h4>
+						<p className="why-us-points-text pe-5">{ysprops.p_text_1}</p>
 					</div>
 				</div>
 				<div className={`d-flex flex-row pb-5 pe-2 align-items-center
@@ -33,8 +33,8 @@ export default function WhyUsDesktopItem(ysprops) {
 							className="img-fluid"/>
 					</div>
 					<div className="d-flex flex-column pe-3">
-						<div className="why-us-points-heading">{ysprops.p_title_2}</div>
-						<div className="why-us-points-text pe-5">{ysprops.p_text_2}</div>
+						<h4 className="why-us-points-heading">{ysprops.p_title_2}</h4>
+						<p className="why-us-points-text pe-5">{ysprops.p_text_2}</p>
 					</div>
 				</div>
 				<div className={`d-flex flex-row pb-5 pe-2 align-items-center
@@ -46,8 +46,8 @@ export default function WhyUsDesktopItem(ysprops) {
 							className="img-fluid"/>
 					</div>
 					<div className="d-flex flex-column pe-3">
-						<div className="why-us-points-heading">{ysprops.p_title_3}</div>
-						<div className="why-us-points-text pe-5">{ysprops.p_text_3}</div>
+						<h4 className="why-us-points-heading">{ysprops.p_title_3}</h4>
+						<p className="why-us-points-text pe-5">{ysprops.p_text_3}</p>
 					</div>
 				</div>
 			</div>

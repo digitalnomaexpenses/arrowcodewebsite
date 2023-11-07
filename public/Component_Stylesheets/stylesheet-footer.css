@@ -58,6 +58,7 @@
 .footer-nav-list-mobile {
 	font-size: 0.75rem;
 	font-weight: bolder;
+	list-style: none;
 }
 
 @media only screen and (max-width: 992px) and (min-width: 768px) {

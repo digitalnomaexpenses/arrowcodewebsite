@@ -29,23 +29,10 @@
 	border-radius: 40px;
 }
 
-.contact-heading {
-	font-size: 1.5rem;
-	font-weight: bolder;
-}
-
-.contact-heading-mobile {
-	font-size: 1.2rem;
-	font-weight: bolder;
-}
-
-.contact-heading span, .contact-heading-mobile span, .contact-heading-timings span{
+.contact-heading-timings span{
 	color: var(--dark-peach);
 }
 
-.contact-text {
-	font-size: 1.2rem;
-}
 
 .contact-heading-timings{
 	font-size: 1.2rem;
@@ -58,10 +45,6 @@
 
 .contact-text-timings-mobile {
 	font-size: 0.75rem;
-}
-
-.contact-text-mobile {
-	font-size: 0.85rem;
 }
 
 
@@ -325,13 +308,10 @@
 
 @media only screen and (max-width: 992px) and (min-width: 768px) {
 
-	.contact-heading-mobile{
-		font-size: 1.3rem;
+	.contact-heading-timings{
+		font-size: 1.2rem;
 	}
 
-	.contact-text-mobile{
-		font-size: 1rem;
-	}
 
 	.contact-text-timings-mobile {
 		font-size: 0.85rem;

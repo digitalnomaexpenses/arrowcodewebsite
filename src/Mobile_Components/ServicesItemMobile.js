@@ -16,10 +16,10 @@ export default function ServicesItem(props) {
 				aria-controls={props.id}
 				className="d-flex flex-row justify-content-start"
 				role="button">
-					<div className="services-item-number pe-3">{props.number}</div>
-					<div className="w-100">{props.title}</div>
-					<div> &#43;</div>
+					<h4 className="services-item-number pe-3">{props.number}</h4>
+					<h4 className="w-100 services-item-title">{props.title}</h4>
+					<h4 className="services-item-number"> &#43;</h4>
 			</div>
-			<div className="services-list-desc-mobile p-1 collapse" id={props.id}>{props.desc}</div>
+			<p className="services-list-desc-mobile p-1 collapse" id={props.id}>{props.desc}</p>
 		</div>	
 )}

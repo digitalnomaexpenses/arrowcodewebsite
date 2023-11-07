@@ -28,7 +28,7 @@ export default function ContactMobile(props) {
 		))
 	return(
 
-		<div 
+		<section 
 		className=" container pt-5"
 		ref= {contactMobileRef}>
 			<div className={`d-flex flex-column contact-mobile pt-5 pe-4 ps-4 pb-5 ${props.darkMode ? "dark" : "light"}`}>
@@ -40,6 +40,6 @@ export default function ContactMobile(props) {
 				</div>
 				
 			</div>
-		</div>
+		</section>
 	)
 }

@@ -31,9 +31,10 @@ export default function Contact(props) {
 
 	const [formDarkMode, setFormDarkMode] = React.useState(props.darkMode)
 	return(
-		<div 
+		<section 
 		className="container pt-5"
-		ref={contactRef}>
+		ref={contactRef}
+		id="contact">
 			<div className={props.darkMode ? "contact dark" : "contact light"}>
 				<div className="d-flex flex-row p-5">
 					<div className={`col-lg-6 col-5 pt-lg-5 pt-2 ${contactVisibility ? "contact-div-animation" : ""}`}>
@@ -46,6 +47,6 @@ export default function Contact(props) {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	)
 }

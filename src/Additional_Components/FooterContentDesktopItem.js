@@ -8,7 +8,7 @@ export default function FooterContentDesktopItem(fprops) {
 					<div className="footer-heading pb-4 pe-5">
 						<img className="img-fluid" src={fprops.fDarkMode? "./SVGs/logo-7-dark-mode.svg" : "./SVGs/logo-7.svg"}/>
 					</div>
-					<div className="footer-text pe-5 pb-3">{fprops.text}</div>
+					<p className="footer-text pe-5 pb-3">{fprops.text}</p>
 					<div className="d-flex flex-row pt-xl-4">
 						<img 
 							src={fprops.fDarkMode ? 
@@ -40,16 +40,16 @@ export default function FooterContentDesktopItem(fprops) {
 			</div>
 			<div className="col-5">
 				<div d-flex flex-column>
-					<div className="footer-heading pb-4">{fprops.title}</div>
-					<div className="footer-text">{fprops.timings_1}</div>
-					<div className="footer-text">{fprops.timings_2}</div>
-					<div className="footer-text pb-4">{fprops.timings_3}</div>
+					<h4 className="footer-heading pb-4">{fprops.title}</h4>
+					<p className="footer-text">{fprops.timings_1}</p>
+					<p className="footer-text">{fprops.timings_2}</p>
+					<p className="footer-text pb-4">{fprops.timings_3}</p>
 					<div className="d-flex flex-row">
 						<img 
 							src={fprops.fDarkMode ? 
 								"../SVGs/Footer/email-icon-dark.svg" : "../SVGs/Footer/email-icon.svg"} 
 							className="img-fluid pe-2"/>
-						<div className="footer-text">{fprops.email}</div>
+						<p className="footer-text">{fprops.email}</p>
 					</div>
 				</div>
 			</div>

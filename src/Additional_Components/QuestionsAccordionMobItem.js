@@ -9,7 +9,7 @@ export default function QuestionsAccordionMobItem(qmobaccprops) {
 				${qmobaccprops.isVisible ? `${qmobaccprops.id}_m_animation` : ""}`
 			} 
 			style={{background: qmobaccprops.qMobAccDarkMode ? "#303030" : "rgba(255, 255, 255, 1)"}}>
-			<h2 className="accordion-header">
+			<h4 className="accordion-header">
 			  <button 
 			  	className={`accordion-button accordion-button-mobile collapsed ${qmobaccprops.qMobAccDarkMode ? "dark-accordion " : ""}`} 
 			  	type="button" 
@@ -19,9 +19,9 @@ export default function QuestionsAccordionMobItem(qmobaccprops) {
 			  	aria-controls={qmobaccprops.id}>
 			  	{qmobaccprops.question}
 			  </button>
-			</h2>
+			</h4>
 			<div id={qmobaccprops.id} className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-			  <div className="accordion-body accordion-body-mobile text-justify">{qmobaccprops.answer}</div>
+			  <p className="accordion-body accordion-body-mobile text-justify">{qmobaccprops.answer}</p>
 			</div>
 		</div>
 	)

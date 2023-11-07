@@ -1,6 +1,6 @@
 import React from "react"
 import JSON_LPContent from "../Additional_Components/JSONs/JSON_LPContent.js"
-import LandingPageMobileItem from "../Additional_Components/LandingPageMobileItem.js"
+
 
 export default function LandingPageMobile(props) {
 
@@ -15,7 +15,7 @@ export default function LandingPageMobile(props) {
 			/>
 		))
 	return(
-		<div className="container pt-5">
+		<section className="container pt-5">
 			<div className="d-flex flex-column justify-content-center align-items-center">
 				<div className="landing-page-svg-div">
 					<svg width="100%" height="100%" viewBox="0 0 492 360" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -474,6 +474,6 @@ export default function LandingPageMobile(props) {
 					"../SVGs/Landing_Page/python-m-dark-mode.svg" : "../SVGs/Landing_Page/python-m-light-mode.svg"} 
 					className="img-fluid"/>
 			</div>
-		</div>
+		</section>
 	)
 }

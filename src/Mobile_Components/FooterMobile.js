@@ -26,12 +26,12 @@ export default function FooterMobile(props) {
 		))
 
 	return(
-		<div className="container pt-5 pb-5">
+		<footer className="container pt-5 pb-5">
 			<div className={props.darkMode ? "footer-mobile dark": "footer-mobile light"}>
 				<div className="d-flex flex-column p-4">
 					{FooterMobContentElement}
 				</div>
 			</div>
-		</div>
+		</footer>
 	)
 }

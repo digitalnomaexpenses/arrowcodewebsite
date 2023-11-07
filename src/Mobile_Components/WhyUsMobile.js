@@ -27,7 +27,7 @@ export default function WhyUsMobile(props) {
 		))
 
 	return(
-		<div 
+		<section 
 			className="container pt-5"
 			ref={yUsMRef}>
 			<div className={`
@@ -35,6 +35,6 @@ export default function WhyUsMobile(props) {
 					${props.darkMode ? "dark" :"light"}`}>
 				{YSMobContentElement}
 			</div>
-		</div>
+		</section>
 	)
 }

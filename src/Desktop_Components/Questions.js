@@ -37,9 +37,10 @@ export default function Questions(props) {
 		))
 
 	return(
-		<div 
+		<section 
 			className="container pt-5"
-			ref={questionsRef}>
+			ref={questionsRef}
+			id="questions">
 			<div className={`questions d-flex flex-row pt-5 ps-5 pe-5 pb-3 ${props.darkMode ? "dark": "light"}`}>
 				<div className="col-5 pe-4">
 					<div className="d-flex flex-column">
@@ -55,6 +56,6 @@ export default function Questions(props) {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	)
 }

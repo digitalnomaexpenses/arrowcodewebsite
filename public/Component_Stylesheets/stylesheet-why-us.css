@@ -110,7 +110,7 @@
   font-size: 1.2rem;
 }
 
-.whyUs3dParentDiv {
+.why-us-svg-div {
     height: 80%;
 }
 
@@ -307,5 +307,14 @@
 
   .why-us-inner-card-heading{
     font-size: 1rem;
+  } 
+}
+
+@media only screen and (max-width: 768px) {
+  .why-us-svg-div {
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+    border-radius: 40px;
   }
 }

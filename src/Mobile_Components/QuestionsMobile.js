@@ -38,7 +38,7 @@ export default function QuestionsMobile(props) {
 		))
 
 	return(
-		<div 
+		<section
 			className="container pt-5"
 			ref={quesMobRef}
 		>
@@ -46,13 +46,13 @@ export default function QuestionsMobile(props) {
 				<div className="d-flex flex-column pt-5 pb-5 ps-4 pe-4">
 					{qMobContentElement}
 					<div className="questions-svg-div text-center ps-3 pb-3">
-						<QuestionsSVG isVisible={quesMobVisibility}/>
+							<QuestionsSVG isVisible={quesMobVisibility}/>
 					</div>
 					<div className="accordion accordion-flush" id="accordionFlushExample">
 						{qAccMobElements}
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	)
 }

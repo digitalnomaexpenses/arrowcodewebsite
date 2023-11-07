@@ -46,3 +46,20 @@
 .navbar-toggler:focus {
     box-shadow: none !important;
 }
+
+.nav-item, .navbar-brand, .darkMode-toggler-icon {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px){
+    .navbar-brand-div {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .navbar-brand-div {
+        width: 50%;
+    }
+}

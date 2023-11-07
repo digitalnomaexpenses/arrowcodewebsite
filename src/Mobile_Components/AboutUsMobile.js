@@ -12,27 +12,30 @@ export default function AboutUsMobile(props) {
 	const { ref: aboutUsMobileRef, inView: aboutUsMobileVisibility } = useInView();
 
 	return(
-		<div 
+		<section 
 		className="container pt-5 ps-4 pe-4"
 		ref={aboutUsMobileRef}>
 			<div className={`d-flex flex-column ${props.darkMode? "" : ""}`}>
-				<div className={`about-us-heading-mobile pb-4 pt-3 text-center ${aboutUsMobileVisibility ? "about-us-heading-mobile-animation" : ""}`}>About <span>Us</span></div>
+				<h3 
+					className={`section-heading pb-4 pt-3 text-center ${aboutUsMobileVisibility ? "about-us-heading-mobile-animation" : ""}`}>
+					About <span>Us</span>
+				</h3>
 				<div className={aboutUsMobileVisibility ? "about-us-mobile-svg-animation pb-3" : "pb-3"}>
 					<AboutUsSVG isVisible={aboutUsMobileVisibility }/>
 				</div>
-				<div className={`about-us-text-mobile pb-4 ps-2 pe-2 text-center ${aboutUsMobileVisibility ? "about-us-text-mobile-animation" : ""}`}>
+				<p className={`section-text pb-4 ps-2 pe-2 text-center ${aboutUsMobileVisibility ? "about-us-text-mobile-animation" : ""}`}>
 					We’re a small team of independent developers, 
 					product managers, and their feline friends
-				</div>
+				</p>
 				<div className="row row-cols-2">
 						<div className={`col text-center pb-4 ${aboutUsMobileVisibility ? "pm-mobile-animation" : ""}`}>
 							<div className="d-flex flex-column justify-content-center">
 								<div className="project-management-svg">
 									<AboutUsProjectMngtSVG isVisible={aboutUsMobileVisibility}/>
 								</div>
-								<div className="d-flex flex-column justify-content-center">
-									<div className="about-us-highlight-number-mobile">10+ </div>
-									<div className="about-us-highlight-text-mobile">Years of Product Management</div>
+								<div className="d-flex flex-column justify-content-center pt-1">
+									<h4 className="about-us-highlight-number-mobile">10+ </h4>
+									<h4 className="about-us-highlight-text-mobile">Years of Product Management</h4>
 								</div>
 							</div>
 						</div>
@@ -41,9 +44,9 @@ export default function AboutUsMobile(props) {
 								<div className="web-development-svg">
 									<AboutUsWebDevSVG isVisible={aboutUsMobileVisibility}/>
 								</div>
-								<div className="d-flex flex-column justify-content-center">
-									<div className="about-us-highlight-number-mobile">5+</div>
-									<div className="about-us-highlight-text-mobile"> Years of Web Development</div>
+								<div className="d-flex flex-column justify-content-center pt-1">
+									<h4 className="about-us-highlight-number-mobile">5+</h4>
+									<h4 className="about-us-highlight-text-mobile"> Years of Web Development</h4>
 								</div>
 							</div>
 						</div>
@@ -52,9 +55,9 @@ export default function AboutUsMobile(props) {
 								<div className="projects-delivered-svg">
 									<AboutUsProjectsDeliSVG isVisible={aboutUsMobileVisibility}/>
 								</div>
-								<div className="d-flex flex-column justify-content-center">
-									<div className="about-us-highlight-number-mobile">40+ </div>
-									<div className="about-us-highlight-text-mobile">Projects Delivered</div>
+								<div className="d-flex flex-column justify-content-center pt-1">
+									<h4 className="about-us-highlight-number-mobile">40+ </h4>
+									<h4 className="about-us-highlight-text-mobile">Projects Delivered</h4>
 								</div>
 							</div>
 						</div>
@@ -63,14 +66,14 @@ export default function AboutUsMobile(props) {
 								<div className="furry-feline-svg">
 									<AboutUsFurFelSVG isVisible={aboutUsMobileVisibility}/>
 								</div>
-								<div className="d-flex flex-column justify-content-center">
-									<div className="about-us-highlight-number-mobile">2+</div>
-									<div className="about-us-highlight-text-mobile"> Furry Feline Friends</div>
+								<div className="d-flex flex-column justify-content-center pt-1">
+									<h4 className="about-us-highlight-number-mobile">2+</h4>
+									<h4 className="about-us-highlight-text-mobile"> Furry Feline Friends</h4>
 								</div>
 							</div>
 						</div>
 					</div>
 			</div>			
-		</div>
+		</section>
 	)
 }

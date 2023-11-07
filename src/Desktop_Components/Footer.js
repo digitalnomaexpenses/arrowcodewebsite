@@ -26,10 +26,10 @@ export default function Footer(props) {
 		))
 
 	return(
-		<div className="container pt-5 pb-5">
+		<footer className="container pt-5 pb-5" id="footer">
 			<div className={` footer d-flex flex-row p-5 ${props.darkMode ? "dark": "light"}`}>
 				{FooterContentElement}
 			</div>
-		</div>
+		</footer>
 	)
 }

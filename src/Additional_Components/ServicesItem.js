@@ -5,7 +5,7 @@ export default function ServicesItem(props) {
 
 	const { ref: serviceItemsRef, inView: servicesItemVisibility } = useInView();
 
-	return(
+		return(
 		<div 
 			ref={serviceItemsRef}
 			className={`mb-lg-3 pb-2 mb-4 services-list-item ${servicesItemVisibility ? `${props.id}-animation` : ""}`}>
@@ -16,13 +16,10 @@ export default function ServicesItem(props) {
 				aria-controls={props.id}
 				className="d-flex flex-row justify-content-start"
 				role="button">
-				<div className=" pe-2 services-item-number">{props.number}</div>
-				<div className="w-100">{props.title}</div>
-				<div 
-					> 
-					&#43;
-				</div>
+					<h4 className=" pe-2 services-item-number">{props.number}</h4>
+					<h4 className="w-100 services-item-title">{props.title}</h4>
+					<h4 className="services-item-title"> &#43; </h4>
 			</div>
-			<div className="services-list-desc collapse pt-3" id={props.id}>{props.desc}</div>
+			<p className="services-list-desc collapse pt-3" id={props.id}>{props.desc}</p>
 		</div>	
 )}

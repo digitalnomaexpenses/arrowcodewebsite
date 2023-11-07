@@ -15,29 +15,6 @@
   overflow-x: hidden;
 }
 
-.services-heading {
-  font-size: 1.5rem;
-  font-weight: bolder;
-}
-
-.services-heading-mobile {
-  font-size: 1.2rem;
-  font-weight: bolder;
-}
-
-.services-heading span,
-.services-heading-mobile span {
-  color: var(--dark-peach);
-}
-
-.services-text {
-  font-size: 1.2rem;  
-}
-
-.services-text-mobile {
-  font-weight: normal;
-  font-size: 0.85rem;
-}
   
 .services-line {
   width: 90%;
@@ -77,6 +54,12 @@
 .services-item-number {
   color: var(--dark-peach);
   font-weight: bolder;
+  font-size: 1rem;
+}
+
+.services-item-title {
+  font-size: 1rem;
+  margin-bottom: 0%;
 }
 
 /*Services text and div Desktop Animations start*/
@@ -449,14 +432,6 @@
 
 @media only screen and (max-width: 992px) and (min-width: 768px) {
 
-  .services-heading {
-    font-size: 1.3rem;
-  }
-
-  .services-text {
-    font-size: 1rem;
-  }
-
   .services-list-item{
     font-size: 0.9rem;
   }
@@ -464,4 +439,10 @@
   .services-list-desc {
     font-size: 0.75rem;
   }
+
+  .services-item-title, .services-item-number {
+    font-size: 0.9rem;
+  }
+
+
 }

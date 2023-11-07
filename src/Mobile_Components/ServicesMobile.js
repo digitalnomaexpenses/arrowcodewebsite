@@ -47,7 +47,7 @@ export default function ServicesMobile() {
 	
 
 	return(
-		<div 
+		<section 
 			className='container ps-3 pe-3'
 			ref={sMobRef}>
 			<div className="d-flex flex-column pt-5 justify-content-center align-items-center">
@@ -59,6 +59,6 @@ export default function ServicesMobile() {
 				{servicesElementsMobile}
 				{servicesElementsTwoMobile}
 			</div>
-		</div>
+		</section>
 	)
 }

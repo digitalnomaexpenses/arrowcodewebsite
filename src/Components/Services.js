@@ -45,9 +45,10 @@ export default function Services() {
 
 
 	return(
-		<div 
+		<section 
 			className="container pt-5"
-			ref={servicesRef}>
+			ref={servicesRef}
+			id="services">
 			<div className="d-flex flex-row">
 				<div className="col-lg-7 col-8 pt-4 ps-5">
 					{servicesContentElement}
@@ -66,5 +67,5 @@ export default function Services() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	)}

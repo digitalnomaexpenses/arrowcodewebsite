@@ -12,9 +12,7 @@ import AboutUsFurFelSVG from "../SVGs/AboutUsFurFelSVG.js"
 
 export default function AboutUs(props) {
 
-	//intersection observer animation start
 	const { ref: aboutUsRef, inView: aboutUsVisibility } = useInView();
- 	//intersection observer animation end
 
 	let AboutUsContentElement = JSON_AboutUsContent.map(eachElement => (
 			<AboutUsContentDesktopItem
@@ -27,9 +25,10 @@ export default function AboutUs(props) {
 		))
 
 	return(
-		<div 
+		<section 
 		className="container pt-5"
 		ref={aboutUsRef}
+		id="about-us"
 		>
 			<div className="about-us d-flex flex-row">
 				<div className={`col-lg-6 col-7 ps-5 pe-lg-5 pe-2 ${aboutUsVisibility ? "about-us-animation" : ""}`}>
@@ -41,8 +40,8 @@ export default function AboutUs(props) {
 									<AboutUsProjectMngtSVG isVisible={aboutUsVisibility}/>
 								</div>
 								<div className="d-flex flex-column justify-content-center">
-									<div className="about-us-highlight-number">10+ </div>
-									<div className="about-us-highlight-text">Years of Product Management</div>
+									<h4 className="about-us-highlight-number">10+ </h4>
+									<h4 className="about-us-highlight-text">Years of Product Management</h4>
 								</div>
 							</div>
 						</div>
@@ -52,8 +51,8 @@ export default function AboutUs(props) {
 									<AboutUsWebDevSVG isVisible={aboutUsVisibility}/>
 								</div>
 								<div className="d-flex flex-column justify-content-center">
-									<div className="about-us-highlight-number">5+</div>
-									<div className="about-us-highlight-text"> Years of Web Development</div>
+									<h4 className="about-us-highlight-number">5+</h4>
+									<h4 className="about-us-highlight-text"> Years of Web Development</h4>
 								</div>
 							</div>
 						</div>
@@ -63,8 +62,8 @@ export default function AboutUs(props) {
 									<AboutUsProjectsDeliSVG isVisible={aboutUsVisibility}/>
 								</div>
 								<div className="d-flex flex-column justify-content-center">
-									<div className="about-us-highlight-number">40+ </div>
-									<div className="about-us-highlight-text">Projects Delivered</div>
+									<h4 className="about-us-highlight-number">40+ </h4>
+									<h4 className="about-us-highlight-text">Projects Delivered</h4>
 								</div>
 							</div>
 						</div>
@@ -74,8 +73,8 @@ export default function AboutUs(props) {
 									<AboutUsFurFelSVG isVisible={aboutUsVisibility}/>
 								</div>
 								<div className="d-flex flex-column justify-content-center">
-									<div className="about-us-highlight-number">2+</div>
-									<div className="about-us-highlight-text"> Furry Feline Friends</div>
+									<h4 className="about-us-highlight-number">2+</h4>
+									<h4 className="about-us-highlight-text"> Furry Feline Friends</h4>
 								</div>
 							</div>
 						</div>
@@ -87,6 +86,6 @@ export default function AboutUs(props) {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	)
 }

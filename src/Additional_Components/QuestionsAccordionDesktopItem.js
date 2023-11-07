@@ -9,7 +9,7 @@ export default function QuestionsAccordionDesktopItem(qprops) {
 				${qprops.isVisible ? `${qprops.id}_animation` : ""}`
 			} 
 			style={{background: qprops.qDarkMode ? "#303030" : "rgba(255, 255, 255, 1)"}}>
-			<h2 className="accordion-header">
+			<h4 className="accordion-header">
 			  <button 
 			  	className={`accordion-button collapsed ${qprops.qDarkMode ? "dark-accordion" : ""}`} 
 			  	type="button" 
@@ -19,9 +19,9 @@ export default function QuestionsAccordionDesktopItem(qprops) {
 			  	aria-controls={qprops.id}>
 			    {qprops.question}
 			  </button>
-			</h2>
+			</h4>
 			<div id={qprops.id} className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-			  <div className="accordion-body">{qprops.answer}</div>
+			  <p className="accordion-body">{qprops.answer}</p>
 			</div>
 		</div>
 	)
