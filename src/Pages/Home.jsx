@@ -4,11 +4,11 @@ import Navbar from "../Components/Navbar"
 import LandingPage from "../Components/LandingPage"
 import WhyUs from "../Components/WhyUs"
 import Services from "../Components/Services"
-import Portfolio from "../Desktop_Components/Portfolio"
-import Questions from "../Desktop_Components/Questions"
-import Contact from "../Desktop_Components/Contact"
-import AboutUs from "../Desktop_Components/AboutUs"
-import Footer from "../Desktop_Components/Footer"
+import Portfolio from "../Components/Portfolio"
+import Questions from "../Components/Questions"
+import Contact from "../Components/Contact"
+import AboutUs from "../Components/AboutUs"
+import Footer from "../Components/Footer"
 
 
 
@@ -17,7 +17,7 @@ export default function Home(props) {
 
 
 	return(
-		<div className={props.darkMode? "container-fluid app-dark": "container-fluid app-light"}>
+		<>
 			<Navbar 
                 darkMode={props.darkMode} 
                 toggleDarkMode={props.toggleDarkMode}
@@ -47,6 +47,6 @@ export default function Home(props) {
 		    <Footer 
 		    	darkMode={props.darkMode} 
 		    	windowWidth={props.windowWidth}/>
-		</div>
+		</>
 	)
 }

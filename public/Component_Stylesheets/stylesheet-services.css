@@ -12,7 +12,9 @@
 }
 
 .services-svg-div {
-  overflow-x: hidden;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
   
@@ -445,4 +447,10 @@
   }
 
 
+}
+
+@media only screen and (max-width:768px) {
+  .services-item-title, .services-item-number {
+    font-size: 0.9rem;
+  }
 }

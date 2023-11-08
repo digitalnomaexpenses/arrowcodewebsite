@@ -149,6 +149,11 @@ button.accordion-button:focus {
 	background-color: transparent !important;
 }
 
+.questions-svg-div {
+	width: 40%;
+	height: 40%;
+}
+
 
 /*Desktop Animations Start*/
 
@@ -584,17 +589,19 @@ button.accordion-button:focus {
 		height: 2.6rem;
 	}
 
-	.questions-svg {
-		width: 50%;
-		height: 50%;
+	.questions-svg-div {
+		width: 25%;
+		height: 25%;
+		margin: 0 auto;
 	}
 
 }	
 
 @media only screen and (max-width: 768px) {
-	.questions-svg {
-		width: 20%;
-		height: 20%;
+	.questions-svg-div {
+		width: 30%;
+		height: 30%;
+		margin: 0 auto;
 	}
 }
 

@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Portfolio(portprops) {
+export default function Portfolio(props) {
 	return(
 		<section className="container" id="portfolio">
 			<h3 className="section-heading text-center pt-5">Featured <span>Projects</span></h3>
@@ -18,14 +18,14 @@ export default function Portfolio(portprops) {
 		                            <p className="section-text">Made With</p>
 		                            <div className="image-container col-12">
 		                                <img 
-		                                	src={`../SVGs/Landing_Page/aws-${portprops.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
-		                                	className={`made-with-icons ${portprops.portWindowWidth <=992? "p-2" : ""}`} />
+		                                	src={`../SVGs/Landing_Page/aws-${props.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
+		                                	className={`made-with-icons ${props.portWindowWidth <=992? "p-2" : ""}`} />
 	                                	<img 
-	                                		src={`../SVGs/Landing_Page/postgreSQL-${portprops.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
-	                                		className={`made-with-icons ${portprops.portWindowWidth <=992? "p-2" : ""}`} />
+	                                		src={`../SVGs/Landing_Page/postgreSQL-${props.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
+	                                		className={`made-with-icons ${props.portWindowWidth <=992? "p-2" : ""}`} />
 	                                	<img 
-	                                		src={`../SVGs/Landing_Page/flask-${portprops.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
-	                                		className={`made-with-icons ${portprops.portWindowWidth <=992? "p-2" : ""}`} />
+	                                		src={`../SVGs/Landing_Page/flask-${props.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
+	                                		className={`made-with-icons ${props.portWindowWidth <=992? "p-2" : ""}`} />
 		                            </div>
 		                        </div>
 		                    </div>
@@ -44,14 +44,14 @@ export default function Portfolio(portprops) {
 		                            
 		                            <div className="image-container col-12">
 		                                <img 
-		                                	src={`../SVGs/Landing_Page/aws-${portprops.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
-		                                	className={`made-with-icons ${portprops.portWindowWidth <=992? "p-2" : ""}`} />
+		                                	src={`../SVGs/Landing_Page/aws-${props.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
+		                                	className={`made-with-icons ${props.portWindowWidth <=992? "p-2" : ""}`} />
 	                                	<img 
-	                                		src={`../SVGs/Landing_Page/postgreSQL-${portprops.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
-	                                		className={`made-with-icons ${portprops.portWindowWidth <=992? "p-2" : ""}`} />
+	                                		src={`../SVGs/Landing_Page/postgreSQL-${props.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
+	                                		className={`made-with-icons ${props.portWindowWidth <=992? "p-2" : ""}`} />
 	                                	<img 
-	                                		src={`../SVGs/Landing_Page/flask-${portprops.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
-	                                		className={`made-with-icons ${portprops.portWindowWidth <=992? "p-2" : ""}`} />
+	                                		src={`../SVGs/Landing_Page/flask-${props.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
+	                                		className={`made-with-icons ${props.portWindowWidth <=992? "p-2" : ""}`} />
 		                            </div>
 		                        </div>
 		                    </div>
@@ -69,14 +69,14 @@ export default function Portfolio(portprops) {
 		                            <p className="section-text pb-4">Made With</p>
 		                            <div className="image-container col-12">
 		                                <img 
-		                                	src={`../SVGs/Landing_Page/aws-${portprops.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
-		                                	className={`made-with-icons ${portprops.portWindowWidth <=992? "p-2" : ""}`} />
+		                                	src={`../SVGs/Landing_Page/aws-${props.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
+		                                	className={`made-with-icons ${props.portWindowWidth <=992? "p-2" : ""}`} />
 	                                	<img 
-	                                		src={`../SVGs/Landing_Page/postgreSQL-${portprops.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
-	                                		className={`made-with-icons ${portprops.portWindowWidth <=992? "p-2" : ""}`} />
+	                                		src={`../SVGs/Landing_Page/postgreSQL-${props.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
+	                                		className={`made-with-icons ${props.portWindowWidth <=992? "p-2" : ""}`} />
 	                                	<img 
-	                                		src={`../SVGs/Landing_Page/flask-${portprops.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
-	                                		className={`made-with-icons ${portprops.portWindowWidth <=992? "p-2" : ""}`} />
+	                                		src={`../SVGs/Landing_Page/flask-${props.darkMode ? "dark-mode.svg" : "light-mode.svg"}`} 
+	                                		className={`made-with-icons ${props.portWindowWidth <=992? "p-2" : ""}`} />
 		                            </div>
 		                        </div>
 		                    </div>

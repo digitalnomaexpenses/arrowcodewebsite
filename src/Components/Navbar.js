@@ -39,13 +39,14 @@ export default function Navbar(props) {
 			id="navbar" 
 			className={`navbar navbar-expand-lg ps-4 ${props.darkMode? "navbar-dark": ""}`} 
 			style={props.darkMode ? navbarStyleDark : navbarStyle}>
+      
 			<div className="navbar-brand-div">
 				<Link id="navbar-brand" className="navbar-brand" to="landing-page" smooth={true} duration={5}>
 	    		<img src={props.darkMode? "./SVGs/logo-7-dark-mode.svg" : "./SVGs/logo-7.svg"} className="img-fluid"/>
 	    	</Link>
 			</div>
 	    
-	    {props.windowWidth <= 992 && <div onClick={props.toggleDarkMode} className="pe-3 darkMode-toggler-icon">
+	    {props.windowWidth < 992 && <div onClick={props.toggleDarkMode} className="pe-3 darkMode-toggler-icon">
             	<img src={`./SVGs/Navbar/${props.darkMode? "moon.svg" : "sun.svg"}`}/>
       </div>}
     	<button 
@@ -74,7 +75,7 @@ export default function Navbar(props) {
           </li>
           </ul>
       </div> 
-      {props.windowWidth > 992 && <div onClick={props.toggleDarkMode} className="pe-3 darkMode-toggler-icon">
+      {props.windowWidth >= 992 && <div onClick={props.toggleDarkMode} className="pe-3 darkMode-toggler-icon">
             	<img src={`./SVGs/Navbar/${props.darkMode? "moon.svg" : "sun.svg"}`}/>
       </div>}
 	  </nav>

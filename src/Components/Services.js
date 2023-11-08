@@ -1,19 +1,23 @@
 import React from "react"
-import JSON_ServicesContent from "../Additional_Components/JSONs/JSON_ServicesContent.js" 
-import JSON_ServicesData from "../Additional_Components/JSONs/JSON_ServicesData.js" 
-import JSON_ServicesDataTwo from "../Additional_Components/JSONs/JSON_ServicesDataTwo.js"
-import ServicesItem from "../Additional_Components/ServicesItem.js"
-import ServicesContentDesktopItem from "../Additional_Components/ServicesContentDesktopItem.js"
-import ServicesSVG from "../SVGs/ServicesSVG.js"
-
 import { useInView } from 'react-intersection-observer'
 
+import Services_JSON from "../JSONs/services"
+import Services_JSON_Component_Desktop from "../Content-Components/services-desktop"
+import Services_JSON_Component_Mobile from "../Content-Components/services-mobile"
 
-export default function Services() {
+import Services_Drawer_1_JSON from "../JSONs/services-drawer-1"
+import Services_Drawer_2_JSON from "../JSONs/services-drawer-2"
+import Services_Drawer_Component_Desktop from "../Content-Components/services-drawer-desktop"
+import Services_Drawer_Component_Mobile from "../Content-Components/services-drawer-mobile"
+
+import Services_SVG from "../SVG-Components/services.js"
+
+
+export default function Services(props) {
 	const { ref: servicesRef, inView: servicesVisibility } = useInView();
 
-	let servicesContentElement = JSON_ServicesContent.map(eachElement => (
-			<ServicesContentDesktopItem 
+	let Services_JSON_Content_Desktop = Services_JSON.map(eachElement => (
+			<Services_JSON_Component_Desktop 
 				key={eachElement.id}
 				id={eachElement.id}
 				title={eachElement.title}
@@ -23,8 +27,20 @@ export default function Services() {
 			/>
 		))
 
-	let servicesPointsElements= JSON_ServicesData.map(eachElement => (
-		<ServicesItem 
+	let Services_JSON_Content_Mobile= Services_JSON.map(eachElement => (
+		<Services_JSON_Component_Mobile
+			key={eachElement.id}
+			id={eachElement.id}
+			title={eachElement.title}
+			title_span={eachElement.title_span}
+			text={eachElement.text}
+			isVisible={servicesVisibility}
+		/>
+		))
+
+
+	let Services_Drawer_1_Desktop = Services_Drawer_1_JSON.map(eachElement => (
+		<Services_Drawer_Component_Desktop
 			key={eachElement.id}
 			id={eachElement.id}
 			number={eachElement.number}
@@ -33,14 +49,35 @@ export default function Services() {
 		/>
 		))
 
-	let servicesPointsElementsTwo = JSON_ServicesDataTwo.map(eachElement => (
-		<ServicesItem 
+	let Services_Drawer_2_Desktop = Services_Drawer_2_JSON.map(eachElement => (
+		<Services_Drawer_Component_Desktop
 			key={eachElement.id}
 			id={eachElement.id}
 			number={eachElement.number}
 			title = {eachElement.title}
 			desc = {eachElement.desc}
 		/>
+		))
+
+
+	let Services_Drawer_1_Mobile = Services_Drawer_1_JSON.map(eachElement => (
+			<Services_Drawer_Component_Mobile
+				key={eachElement.id}
+				id={eachElement.id}
+				number={eachElement.number}
+				title = {eachElement.title}
+				desc = {eachElement.desc}
+			/>
+		))
+
+	let Services_Drawer_2_Mobile = Services_Drawer_2_JSON.map(eachElement => (
+			<Services_Drawer_Component_Mobile
+				key={eachElement.id}
+				id={eachElement.id}
+				number={eachElement.number}
+				title = {eachElement.title}
+				desc = {eachElement.desc}
+			/>
 		))
 
 
@@ -49,23 +86,42 @@ export default function Services() {
 			className="container pt-5"
 			ref={servicesRef}
 			id="services">
-			<div className="d-flex flex-row">
-				<div className="col-lg-7 col-8 pt-4 ps-5">
-					{servicesContentElement}
-					<div className="row row-cols-2 pe-5 pt-4">
-						<div className="d-flex flex-column services-list">
-							{servicesPointsElements}
+			{
+				props.windowWidth > 992 && 
+
+				<div className="d-flex flex-row">
+					<div className="col-lg-7 col-8 pt-4 ps-5">
+						{Services_JSON_Content_Desktop}
+						<div className="row row-cols-2 pe-5 pt-4">
+							<div className="d-flex flex-column services-list">
+								{Services_Drawer_1_Desktop}
+							</div>
+							<div className="d-flex flex-column services-list">
+								{Services_Drawer_2_Desktop}
+							</div>
 						</div>
-						<div className="d-flex flex-column services-list">
-							{servicesPointsElementsTwo}
+					</div>
+					<div className={`col ${servicesVisibility ? "services-rhs-animation" : ""}`}>
+						<div className="services-svg-div pt-4 pe-2">
+							<Services_SVG />
 						</div>
 					</div>
 				</div>
-				<div className={`col ${servicesVisibility ? "services-rhs-animation" : ""}`}>
-					<div className="services-svg-div pt-4">
-						<ServicesSVG />
+
+			}
+			{
+				props.windowWidth <= 992 &&
+
+				<div className="d-flex flex-column pt-5 justify-content-center align-items-center">
+					{Services_JSON_Content_Mobile}
+					<hr className={`services-line ${servicesVisibility ? "s-mob-animation-3" : ""}`}/>
+					<div className={`services-svg-div pb-3 ${servicesVisibility ? "s-mob-animation-4" : ""}`}>
+						<Services_SVG />
 					</div>
+					{Services_Drawer_1_Mobile}
+					{Services_Drawer_2_Mobile}
 				</div>
-			</div>
+
+			}
 		</section>
 	)}

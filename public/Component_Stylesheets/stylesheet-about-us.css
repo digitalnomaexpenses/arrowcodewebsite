@@ -14,7 +14,6 @@
 	min-width: 100%;
 }
 
-
 .about-us-highlight-number {
 	font-weight: bolder;
 	font-size: 1.2rem;
@@ -33,12 +32,16 @@
 	font-size: 0.8rem;
 }
 
-.about-us-icons {
-	width: 60px;
-	height: auto;
-	margin: 20px;
+.about-us-svg-div {
+	display: flex;
+	justify-content: center;
+	align-items: end;
 }
 
+.about-us-text-with-icons {
+	height: 80%;
+	margin: auto;
+}
 
 
 
@@ -47,6 +50,7 @@
 	animation: about-us-div-appear 2s ease-in-out;
 	transform-box: fill-box;
 	transform-origin: center;
+
 }
 
 @keyframes about-us-div-appear {
@@ -285,4 +289,18 @@
 		font-size: 0.7rem;
 	}
 
+	.about-us-svg-div {
+		width: 60%;
+		height: 60%;
+		margin: auto;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	.about-us-svg-div {
+		width: 60%;
+		height: 60%;
+		margin: auto;
+	}
 }

@@ -57,7 +57,14 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width: 433px){
+
+    .navbar-brand-div {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 433px) {
 
     .navbar-brand-div {
         width: 50%;
