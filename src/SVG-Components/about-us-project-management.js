@@ -3,7 +3,7 @@ import React from "react"
 export default function AboutUsProjectMngtSVG(absprjmngprops) {
 	return(
 		<>
-			<svg width="90" height="90" viewBox="0 0 90 90" fill="none" id="svg74"  xmlns="http://www.w3.org/2000/svg" >
+			<svg width="90" height="90" viewBox="0 0 90 90" fill="none" id="svg74"  xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 			   <defs id="defs78" />
 			   <g id="g220" transform="matrix(1.6000032,0,0,1.6000032,0.999824,0.999992)" >
 			      <path d="m 25.4795,44.0232 -0.9552,-1.249 -0.8082,0.4408 0.5143,1.69 0.8082,0.0734 z" fill="#9f616a" id="about-us-svg-pm-path2"  />

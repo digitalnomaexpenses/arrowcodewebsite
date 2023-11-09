@@ -1,8 +1,24 @@
 import React from "react"
+import {Link} from "react-router-dom"
 
 export default function TermsAndConditions(props) {
 	return(
 		<section className={`container pt-5 pb-5 ps-3 pe-3 ${props.darkMode ? "ppdark": ""}`}>
+			<div className="minor-page-navbar pb-3">
+				<Link to="/" className="minor-page-back-button">
+					<div className="minor-page-navbar-back-button">
+						<img 
+						src={props.darkMode? 
+							"../SVGs/Minor_Pages/back-darkmode.svg": "../SVGs/Minor_Pages/back-lightmode.svg"}
+						className="img-fluid"/>
+						<p>Back</p>
+					</div>
+				</Link>	
+				<div onClick={props.toggleDarkMode} className="pe-3 darkMode-toggler-icon">
+       	     		<img src={`./SVGs/Navbar/${props.darkMode? "moon.svg" : "sun.svg"}`}/>
+    			</div>
+			</div>
+
 			<h3 className="text-center section-heading pb-3">Privacy <span>Policy</span></h3>
 			<p className="minor-page-text pb-3">Your privacy is important to us. This Privacy Policy outlines how [Your Company Name] ("we," "us," "our") collects, uses, and protects your personal information when you use our website and services. By accessing our website and using our services, you consent to the practices described in this Privacy Policy.</p>
 

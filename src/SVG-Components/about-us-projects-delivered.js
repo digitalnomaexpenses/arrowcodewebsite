@@ -3,7 +3,7 @@ import React from "react"
 export default function AboutUsProjectsDeliSVG(absprjdelprops) {
 	return(
 		<>
-			<svg width="90" height="90" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+			<svg width="90" height="90" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 			   <defs id="defs76" />
 			   <g id="g1191" transform="matrix(0.13197182,0,0,0.13197182,4.4804255,0.75629821)" >
 			      <g id="g1155" transform="matrix(1.2734601,0,0,1.2734601,-282.29165,-47.483231)" >

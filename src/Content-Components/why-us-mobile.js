@@ -1,5 +1,6 @@
 import React from "react"
 import Why_Us_SVG from "../SVG-Components/why-us.js"
+import Why_Us_Mobile_SVG from "../SVG-Components/why-us-mobile.js"
 
 export default function WhyUsMobContentItem(props) {
 	return(
@@ -11,14 +12,16 @@ export default function WhyUsMobContentItem(props) {
 				{props.title}<span>{props.title_span}</span>
 			</h3>
 			<div className="pt-3 why-us-svg-div">
-				<Why_Us_SVG/>
+				<Why_Us_Mobile_SVG/>
 			</div>
 			<div className={`d-flex flex-row ps-2 pe-2 pt-3 pb-4 ${props.isVisible ? "y-us-m-animation-2" : ""}`}>
 				<div>
 					<img 
 						src={props.ysMobDarkMode ? 
 							"../SVGs/Why_Us/why-us-arrow-mobile-dark.svg" : 
-							"../SVGs/Why_Us/why-us-arrow-mobile-light.svg"}/>
+							"../SVGs/Why_Us/why-us-arrow-mobile-light.svg"}
+						className="img-fluid"
+						alt="Why choose us point one icon"/>
 				</div>
 				<div className="d-flex flex-column">
 					<h4 className="why-us-points-heading-mobile">{props.p_title_1}</h4>
@@ -29,7 +32,10 @@ export default function WhyUsMobContentItem(props) {
 				<div>
 					<img 
 						src={props.ysMobDarkMode ? 
-							"../SVGs/Why_Us/why-us-arrow-mobile-dark.svg":"../SVGs/Why_Us/why-us-arrow-mobile-light.svg"}/>
+							"../SVGs/Why_Us/why-us-arrow-mobile-dark.svg"
+							:"../SVGs/Why_Us/why-us-arrow-mobile-light.svg"}
+						className="img-fluid"
+						alt="Why choose us point two icon"/>
 				</div>
 				<div className="d-flex flex-column">
 					<h4 className="why-us-points-heading-mobile">{props.p_title_2}</h4>
@@ -40,7 +46,10 @@ export default function WhyUsMobContentItem(props) {
 				<div>
 					<img 
 						src={props.ysMobDarkMode ? 
-							"../SVGs/Why_Us/why-us-arrow-mobile-dark.svg":"../SVGs/Why_Us/why-us-arrow-mobile-light.svg"}/>
+							"../SVGs/Why_Us/why-us-arrow-mobile-dark.svg":
+							"../SVGs/Why_Us/why-us-arrow-mobile-light.svg"}
+						className="img-fluid"
+						alt="Why choose us point three icon"/>
 				</div>
 				<div className="d-flex flex-column">
 					<h4 className="why-us-points-heading-mobile">{props.p_title_3}</h4>

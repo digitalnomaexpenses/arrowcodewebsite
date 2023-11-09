@@ -4,7 +4,7 @@ import React from "react"
 export default function AboutUsSVG(abssvgprops) {
 	return(
 		<>
-			<svg width="100%" height="100%" viewBox="0 0 521 365" fill="none" xmlns="http://www.w3.org/2000/svg" id="about-us-svg" className="about-us-svg img-fluid">
+			<svg width="100%" height="100%" viewBox="0 0 521 365" fill="none" xmlns="http://www.w3.org/2000/svg" id="about-us-svg" className="about-us-svg img-fluid" aria-hidden="true">
 			  <defs id="defs8020" />
 			  <g id="g8723">
 			    <path d="M486 186H126V316H486V186Z" stroke= "#414042"  strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" id="path7766" />

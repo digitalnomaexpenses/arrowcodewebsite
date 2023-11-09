@@ -3,7 +3,7 @@ import React from "react"
 export default function AboutUsFurFelSVG(absfurfelsvgprops) {
 	return(
 		<>
-			<svg width="90" height="90" viewBox="0 0 90 90" id="svg22" xmlns="http://www.w3.org/2000/svg">
+			<svg width="90" height="90" viewBox="0 0 90 90" id="svg22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 			  <defs id="defs26" />
 			  <g id="g872" transform="matrix(0.2338478,0,0,0.2338478,-68.53897,5.0030052)">
 			    <path d="m 560.17,337.74 -141.49,-4.02 c 0,0 10.65,-63.71 -23.52,-81.39 -23.29,-12.06 -43.96,-68.39 -38.08,-106.72 0.08,-0.51 0.16,-1.02 0.25,-1.52 2.98,-17.16 11.5,-30.45 27.79,-34.06 52.66,-11.66 90.24,-2.62 90.24,-2.62 0,0 8.7,0.11 21.59,2.53 0.46,0.08 0.92,0.17 1.38,0.27 36.49,7.15 103.94,32.61 106.86,123.01 4.02,124.2 -45.02,104.5 -45.02,104.5 z" fill="#3f3d56" id="about-us-svg-cat-path2" />

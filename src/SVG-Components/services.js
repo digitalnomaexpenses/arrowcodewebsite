@@ -4,7 +4,7 @@ import React from "react"
 export default function ServicesSVG() {
 	return(
 		<>
-			<svg id="svg2" width="100%" height="100%" viewBox="0 0 900 550" xmlns="http://www.w3.org/2000/svg" className="img-fluid services-svg">
+			<svg id="svg2" width="100%" height="100%" viewBox="0 0 900 550" xmlns="http://www.w3.org/2000/svg" className="img-fluid services-svg" aria-hidden="true">
 			   <defs id="defs6" />
 			   <g id="g8" transform="matrix(1.3333333,0,0,-1.3333333,3.3754033e-4,543.81461)">
 			      <g id="g10" transform="scale(0.1)">

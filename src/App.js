@@ -27,8 +27,12 @@ function App() {
                                     darkMode={darkMode}
                                     windowWidth={windowWidth}
                                     toggleDarkMode={toggleDarkMode}/>}/>
-      <Route path="/terms-and-conditions" element={<TermsAndConditions darkMode={darkMode}/>}/>
-      <Route path="/privacy-policy" element={<PrivacyPolicy darkMode={darkMode}/>}/>
+      <Route path="/terms-and-conditions" element={<TermsAndConditions 
+                                                      darkMode={darkMode}
+                                                      toggleDarkMode={toggleDarkMode}/>}/>
+      <Route path="/privacy-policy" element={<PrivacyPolicy 
+                                                darkMode={darkMode} 
+                                                toggleDarkMode={toggleDarkMode}/>}/>
     </Routes>
     </div>
 

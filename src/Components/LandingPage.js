@@ -48,37 +48,44 @@ export default function LandingPage(props) {
 							src={props.darkMode ? 
 								"../SVGs/Landing_Page/aws-dark-mode.svg" : 
 								"../SVGs/Landing_Page/aws-light-mode.svg"} 
-							className="img-fluid lp-skill-icon-1"/>
+							className="img-fluid lp-skill-icon-1"
+							alt="AWS icon"/>
 						<img 
 							src={props.darkMode ? 
 								"../SVGs/Landing_Page/postgreSQL-dark-mode.svg" : 
 								"../SVGs/Landing_Page/postgreSQL-light-mode.svg"} 
-							className="img-fluid lp-skill-icon-2"/>
+							className="img-fluid lp-skill-icon-2"
+							alt="PostgreSQL icon"/>
 						<img 
 							src={props.darkMode ? 
 								"../SVGs/Landing_Page/flask-dark-mode.svg" : 
 								"../SVGs/Landing_Page/flask-light-mode.svg"} 
-							className="img-fluid lp-skill-icon-3"/>
+							className="img-fluid lp-skill-icon-3"
+							alt="Flask icon"/>
 						<img 
 							src={props.darkMode ? 
 								"../SVGs/Landing_Page/bootstrap-dark-mode.svg" : 
 								"../SVGs/Landing_Page/bootstrap-light-mode.svg"} 
-							className="img-fluid lp-skill-icon-4"/>
+							className="img-fluid lp-skill-icon-4"
+							alt="Bootstrap icon"/>
 						<img 
 							src={props.darkMode ? 
 								"../SVGs/Landing_Page/react-dark-mode.svg" : 
 								"../SVGs/Landing_Page/react-light-mode.svg"} 
-							className="img-fluid lp-skill-icon-5"/>
+							className="img-fluid lp-skill-icon-5"
+							alt="React icon"/>
 						<img 
 							src={props.darkMode ? 
 								"../SVGs/Landing_Page/threejs-dark-mode.svg" : 
 								"../SVGs/Landing_Page/threejs-light-mode.svg"} 
-							className="img-fluid lp-skill-icon-6"/>
+							className="img-fluid lp-skill-icon-6"
+							alt="ThreeJS icon"/>
 						<img 
 							src={props.darkMode ? 
 								"../SVGs/Landing_Page/python-dark-mode.svg" : 
 								"../SVGs/Landing_Page/python-light-mode.svg"} 
-							className="img-fluid lp-skill-icon-7"/>
+							className="img-fluid lp-skill-icon-7"
+							alt="Python icon"/>
 					</div>
 				</div>
 			}
@@ -96,37 +103,44 @@ export default function LandingPage(props) {
 							src={props.darkMode ? 
 							"../SVGs/Landing_Page/aws-m-dark-mode.svg" : 
 							"../SVGs/Landing_Page/aws-m-light-mode.svg"} 
-							className="img-fluid"/>
+							className="img-fluid"
+							alt="AWS icon"/>
 						<img 
 							src={props.darkMode ? 
 							"../SVGs/Landing_Page/postgreSQL-m-dark-mode.svg" : 
 							"../SVGs/Landing_Page/postgreSQL-m-light-mode.svg"} 
-							className="img-fluid"/>
+							className="img-fluid"
+							alt="PostgreSQL icon"/>
 						<img 
 							src={props.darkMode ? 
 							"../SVGs/Landing_Page/flask-m-dark-mode.svg" : 
 							"../SVGs/Landing_Page/flask-m-light-mode.svg"} 
-							className="img-fluid"/>
+							className="img-fluid"
+							alt="Flask icon"/>
 						<img 
 							src={props.darkMode ? 
 							"../SVGs/Landing_Page/bootstrap-m-dark-mode.svg" : 
 							"../SVGs/Landing_Page/bootstrap-m-light-mode.svg"} 
-							className="img-fluid"/>
+							className="img-fluid"
+							alt="Bootstrap icon"/>
 						<img 
 							src={props.darkMode ? 
 							"../SVGs/Landing_Page/react-m-dark-mode.svg" : 
 							"../SVGs/Landing_Page/react-m-light-mode.svg"} 
-							className="img-fluid"/>
+							className="img-fluid"
+							alt="React icon"/>
 						<img 
 							src={props.darkMode ? 
 							"../SVGs/Landing_Page/threejs-m-dark-mode.svg" : 
 							"../SVGs/Landing_Page/threejs-m-light-mode.svg"} 
-							className="img-fluid"/>
+							className="img-fluid"
+							alt="ThreeJS icon"/>
 						<img 
 							src={props.darkMode ? 
 							"../SVGs/Landing_Page/python-m-dark-mode.svg" : 
 							"../SVGs/Landing_Page/python-m-light-mode.svg"} 
-							className="img-fluid"/>
+							className="img-fluid"
+							alt="Python icon"/>
 					</div>
 				</>
 

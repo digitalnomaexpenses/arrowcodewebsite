@@ -17,7 +17,8 @@ export default function WhyUsDesktopItem(props) {
 						<img 
 							src={props.ysDarkMode? 
 								"../SVGs/Why_Us/why-us-arrow-dark.svg": "../SVGs/Why_Us/why-us-arrow-light.svg"}
-							className="img-fluid"/>
+							className="img-fluid"
+							alt="Why choose us point one icon"/>
 					</div>
 					<div className="d-flex flex-column pe-3">
 						<h4 className="why-us-points-heading">{props.p_title_1}</h4>
@@ -30,7 +31,8 @@ export default function WhyUsDesktopItem(props) {
 						<img 
 							src={props.ysDarkMode? 
 								"../SVGs/Why_Us/why-us-arrow-dark.svg": "../SVGs/Why_Us/why-us-arrow-light.svg"}
-							className="img-fluid"/>
+							className="img-fluid"
+							alt="Why choose us point two icon"/>
 					</div>
 					<div className="d-flex flex-column pe-3">
 						<h4 className="why-us-points-heading">{props.p_title_2}</h4>
@@ -43,7 +45,8 @@ export default function WhyUsDesktopItem(props) {
 						<img 
 							src={props.ysDarkMode? 
 								"../SVGs/Why_Us/why-us-arrow-dark.svg": "../SVGs/Why_Us/why-us-arrow-light.svg"}
-							className="img-fluid"/>
+							className="img-fluid"
+							alt="Why choose us point three icon"/>
 					</div>
 					<div className="d-flex flex-column pe-3">
 						<h4 className="why-us-points-heading">{props.p_title_3}</h4>

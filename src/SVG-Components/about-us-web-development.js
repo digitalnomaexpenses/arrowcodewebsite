@@ -3,7 +3,7 @@ import React from "react"
 export default function AboutUsWebDevSVG(abswebdevprops) {
 	return(
 		<>
-			<svg width="90" height="90" viewBox="0 0 90 90" fill="none" id="svg299" xmlns="http://www.w3.org/2000/svg">
+			<svg width="90" height="90" viewBox="0 0 90 90" fill="none" id="svg299" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 			   <defs id="defs303" />
 			   <g id="g564" transform="matrix(0.8003842,0,0,0.8003842,0.28893784,-27.053788)" >
 			      <g id="g492" >

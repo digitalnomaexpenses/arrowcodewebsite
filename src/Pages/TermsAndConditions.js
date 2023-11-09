@@ -1,8 +1,24 @@
 import React from "react"
+import {Link} from "react-router-dom"
 
 export default function TermsAndConditions(props) {
 	return(
 		<section className={`container pt-5 pb-5 ps-3 pe-3 ${props.darkMode ? "tncdark": ""}`}>
+			<div className="minor-page-navbar pb-3">
+				<Link to="/" className="minor-page-back-button">
+					<div className="minor-page-navbar-back-button">
+						<img 
+						src={props.darkMode? 
+							"../SVGs/Minor_Pages/back-darkmode.svg": "../SVGs/Minor_Pages/back-lightmode.svg"}
+						className="img-fluid"/>
+						<p>Back</p>
+					</div>
+				</Link>	
+				<div onClick={props.toggleDarkMode} className="pe-3 darkMode-toggler-icon">
+       	     		<img src={`./SVGs/Navbar/${props.darkMode? "moon.svg" : "sun.svg"}`}/>
+    			</div>
+			</div>
+			
 			<h3 className="text-center section-heading pb-3">Terms and <span>Conditions</span></h3>
 			<div>
 				<h5 className="minor-page-heading pt-4 pb-1">1. Acceptance of Terms:</h5>
@@ -73,7 +89,6 @@ export default function TermsAndConditions(props) {
 				
 
 				<small className="tnc-update">Last Updated: 15<sup>th</sup> November 2023</small>
-
 			</div>
 		</section>
 	)

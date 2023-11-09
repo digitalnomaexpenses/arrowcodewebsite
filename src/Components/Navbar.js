@@ -42,12 +42,18 @@ export default function Navbar(props) {
       
 			<div className="navbar-brand-div">
 				<Link id="navbar-brand" className="navbar-brand" to="landing-page" smooth={true} duration={5}>
-	    		<img src={props.darkMode? "./SVGs/logo-7-dark-mode.svg" : "./SVGs/logo-7.svg"} className="img-fluid"/>
+	    		<img 
+            src={props.darkMode? "./SVGs/logo-7-dark-mode.svg" : "./SVGs/logo-7.svg"} 
+            className="img-fluid"
+            alt="Arrow Code brand logo"/>
 	    	</Link>
 			</div>
 	    
 	    {props.windowWidth < 992 && <div onClick={props.toggleDarkMode} className="pe-3 darkMode-toggler-icon">
-            	<img src={`./SVGs/Navbar/${props.darkMode? "moon.svg" : "sun.svg"}`}/>
+            	<img 
+                src={`./SVGs/Navbar/${props.darkMode? "moon.svg" : "sun.svg"}`}
+                className="img-fluid"
+                alt="Dark-mode/Light-mode icon"/>
       </div>}
     	<button 
         className={props.darkMode ? "navbar-toggler dark-navbar-toggler me-3" : "navbar-toggler me-3" }
@@ -76,7 +82,10 @@ export default function Navbar(props) {
           </ul>
       </div> 
       {props.windowWidth >= 992 && <div onClick={props.toggleDarkMode} className="pe-3 darkMode-toggler-icon">
-            	<img src={`./SVGs/Navbar/${props.darkMode? "moon.svg" : "sun.svg"}`}/>
+            	<img 
+                src={`./SVGs/Navbar/${props.darkMode? "moon.svg" : "sun.svg"}`}
+                className="img-fluid"
+                alt="Dark-mode/Light-mode icon"/>
       </div>}
 	  </nav>
 	</div>   

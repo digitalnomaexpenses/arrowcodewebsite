@@ -3,7 +3,7 @@ import React from "react"
 export default function WhyUsSVG() {
 	return(
 		<div className="">
-			<svg width="100%" height="100%" viewBox="0 0 500 530" fill="none" version="1.1" id="svg356" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+			<svg width="100%" height="100%" viewBox="0 0 630 530" fill="none" version="1.1" id="svg356" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 			   <defs id="defs360" />
 			   <mask id="mask0_282_7984" maskUnits="userSpaceOnUse" x="129" y="67" width="30" height="30">
 			      <path d="m 158.387,83.9094 c -0.979,7.8689 -8.151,13.4537 -16.02,12.4738 -7.867,-0.9791 -13.451,-8.1489 -12.472,-16.0178 0.978,-7.867 8.15,-13.4518 16.016,-12.4719 7.867,0.9781 13.454,8.1489 12.476,16.0159 z" fill="#ffffff" id="ys-path214" />
