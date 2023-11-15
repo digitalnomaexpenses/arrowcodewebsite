@@ -29,7 +29,7 @@ export default function AboutUsProjectsDeliSVG(absprjdelprops) {
 			         <path d="m -877.96111,75.9185 h -160.02999 c -3.17,0 -5.75,-3.28 -5.75,-7.3 0,-4.02 2.58,-7.3 5.75,-7.3 h 160.02999 c 3.17,0 5.75,3.28 5.75,7.3 0,4.02 -2.58,7.3 -5.75,7.3 z" fill="#dadbdc" strokeWidth="0" id="about-us-svg-cp-path8-4" />
 			         <path d="m -877.96111,108.2685 h -160.02999 c -3.17,0 -5.75,-3.28 -5.75,-7.3 0,-4.02 2.58,-7.3 5.75,-7.3 h 160.02999 c 3.17,0 5.75,3.28 5.75,7.3 0,4.02 -2.58,7.3 -5.75,7.3 z" fill="#dadbdc" strokeWidth="0" id="about-us-svg-cp-path10-6" />
 			         <path d="m -923.85111,140.6185 h -114.13999 c -3.17,0 -5.75,-3.28 -5.75,-7.3 0,-4.02 2.58,-7.3 5.75,-7.3 h 114.13999 c 3.17,0 5.75,3.28 5.75,7.3 0,4.02 -2.58,7.3 -5.75,7.3 z" fill="#dadbdc" strokeWidth="0" id="about-us-svg-cp-path12" />
-			         <g id="completed-tick" className={absprjdelprops.isVisible ? "completed-tick-animation" : ""}>
+			         <g id="completed-tick" className="completed-tick-animation">
 			            <circle cx="-961.12109" cy="262.50851" r="68.309998" fill="#6c63ff" strokeWidth="0" id="about-us-svg-cp-circle14"  />
 			            <path d="m -979.29111,263.9285 c 3.53,6.91 7.06,13.83 10.59,20.74 1.01,1.99 3.98,1.36 4.57,-0.6 4.63,-15.44 13.23,-29.51 24.82,-40.7 2.32,-2.24 -1.22,-5.77 -3.54,-3.54 -12.2,11.78 -21.23,26.67 -26.11,42.91 l 4.57,-0.6 c -3.53,-6.91 -7.06,-13.83 -10.59,-20.74 -1.46,-2.87 -5.78,-0.34 -4.32,2.52 h 0.01 z" fill="#ffffff" strokeWidth="0" id="about-us-svg-cp-path16" />
 			         </g>

@@ -10,7 +10,7 @@ export default function FooterContentDesktopItem(props) {
 					<div className="footer-heading pb-4 pe-5">
 						<img 
 							className="img-fluid" 
-							src={props.fDarkMode? "./SVGs/logo-7-dark-mode.svg" : "./SVGs/logo-7.svg"}
+							src={props.fDarkMode? "./SVGs/logo-dark-mode.svg" : "./SVGs/logo.svg"}
 							alt="Arrow Code brand logo"/>
 					</div>
 					<p className="footer-text pe-5 pb-3">{props.text}</p>

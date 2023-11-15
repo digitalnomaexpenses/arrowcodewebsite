@@ -1,0 +1,29 @@
+.navbar-logo-animation-light-mode {
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: navbar-logo-animation-light-mode 15s linear infinite;
+}
+
+@keyframes navbar-logo-animation-light-mode {
+    from {
+        transform: scale(0.60171139, 0.60171139) translate(-25px) rotate(0deg);
+    }
+    to {
+        transform: scale(0.60171139, 0.60171139) translate(-25px) rotate(360deg);
+    }
+}
+
+.navbar-logo-animation-dark-mode {
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: navbar-logo-animation-dark-mode 15s linear infinite;
+}
+
+@keyframes navbar-logo-animation-dark-mode {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

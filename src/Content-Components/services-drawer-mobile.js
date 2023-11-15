@@ -1,14 +1,15 @@
-import React from "react"
-import { useInView } from 'react-intersection-observer'
+import React, {useRef} from "react"
+import {motion, useInView as FramerMotionUseInView} from "framer-motion"
 
 export default function ServicesItem(props) {
 
-	const { ref: siMobRef, inView: siMobVisibility } = useInView();
+	const ref = useRef(null);
+	const itemInView = FramerMotionUseInView(ref, { once: true })
 
 	return(
-		<div 
-			ref={siMobRef}
-			className={`services-list-item-mobile pt-2 pb-2 ${siMobVisibility ? `${props.id}-mob-animation` : ""}`}>
+		<div
+			ref={ref}
+			className={`services-list-item-mobile pt-2 pb-2 ${itemInView ? `${props.id}-mob-animation` : ""}`}>
 			<div 
 				data-bs-toggle="collapse" 
 				data-bs-target={`#${props.id}`} 

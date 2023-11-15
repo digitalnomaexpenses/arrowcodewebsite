@@ -1,20 +1,57 @@
-import React from "react"
+import React, {useRef} from "react"
+import {motion, useInView as FramerMotionUseInView} from "framer-motion"
 import Why_Us_SVG from "../SVG-Components/why-us.js"
 import Why_Us_Mobile_SVG from "../SVG-Components/why-us-mobile.js"
 
 export default function WhyUsMobContentItem(props) {
+
+	const titleref = useRef(null);
+	const titleInView = FramerMotionUseInView(titleref, { once: true })
+
+	const svgref = useRef(null);
+	const svgInView = FramerMotionUseInView(svgref, { once: true })
+
+	const point1ref = useRef(null);
+	const point1InView = FramerMotionUseInView(point1ref, { once: true })
+
+	const point2ref = useRef(null);
+	const point2InView = FramerMotionUseInView(point2ref, { once: true })
+
+	const point3ref = useRef(null);
+	const point3InView = FramerMotionUseInView(point3ref, { once: true })
+
+
 	return(
 		<>
-			<h3 className={`
-				section-heading pb-3 text-center
-				${props.ysMobDarkMode ? "ws-dark-border" : "ws-light-border"}
-				${props.isVisible ? "y-us-m-animation-1" : ""}`}>
+			<h3 
+				className={`section-heading pb-3 text-center
+				${props.ysMobDarkMode ? "ws-dark-border" : "ws-light-border"}`}
+				ref={titleref}
+				style={{
+					opacity: titleInView ? 1 : 0,
+					transform: titleInView ? "none" : "translateY(50%)",
+					transition: "all 1s"
+					}}>
 				{props.title}<span>{props.title_span}</span>
 			</h3>
-			<div className="pt-3 why-us-svg-div">
+			<div 
+				className="pt-3 why-us-svg-div"
+				ref={svgref}
+				style={{
+					opacity: svgInView ? 1 : 0,
+					transform: svgInView ? "none" : "translateY(30%)",
+					transition: "all 1s 0.3s"
+					}}>
 				<Why_Us_Mobile_SVG/>
 			</div>
-			<div className={`d-flex flex-row ps-2 pe-2 pt-3 pb-4 ${props.isVisible ? "y-us-m-animation-2" : ""}`}>
+			<div 
+				className="d-flex flex-row ps-2 pe-2 pt-3 pb-4"
+				ref={point1ref}
+				style={{
+					opacity: point1InView ? 1 : 0,
+					transform: point1InView ? "none" : "translateY(50%)",
+					transition: "all 1s 0.6s"
+					}}>
 				<div>
 					<img 
 						src={props.ysMobDarkMode ? 
@@ -28,7 +65,14 @@ export default function WhyUsMobContentItem(props) {
 					<p className="why-us-points-text-mobile text-justify">{props.p_text_1}</p>
 				</div>
 			</div>
-			<div className={`d-flex flex-row ps-2 pe-2 pb-4 ${props.isVisible ? "y-us-m-animation-3" : ""}`}>
+			<div 
+				className="d-flex flex-row ps-2 pe-2 pb-4"
+				ref={point2ref}
+				style={{
+					opacity: point2InView ? 1 : 0,
+					transform: point2InView ? "none" : "translateY(50%)",
+					transition: "all 1s 0.8s"
+					}}>
 				<div>
 					<img 
 						src={props.ysMobDarkMode ? 
@@ -42,7 +86,14 @@ export default function WhyUsMobContentItem(props) {
 					<p className="why-us-points-text-mobile text-justify">{props.p_text_2}</p>
 				</div>
 			</div>
-			<div className={`d-flex flex-row ps-2 pe-2 pb-4 ${props.isVisible ? "y-us-m-animation-4" : ""}`}>
+			<div 
+				className="d-flex flex-row ps-2 pe-2 pb-4"
+				ref={point3ref}
+				style={{
+					opacity: point3InView ? 1 : 0,
+					transform: point3InView ? "none" : "translateY(50%)",
+					transition: "all 1s 1s"
+					}}>
 				<div>
 					<img 
 						src={props.ysMobDarkMode ? 

@@ -1,4 +1,5 @@
 import React from "react"
+import {motion, useScroll, useTransform} from "framer-motion"
 
 import Navbar from "../Components/Navbar"
 import LandingPage from "../Components/LandingPage"
@@ -10,6 +11,13 @@ import Contact from "../Components/Contact"
 import AboutUs from "../Components/AboutUs"
 import Footer from "../Components/Footer"
 
+import LandingPageAltFramerMotion from "../Components/LandingPageAltFramerMotion"
+import WhyUsAltFramerMotion from "../Components/WhyUsAltFramerMotion"
+import ServicesAltFramerMotion from "../Components/ServicesAltFramerMotion"
+import ContactAltFramerMotion from "../Components/ContactAltFramerMotion"
+import QuestionsAltFramerMotion from "../Components/QuestionsAltFramerMotion"
+import AboutUsAltFramerMotion from "../Components/AboutUsAltFramerMotion"
+
 
 
 export default function Home(props) {
@@ -17,31 +25,37 @@ export default function Home(props) {
 
 
 	return(
-		<>
-			<Navbar 
+		<>	
+			<motion.div
+				initial={{opacity: 0}}
+            	animate={{opacity: 1}}
+            	transition={{duration: 0.5}}>
+            	<Navbar 
                 darkMode={props.darkMode} 
                 toggleDarkMode={props.toggleDarkMode}
             	windowWidth={props.windowWidth}
                 />
-            <LandingPage 
+			</motion.div>
+			
+            <LandingPageAltFramerMotion 
             	darkMode={props.darkMode} 
             	windowWidth={props.windowWidth}/>
-            <WhyUs 
+            <WhyUsAltFramerMotion
             	darkMode={props.darkMode}
             	windowWidth={props.windowWidth} />
-            <Services 
+            <ServicesAltFramerMotion 
             	darkMode={props.darkMode}
             	windowWidth={props.windowWidth} />
-            <Questions 
+            <QuestionsAltFramerMotion
             	darkMode={props.darkMode}
             	windowWidth={props.windowWidth} />
             <Portfolio 
 		        darkMode={props.darkMode} 
 		        portWindowWidth={props.windowWidth}/> 
-		    <Contact 
+		    <ContactAltFramerMotion 
 		    	darkMode={props.darkMode} 
 		    	windowWidth={props.windowWidth}/>
-		    <AboutUs 
+		    <AboutUsAltFramerMotion 
 		    	darkMode={props.darkMode}
 		    	windowWidth={props.windowWidth} />
 		    <Footer 

@@ -8,7 +8,7 @@ export default function FooterContentMobItem(props) {
 			<div className="footer-heading-mobile pb-2 pt-2">
 				<img 
 					className="img-fluid" 
-					src={props.fMobDarkMode? "./SVGs/logo-7-dark-mode.svg" : "./SVGs/logo-7.svg"}
+					src={props.fMobDarkMode? "./SVGs/logo-dark-mode.svg" : "./SVGs/logo.svg"}
 					alt="Arrow Code brand logo"/>
 			</div>
 			<p className="footer-text-mobile">{props.text}</p>

@@ -1,8 +1,9 @@
 import React from "react"
+import {motion, useScroll, useTransform} from "framer-motion"
 
 import Landing_Page_JSON from "../JSONs/landing-page"
-import Landing_Page_JSON_Component_Desktop from "../Content-Components/landing-page-desktop"
-import Landing_Page_JSON_Component_Mobile from "../Content-Components/landing-page-mobile"
+import Landing_Page_JSON_Component_Desktop from "../Content-Components/landing-page-desktop-framer-motion"
+import Landing_Page_JSON_Component_Mobile from "../Content-Components/landing-page-mobile-framer-motion"
 
 import Landing_Page_SVG from "../SVG-Components/landing-page.js"
 
@@ -31,19 +32,33 @@ export default function LandingPage(props) {
 
 	return (
 		<section className="container pt-5 landing-page vh-100" id="landing-page">
-			{props.windowWidth > 992 && 
+			{
+				props.windowWidth > 992 && 
 				<div className="d-flex flex-column pt-5">
 					<div className="d-flex flex-row pb-5 justify-content-around align-items-center">
-						<div className="col-6 pt-5 ps-5">
+						<motion.div 
+							className="col-6 pt-5 ps-5"
+							initial={{x: -200, opacity: 0}}
+							animate={{x: 0, opacity: 1,}}
+							transition={{duration: 0.5, delay: 0.4}}
+							>
 							{Landing_Page_JSON_Content_Desktop}
-						</div>
-						<div className="col-5 pe-5">
-							<div className="landing-page-svg-div">
+						</motion.div>
+						<motion.div 
+							className="col-5 pe-5"
+							initial={{x:200, opacity: 0}}
+							animate={{x: 0, opacity: 1}}
+							transition={{delay: 0.8, duration: 0.5}}>
+							<div className="">
 								<Landing_Page_SVG />
 							</div>
-						</div>
+						</motion.div>
 					</div>
-					<div className="d-flex flex-row justify-content-around lp-skill-icons ps-3 pe-3 mt-4 mb-5">
+					<motion.div 
+						className="d-flex flex-row justify-content-around ps-3 pe-3 mt-4 mb-5"
+						initial={{y: 30, opacity: 0}}
+						animate={{y: 0, opacity: 1}}
+						transition={{type: "spring", delay: 1.2, duration: 0.5}}>
 						<img 
 							src={props.darkMode ? 
 								"../SVGs/Landing_Page/aws-dark-mode.svg" : 
@@ -86,19 +101,28 @@ export default function LandingPage(props) {
 								"../SVGs/Landing_Page/python-light-mode.svg"} 
 							className="img-fluid lp-skill-icon-7"
 							alt="Python icon"/>
-					</div>
+					</motion.div>
 				</div>
 			}
 
-			{props.windowWidth <=992 && 
+			{
+				props.windowWidth <= 992 && 
 				<>
 					<div className="d-flex flex-column justify-content-center align-items-center">
-						<div className="landing-page-svg-div">
+						<motion.div 
+							className="landing-page-svg-div"
+							initial={{y:40, opacity:0}}
+							animate={{y:0, opacity:1}}
+							transition={{duration:1, delay: 0.6, type:"spring"}}>
 							<Landing_Page_SVG />
-						</div>
+						</motion.div>
 						{Landing_Page_JSON_Content_Mobile}
 					</div>
-					<div className="d-flex flex-row justify-content-around lp-logos-mobile-light">
+					<motion.div 
+						className="d-flex flex-row justify-content-around lp-logos-mobile-light"
+						initial={{y:70, opacity:0}}
+						animate={{y:0, opacity:1}}
+						transition={{duration:1, delay: 1.8, type:"spring"}}>
 						<img 
 							src={props.darkMode ? 
 							"../SVGs/Landing_Page/aws-m-dark-mode.svg" : 
@@ -141,7 +165,7 @@ export default function LandingPage(props) {
 							"../SVGs/Landing_Page/python-m-light-mode.svg"} 
 							className="img-fluid"
 							alt="Python icon"/>
-					</div>
+					</motion.div>
 				</>
 
 			}

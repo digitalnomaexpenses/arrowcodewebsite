@@ -1,12 +1,18 @@
-import React from "react"
+import React, {useRef} from "react"
+import {motion, useInView as FramerMotionUseInView} from "framer-motion"
 
 export default function QuestionsAccordionMobItem(props) {
+
+	const ref = useRef(null);
+	const itemInView = FramerMotionUseInView(ref, { once: true })
+
 	return(
-		<div 
-			className=	{
+		<div
+			ref={ref} 
+			className={
 				`accordion-item 
 				${props.qMobAccDarkMode ? "dark-accordion" : ""} 
-				${props.isVisible ? `${props.id}_m_animation` : ""}`
+				${itemInView ? `${props.id}_m_animation` : ""}`
 			} 
 			style={{background: props.qMobAccDarkMode ? "#303030" : "rgba(255, 255, 255, 1)"}}>
 			<h4 className="accordion-header">

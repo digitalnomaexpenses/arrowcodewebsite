@@ -1,5 +1,7 @@
 import React from "react"
 import { Link, Element } from 'react-scroll'
+import LogoLightMode from "../SVG-Components/navbar-logo-light-mode"
+import LogoDarkMode from "../SVG-Components/navbar-logo-dark-mode"
 
 export default function Navbar(props) {
 
@@ -42,10 +44,7 @@ export default function Navbar(props) {
       
 			<div className="navbar-brand-div">
 				<Link id="navbar-brand" className="navbar-brand" to="landing-page" smooth={true} duration={5}>
-	    		<img 
-            src={props.darkMode? "./SVGs/logo-7-dark-mode.svg" : "./SVGs/logo-7.svg"} 
-            className="img-fluid"
-            alt="Arrow Code brand logo"/>
+	    		{props.darkMode ? <LogoDarkMode/> : <LogoLightMode/> }
 	    	</Link>
 			</div>
 	    
