@@ -11,6 +11,8 @@ import Questions_Accordion_Component_Mobile from "../Content-Components/question
 
 import Questions_SVG from "../SVG-Components/questions.js"
 
+
+
 export default function Questions(props) {
 
 	let Questions_JSON_Content_Desktop = Questions_JSON.map(eachElement => (
@@ -94,7 +96,7 @@ export default function Questions(props) {
 							{Questions_JSON_Content_Desktop}
 							<div 
 								className="questions-svg-div ps-1">
-								<Questions_SVG />
+								<Questions_SVG darkMode={props.darkMode}/>
 							</div>
 						</div>
 					</motion.div>
@@ -122,7 +124,7 @@ export default function Questions(props) {
 							transform: svgInView ? "none" : "translateY(30%)",
 							transition: "all 1s 0.6s"
 							}}>
-								<Questions_SVG/>
+								<Questions_SVG darkMode={props.darkMode}/>
 						</div>
 						<div className="accordion accordion-flush" id="accordionFlushExample">
 							{Questions_Accordion_Mobile}

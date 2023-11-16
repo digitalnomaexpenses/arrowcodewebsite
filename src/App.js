@@ -15,7 +15,7 @@ function App() {
 
     )}, [] )
 
-  const [darkMode, setDarkMode] = React.useState(false)
+  const [darkMode, setDarkMode] = React.useState(true)
 
   function toggleDarkMode() {
         setDarkMode(prevMode => !prevMode)}

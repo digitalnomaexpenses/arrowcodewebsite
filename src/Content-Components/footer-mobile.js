@@ -8,28 +8,28 @@ export default function FooterContentMobItem(props) {
 			<div className="footer-heading-mobile pb-2 pt-2">
 				<img 
 					className="img-fluid" 
-					src={props.fMobDarkMode? "./SVGs/logo-dark-mode.svg" : "./SVGs/logo.svg"}
+					src={props.darkMode? "./SVGs/logo-dark-mode.svg" : "./SVGs/logo.svg"}
 					alt="Arrow Code brand logo"/>
 			</div>
 			<p className="footer-text-mobile">{props.text}</p>
 			<div className="d-flex flex-row pt-2">
 				<img 
-					src={props.fMobDarkMode ? 
+					src={props.darkMode ? 
 						"../SVGs/Footer/facebook-icon-dark.svg" : "../SVGs/Footer/facebook-icon.svg"} 
 					className="img-fluid pe-4"
 					alt="Social media icon: Facebook"/>
 				<img 
-					src={props.fMobDarkMode ? 
+					src={props.darkMode ? 
 						"../SVGs/Footer/linkedin-icon-dark.svg" : "../SVGs/Footer/linkedin-icon.svg"} 
 					className="img-fluid pe-4"
 					alt="Social media icon: LinkedIn"/>
 				<img 
-					src={props.fMobDarkMode ? 
+					src={props.darkMode ? 
 						"../SVGs/Footer/twitter-icon-dark.svg" : "../SVGs/Footer/twitter-icon.svg"} 
 					className="img-fluid pe-4"
 					alt="Social media icon: Twitter"/>
 				<img 
-					src={props.fMobDarkMode ? 
+					src={props.darkMode ? 
 						"../SVGs/Footer/instagram-icon-dark.svg" : "../SVGs/Footer/instagram-icon.svg"} 
 					className="img-fluid pe-4"
 					alt="Social media icon: Instagram"/>
@@ -87,7 +87,7 @@ export default function FooterContentMobItem(props) {
 			<p className="footer-text-mobile pb-3">{props.timings_3}</p>
 			<div className="d-flex flex-row">
 				<img 
-					src={props.fMobDarkMode ? 
+					src={props.darkMode ? 
 						"../SVGs/Footer/email-icon-dark.svg" : "../SVGs/Footer/email-icon.svg"} 
 					className="img-fluid pe-2"
 					alt="Email icon"/>

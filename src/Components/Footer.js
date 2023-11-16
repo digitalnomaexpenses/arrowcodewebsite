@@ -22,7 +22,7 @@ export default function Footer(props) {
 				timings_2={eachElement.timings_2}
 				timings_3={eachElement.timings_3}
 				email={eachElement.email}
-				fDarkMode={props.darkMode}
+				darkMode={props.darkMode}
 			/>
 		))
 
@@ -42,7 +42,7 @@ export default function Footer(props) {
 				timings_2={eachElement.timings_2}
 				timings_3={eachElement.timings_3}
 				email={eachElement.email}
-				fMobDarkMode={props.darkMode}
+				darkMode={props.darkMode}
 			/>
 		))
 

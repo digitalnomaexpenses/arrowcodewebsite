@@ -85,7 +85,7 @@ export default function AboutUs(props) {
 						<div className="col">
 							<div className="d-flex flex-row pb-4 pt-2">
 								<div className="project-management-svg pe-3">
-									<Project_Management_SVG/>
+									<Project_Management_SVG darkMode={props.darkMode}/>
 								</div>
 								<div className="d-flex flex-column justify-content-center">
 									<h4 className="about-us-highlight-number">10+ </h4>
@@ -96,7 +96,7 @@ export default function AboutUs(props) {
 						<div className="col">
 							<div className="d-flex flex-row pb-4 pt-2">
 								<div className="web-development-svg pe-3">
-									<Web_Development_SVG/>
+									<Web_Development_SVG darkMode={props.darkMode}/>
 								</div>
 								<div className="d-flex flex-column justify-content-center">
 									<h4 className="about-us-highlight-number">5+</h4>
@@ -107,7 +107,7 @@ export default function AboutUs(props) {
 						<div className="col">
 							<div className="d-flex flex-row pb-4">
 								<div className="projects-delivered-svg pe-3">
-									<Projects_Delivered_SVG/>
+									<Projects_Delivered_SVG darkMode={props.darkMode}/>
 								</div>
 								<div className="d-flex flex-column justify-content-center">
 									<h4 className="about-us-highlight-number">40+ </h4>
@@ -118,7 +118,7 @@ export default function AboutUs(props) {
 						<div className="col">
 							<div className="d-flex flex-row pb-4">
 								<div className="furry-feline-svg pe-3">
-									<Furry_Felines_SVG/>
+									<Furry_Felines_SVG darkMode={props.darkMode}/>
 								</div>
 								<div className="d-flex flex-column justify-content-center">
 									<h4 className="about-us-highlight-number">2+</h4>
@@ -131,7 +131,7 @@ export default function AboutUs(props) {
 				<motion.div 
 					className="col ps-5 pe-5 about-us-svg-div"
 					style={{x:rhsx, opacity:scrollopacity}}>
-					<About_Us_SVG />
+					<About_Us_SVG darkMode={props.darkMode}/>
 				</motion.div>
 			</div>
 		}
@@ -152,7 +152,7 @@ export default function AboutUs(props) {
 							>
 							<div className="d-flex flex-column justify-content-center">
 								<div className="project-management-svg">
-									<Project_Management_SVG/>
+									<Project_Management_SVG darkMode={props.darkMode}/>
 								</div>
 								<div className="d-flex flex-column justify-content-center pt-1">
 									<h4 className="about-us-highlight-number-mobile">10+ </h4>
@@ -170,7 +170,7 @@ export default function AboutUs(props) {
 							>
 							<div className="d-flex flex-column justify-content-center">
 								<div className="web-development-svg">
-									<Web_Development_SVG/>
+									<Web_Development_SVG darkMode={props.darkMode}/>
 								</div>
 								<div className="d-flex flex-column justify-content-center pt-1">
 									<h4 className="about-us-highlight-number-mobile">5+</h4>
@@ -188,7 +188,7 @@ export default function AboutUs(props) {
 							>
 							<div className="d-flex flex-column justify-content-center">
 								<div className="projects-delivered-svg">
-									<Projects_Delivered_SVG/>
+									<Projects_Delivered_SVG darkMode={props.darkMode}/>
 								</div>
 								<div className="d-flex flex-column justify-content-center pt-1">
 									<h4 className="about-us-highlight-number-mobile">40+ </h4>
@@ -206,7 +206,7 @@ export default function AboutUs(props) {
 							>
 							<div className="d-flex flex-column justify-content-center">
 								<div className="furry-feline-svg">
-									<Furry_Felines_SVG/>
+									<Furry_Felines_SVG darkMode={props.darkMode}/>
 								</div>
 								<div className="d-flex flex-column justify-content-center pt-1">
 									<h4 className="about-us-highlight-number-mobile">2+</h4>

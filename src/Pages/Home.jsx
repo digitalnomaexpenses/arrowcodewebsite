@@ -26,16 +26,11 @@ export default function Home(props) {
 
 	return(
 		<>	
-			<motion.div
-				initial={{opacity: 0}}
-            	animate={{opacity: 1}}
-            	transition={{duration: 0.5}}>
-            	<Navbar 
-                darkMode={props.darkMode} 
-                toggleDarkMode={props.toggleDarkMode}
-            	windowWidth={props.windowWidth}
-                />
-			</motion.div>
+        	<Navbar 
+            darkMode={props.darkMode} 
+            toggleDarkMode={props.toggleDarkMode}
+        	windowWidth={props.windowWidth}
+            />
 			
             <LandingPageAltFramerMotion 
             	darkMode={props.darkMode} 

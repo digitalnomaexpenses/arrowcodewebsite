@@ -65,7 +65,7 @@ export default function WhyUs(props) {
 				props.windowWidth > 768 && 
 				<div className={`d-flex flex-row why-us pt-5 ps-4 pb-5 ${props.darkMode? "dark" : "light"}`}>
 					<motion.div 
-						className="col ps-lg-4"
+						className="col ps-4"
 						style={{x:lhsx, opacity:scrollopacity}}>
 						<div className="col-lg-9 col-md-11 h-100">
 							<div 
@@ -82,7 +82,7 @@ export default function WhyUs(props) {
 									for your business
 								</p>
 								<div className="why-us-svg-div">
-									<Why_Us_SVG />
+									<Why_Us_SVG darkMode={props.darkMode} />
 								</div>
 							</div>
 						</div>

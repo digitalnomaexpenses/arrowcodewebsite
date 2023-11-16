@@ -1,6 +1,5 @@
 import React, {useRef} from "react"
 import {motion, useInView as FramerMotionUseInView} from "framer-motion"
-import Why_Us_SVG from "../SVG-Components/why-us.js"
 import Why_Us_Mobile_SVG from "../SVG-Components/why-us-mobile.js"
 
 export default function WhyUsMobContentItem(props) {
@@ -42,7 +41,7 @@ export default function WhyUsMobContentItem(props) {
 					transform: svgInView ? "none" : "translateY(30%)",
 					transition: "all 1s 0.3s"
 					}}>
-				<Why_Us_Mobile_SVG/>
+				<Why_Us_Mobile_SVG darkMode={props.ysMobDarkMode}/>
 			</div>
 			<div 
 				className="d-flex flex-row ps-2 pe-2 pt-3 pb-4"

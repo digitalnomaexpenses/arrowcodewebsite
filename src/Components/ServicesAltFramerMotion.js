@@ -129,7 +129,7 @@ export default function Services(props) {
 						className="col ps-5"
 						style={{x:rhsx, opacity: scrollopacity}}>
 						<div className="services-svg-div pt-4 pe-2">
-							<Services_SVG />
+							<Services_SVG darkMode={props.darkMode}/>
 						</div>
 					</motion.div>
 				</div>
@@ -156,7 +156,7 @@ export default function Services(props) {
 						transform: svgInView ? "none" : "translateY(30%)",
 						transition: "all 1s 0.6s"
 						}}>
-						<Services_SVG />
+						<Services_SVG darkMode={props.darkMode}/>
 					</div>
 					{Services_Drawer_1_Mobile}
 					{Services_Drawer_2_Mobile}

@@ -35,7 +35,7 @@ export default function AboutUsContentMobileItem(props) {
 					transition: "all 1s 0.3s"
 					}}
 			>
-				<About_Us_SVG isVisible={props.isVisible}/>
+				<About_Us_SVG darkMode={props.darkMode}/>
 			</div>
 			<p 
 				className="section-text pb-4 ps-2 pe-2 text-center"
