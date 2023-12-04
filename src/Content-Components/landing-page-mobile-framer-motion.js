@@ -21,7 +21,7 @@ export default function LandingPageMobileItem(props) {
 				{props.text}
 			</motion.h4>
 			<motion.div 
-				className="text-center pb-5"
+				className="text-center"
 				initial={{y:40, opacity:0}}
 				animate={{y:0, opacity:1}}
 				transition={{delay: 1.5, duration: 1, type:"spring"}}>

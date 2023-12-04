@@ -16,6 +16,8 @@
 
 .landing-page {
   overflow-x: hidden;
+  padding-top: 10px;
+  height: 85vh;
 }
 
 .lp-title-and-text {
@@ -122,6 +124,7 @@
 	transform-box: fill-box;
 	transform-origin: center;
 }
+
 
 
 /*Landing Page Animation Start*/

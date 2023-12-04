@@ -26,7 +26,8 @@ function App() {
       <Route path="/" element={<Home
                                     darkMode={darkMode}
                                     windowWidth={windowWidth}
-                                    toggleDarkMode={toggleDarkMode}/>}/>
+                                    toggleDarkMode={toggleDarkMode}/>
+                                  }/>
       <Route path="/terms-and-conditions" element={<TermsAndConditions 
                                                       darkMode={darkMode}
                                                       toggleDarkMode={toggleDarkMode}/>}/>

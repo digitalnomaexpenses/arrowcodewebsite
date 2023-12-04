@@ -22,8 +22,6 @@ import AboutUsAltFramerMotion from "../Components/AboutUsAltFramerMotion"
 
 export default function Home(props) {
 
-
-
 	return(
 		<>	
         	<Navbar 
