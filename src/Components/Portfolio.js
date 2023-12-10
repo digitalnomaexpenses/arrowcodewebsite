@@ -10,10 +10,10 @@ export default function Portfolio(props) {
 		                <div className="container">
 		                    <div className="col d-flex flex-lg-row flex-column align-items-center justify-content-center text-center mt-5 pt-5 mb-5 pb-5">
 		                        <div className="col-lg-8 laptop-container">
-		                            <img src = "laptop.png"/>
+		                        	<img src = "slide_grow.png"/>
 		                        </div>
 		                        <div className="col-lg-4 col-md-10 col-12">
-		                            <h4 className="section-heading pb-3">Expense App</h4>
+		                            <h4 className="section-heading pb-3">Grow: Expense Tracker</h4>
 		                            <p className="section-text pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
 		                            <p className="section-text">Made With</p>
 		                            <div className="image-container col-12">
@@ -35,10 +35,10 @@ export default function Portfolio(props) {
 		                <div className="container">
 		                    <div className="col d-flex flex-lg-row flex-column align-items-center justify-content-center text-center mt-5 pt-5 mb-5 pb-5">
 		                        <div className="col-lg-8 laptop-container">
-		                            <img src = "laptop.png"/>
+		                            <img src = "slide_judgefoodie.png"/>
 		                        </div>
 		                        <div className="col-lg-4 col-md-10 col-12">
-		                            <h4 className="section-heading pb-3">Expense App 2</h4>
+		                            <h4 className="section-heading pb-3">Judge Foodie: Restaurant Rating </h4>
 		                            <p className="section-text pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
 		                            <p className="section-text">Made With</p>
 		                            
